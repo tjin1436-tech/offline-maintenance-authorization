@@ -1,0 +1,491 @@
+[
+  {
+    "case": "P1_before_robot",
+    "repeat": 1,
+    "expected": [
+      "KILLED",
+      "PENDING_OR_CONFLICT",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      "QUOTA_EXHAUSTED",
+      0
+    ],
+    "actual": [
+      "KILLED",
+      "PENDING_OR_CONFLICT",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      "QUOTA_EXHAUSTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "P2_after_robot",
+    "repeat": 1,
+    "expected": [
+      "KILLED",
+      "RECOVERED",
+      "REPLAY",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "actual": [
+      "KILLED",
+      "RECOVERED",
+      "REPLAY",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P3_after_log",
+    "repeat": 1,
+    "expected": [
+      "KILLED",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "actual": [
+      "KILLED",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P4_registry_before_local_mark",
+    "repeat": 1,
+    "expected": [
+      "KILLED",
+      1,
+      false,
+      [
+        "DUPLICATE"
+      ],
+      1,
+      true
+    ],
+    "actual": [
+      "KILLED",
+      1,
+      false,
+      [
+        "DUPLICATE"
+      ],
+      1,
+      true
+    ],
+    "pass": true
+  },
+  {
+    "case": "P5_lost_ack",
+    "repeat": 1,
+    "expected": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "actual": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P6_untrusted_restart",
+    "repeat": 1,
+    "expected": [
+      "CLOCK_UNTRUSTED",
+      1,
+      1
+    ],
+    "actual": [
+      "CLOCK_UNTRUSTED",
+      1,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P7_two_record_resume",
+    "repeat": 1,
+    "expected": [
+      "KILLED",
+      [
+        "DUPLICATE",
+        "ACCEPTED"
+      ],
+      2,
+      [
+        true,
+        true
+      ]
+    ],
+    "actual": [
+      "KILLED",
+      [
+        "DUPLICATE",
+        "ACCEPTED"
+      ],
+      2,
+      [
+        true,
+        true
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "P1_before_robot",
+    "repeat": 2,
+    "expected": [
+      "KILLED",
+      "PENDING_OR_CONFLICT",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      "QUOTA_EXHAUSTED",
+      0
+    ],
+    "actual": [
+      "KILLED",
+      "PENDING_OR_CONFLICT",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      "QUOTA_EXHAUSTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "P2_after_robot",
+    "repeat": 2,
+    "expected": [
+      "KILLED",
+      "RECOVERED",
+      "REPLAY",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "actual": [
+      "KILLED",
+      "RECOVERED",
+      "REPLAY",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P3_after_log",
+    "repeat": 2,
+    "expected": [
+      "KILLED",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "actual": [
+      "KILLED",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P4_registry_before_local_mark",
+    "repeat": 2,
+    "expected": [
+      "KILLED",
+      1,
+      false,
+      [
+        "DUPLICATE"
+      ],
+      1,
+      true
+    ],
+    "actual": [
+      "KILLED",
+      1,
+      false,
+      [
+        "DUPLICATE"
+      ],
+      1,
+      true
+    ],
+    "pass": true
+  },
+  {
+    "case": "P5_lost_ack",
+    "repeat": 2,
+    "expected": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "actual": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P6_untrusted_restart",
+    "repeat": 2,
+    "expected": [
+      "CLOCK_UNTRUSTED",
+      1,
+      1
+    ],
+    "actual": [
+      "CLOCK_UNTRUSTED",
+      1,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P7_two_record_resume",
+    "repeat": 2,
+    "expected": [
+      "KILLED",
+      [
+        "DUPLICATE",
+        "ACCEPTED"
+      ],
+      2,
+      [
+        true,
+        true
+      ]
+    ],
+    "actual": [
+      "KILLED",
+      [
+        "DUPLICATE",
+        "ACCEPTED"
+      ],
+      2,
+      [
+        true,
+        true
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "case": "P1_before_robot",
+    "repeat": 3,
+    "expected": [
+      "KILLED",
+      "PENDING_OR_CONFLICT",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      "QUOTA_EXHAUSTED",
+      0
+    ],
+    "actual": [
+      "KILLED",
+      "PENDING_OR_CONFLICT",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      "QUOTA_EXHAUSTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "P2_after_robot",
+    "repeat": 3,
+    "expected": [
+      "KILLED",
+      "RECOVERED",
+      "REPLAY",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "actual": [
+      "KILLED",
+      "RECOVERED",
+      "REPLAY",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P3_after_log",
+    "repeat": 3,
+    "expected": [
+      "KILLED",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "actual": [
+      "KILLED",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P4_registry_before_local_mark",
+    "repeat": 3,
+    "expected": [
+      "KILLED",
+      1,
+      false,
+      [
+        "DUPLICATE"
+      ],
+      1,
+      true
+    ],
+    "actual": [
+      "KILLED",
+      1,
+      false,
+      [
+        "DUPLICATE"
+      ],
+      1,
+      true
+    ],
+    "pass": true
+  },
+  {
+    "case": "P5_lost_ack",
+    "repeat": 3,
+    "expected": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "actual": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P6_untrusted_restart",
+    "repeat": 3,
+    "expected": [
+      "CLOCK_UNTRUSTED",
+      1,
+      1
+    ],
+    "actual": [
+      "CLOCK_UNTRUSTED",
+      1,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "P7_two_record_resume",
+    "repeat": 3,
+    "expected": [
+      "KILLED",
+      [
+        "DUPLICATE",
+        "ACCEPTED"
+      ],
+      2,
+      [
+        true,
+        true
+      ]
+    ],
+    "actual": [
+      "KILLED",
+      [
+        "DUPLICATE",
+        "ACCEPTED"
+      ],
+      2,
+      [
+        true,
+        true
+      ]
+    ],
+    "pass": true
+  }
+]

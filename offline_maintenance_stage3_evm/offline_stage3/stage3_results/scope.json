@@ -1,0 +1,26 @@
+{
+  "stage": "local_EVM_functional_experiments",
+  "node": "v24.15.0",
+  "platform": "win32",
+  "arch": "x64",
+  "chainId": 1337,
+  "ganache": "7.9.2",
+  "ethers": "6.13.5",
+  "solc": "0.8.28+commit.7893614a.Emscripten.clang",
+  "evmVersion": "shanghai",
+  "repeats": 3,
+  "caseTypes": 13,
+  "runs": 39,
+  "passed": 39,
+  "minedTransactions": 122,
+  "revertedTransactions": 15,
+  "importedCompletedRecords": 17,
+  "limitations": [
+    "Ganache development node, not public Ethereum or distributed consensus",
+    "Ed25519 verified off-chain by trusted bridge",
+    "contract trusts declared execution time and authenticated EVM submitter",
+    "robot remains a receipt simulator",
+    "node restart is graceful with persistent database, not power loss",
+    "gas values are actual receipts for this implementation, not production fee estimates"
+  ]
+}

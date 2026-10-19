@@ -1,0 +1,71 @@
+[
+  {
+    "case": "C10_node_restart",
+    "repeat": 1,
+    "event": "EVM_NODE_GRACEFUL_RESTART",
+    "oldPid": 15304,
+    "newPid": 14284
+  },
+  {
+    "case": "C11_gateway_crash_after_commit",
+    "repeat": 1,
+    "event": "GATEWAY_FORCED_TERMINATION",
+    "pid": 41660,
+    "phase": "after_evm_commit",
+    "exit": {
+      "code": null,
+      "signal": "SIGKILL"
+    }
+  },
+  {
+    "case": "C12_offline_spool_then_upload",
+    "repeat": 1,
+    "event": "RPC_GATE_RESTORED_AND_SPOOL_UPLOADED"
+  },
+  {
+    "case": "C10_node_restart",
+    "repeat": 2,
+    "event": "EVM_NODE_GRACEFUL_RESTART",
+    "oldPid": 14284,
+    "newPid": 37636
+  },
+  {
+    "case": "C11_gateway_crash_after_commit",
+    "repeat": 2,
+    "event": "GATEWAY_FORCED_TERMINATION",
+    "pid": 51660,
+    "phase": "after_evm_commit",
+    "exit": {
+      "code": null,
+      "signal": "SIGKILL"
+    }
+  },
+  {
+    "case": "C12_offline_spool_then_upload",
+    "repeat": 2,
+    "event": "RPC_GATE_RESTORED_AND_SPOOL_UPLOADED"
+  },
+  {
+    "case": "C10_node_restart",
+    "repeat": 3,
+    "event": "EVM_NODE_GRACEFUL_RESTART",
+    "oldPid": 37636,
+    "newPid": 37484
+  },
+  {
+    "case": "C11_gateway_crash_after_commit",
+    "repeat": 3,
+    "event": "GATEWAY_FORCED_TERMINATION",
+    "pid": 34044,
+    "phase": "after_evm_commit",
+    "exit": {
+      "code": null,
+      "signal": "SIGKILL"
+    }
+  },
+  {
+    "case": "C12_offline_spool_then_upload",
+    "repeat": 3,
+    "event": "RPC_GATE_RESTORED_AND_SPOOL_UPLOADED"
+  }
+]

@@ -1,0 +1,11 @@
+# Dependencies and caches (reinstall with npm ci / pip install -r requirements.txt)
+node_modules/
+__pycache__/
+*.pyc
+
+# Zip archives duplicate the unpacked folders next to them
+*.zip
+
+# Reference outputs bundled with the packages, not runs from the authors' machine
+verified_*/
+reference_results*/

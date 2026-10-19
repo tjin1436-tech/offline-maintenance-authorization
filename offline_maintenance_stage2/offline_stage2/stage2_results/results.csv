@@ -1,0 +1,22 @@
+﻿case,repeat,expected,actual,pass
+P1_before_robot,1,"[""KILLED"", ""PENDING_OR_CONFLICT"", ""NEEDS_RECONCILIATION"", [""PENDING""], ""QUOTA_EXHAUSTED"", 0]","[""KILLED"", ""PENDING_OR_CONFLICT"", ""NEEDS_RECONCILIATION"", [""PENDING""], ""QUOTA_EXHAUSTED"", 0]",True
+P2_after_robot,1,"[""KILLED"", ""RECOVERED"", ""REPLAY"", [""ACCEPTED""], 1]","[""KILLED"", ""RECOVERED"", ""REPLAY"", [""ACCEPTED""], 1]",True
+P3_after_log,1,"[""KILLED"", ""REPLAY"", ""QUOTA_EXHAUSTED"", [""ACCEPTED""], 1]","[""KILLED"", ""REPLAY"", ""QUOTA_EXHAUSTED"", [""ACCEPTED""], 1]",True
+P4_registry_before_local_mark,1,"[""KILLED"", 1, false, [""DUPLICATE""], 1, true]","[""KILLED"", 1, false, [""DUPLICATE""], 1, true]",True
+P5_lost_ack,1,"[[""UNAVAILABLE""], [""DUPLICATE""], 1]","[[""UNAVAILABLE""], [""DUPLICATE""], 1]",True
+P6_untrusted_restart,1,"[""CLOCK_UNTRUSTED"", 1, 1]","[""CLOCK_UNTRUSTED"", 1, 1]",True
+P7_two_record_resume,1,"[""KILLED"", [""DUPLICATE"", ""ACCEPTED""], 2, [true, true]]","[""KILLED"", [""DUPLICATE"", ""ACCEPTED""], 2, [true, true]]",True
+P1_before_robot,2,"[""KILLED"", ""PENDING_OR_CONFLICT"", ""NEEDS_RECONCILIATION"", [""PENDING""], ""QUOTA_EXHAUSTED"", 0]","[""KILLED"", ""PENDING_OR_CONFLICT"", ""NEEDS_RECONCILIATION"", [""PENDING""], ""QUOTA_EXHAUSTED"", 0]",True
+P2_after_robot,2,"[""KILLED"", ""RECOVERED"", ""REPLAY"", [""ACCEPTED""], 1]","[""KILLED"", ""RECOVERED"", ""REPLAY"", [""ACCEPTED""], 1]",True
+P3_after_log,2,"[""KILLED"", ""REPLAY"", ""QUOTA_EXHAUSTED"", [""ACCEPTED""], 1]","[""KILLED"", ""REPLAY"", ""QUOTA_EXHAUSTED"", [""ACCEPTED""], 1]",True
+P4_registry_before_local_mark,2,"[""KILLED"", 1, false, [""DUPLICATE""], 1, true]","[""KILLED"", 1, false, [""DUPLICATE""], 1, true]",True
+P5_lost_ack,2,"[[""UNAVAILABLE""], [""DUPLICATE""], 1]","[[""UNAVAILABLE""], [""DUPLICATE""], 1]",True
+P6_untrusted_restart,2,"[""CLOCK_UNTRUSTED"", 1, 1]","[""CLOCK_UNTRUSTED"", 1, 1]",True
+P7_two_record_resume,2,"[""KILLED"", [""DUPLICATE"", ""ACCEPTED""], 2, [true, true]]","[""KILLED"", [""DUPLICATE"", ""ACCEPTED""], 2, [true, true]]",True
+P1_before_robot,3,"[""KILLED"", ""PENDING_OR_CONFLICT"", ""NEEDS_RECONCILIATION"", [""PENDING""], ""QUOTA_EXHAUSTED"", 0]","[""KILLED"", ""PENDING_OR_CONFLICT"", ""NEEDS_RECONCILIATION"", [""PENDING""], ""QUOTA_EXHAUSTED"", 0]",True
+P2_after_robot,3,"[""KILLED"", ""RECOVERED"", ""REPLAY"", [""ACCEPTED""], 1]","[""KILLED"", ""RECOVERED"", ""REPLAY"", [""ACCEPTED""], 1]",True
+P3_after_log,3,"[""KILLED"", ""REPLAY"", ""QUOTA_EXHAUSTED"", [""ACCEPTED""], 1]","[""KILLED"", ""REPLAY"", ""QUOTA_EXHAUSTED"", [""ACCEPTED""], 1]",True
+P4_registry_before_local_mark,3,"[""KILLED"", 1, false, [""DUPLICATE""], 1, true]","[""KILLED"", 1, false, [""DUPLICATE""], 1, true]",True
+P5_lost_ack,3,"[[""UNAVAILABLE""], [""DUPLICATE""], 1]","[[""UNAVAILABLE""], [""DUPLICATE""], 1]",True
+P6_untrusted_restart,3,"[""CLOCK_UNTRUSTED"", 1, 1]","[""CLOCK_UNTRUSTED"", 1, 1]",True
+P7_two_record_resume,3,"[""KILLED"", [""DUPLICATE"", ""ACCEPTED""], 2, [true, true]]","[""KILLED"", [""DUPLICATE"", ""ACCEPTED""], 2, [true, true]]",True

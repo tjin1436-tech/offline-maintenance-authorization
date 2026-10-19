@@ -1,0 +1,18 @@
+{
+  "name": "offline-maintenance-stage5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local HTTP and EVM benchmark with robot emulator",
+  "scripts": {
+    "test": "node run_benchmark.cjs",
+    "audit": "node audit_benchmark.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "ethers": "6.13.5",
+    "ganache": "7.9.2",
+    "solc": "0.8.28"
+  }
+}

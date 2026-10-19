@@ -1,0 +1,9 @@
+{
+  "name": "offline-maintenance-stage6-unified",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unified SQLite, HTTP, signed robot receipts and EVM research prototype",
+  "engines": {"node": ">=24.15.0 <25"},
+  "scripts": {"test": "node run_validation.cjs", "audit": "node audit.cjs"},
+  "dependencies": {"ethers": "6.13.5", "ganache": "7.9.2", "solc": "0.8.28"}
+}

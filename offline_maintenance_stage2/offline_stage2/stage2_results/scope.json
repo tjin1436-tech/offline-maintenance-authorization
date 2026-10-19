@@ -1,0 +1,20 @@
+{
+  "stage": "actual_gateway_process_termination_with_simulated_services",
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cryptography": "46.0.0",
+  "case_types": 7,
+  "repeats": 3,
+  "runs": 21,
+  "passed": 21,
+  "forced_terminations": 18,
+  "limitations": [
+    "robot is HTTP/SQLite simulation",
+    "registry is in-memory HTTP simulation, not EVM",
+    "only gateway worker killed; controller/services remain alive",
+    "injected logical time",
+    "checkpoint-targeted SIGKILL/TerminateProcess, not power failure",
+    "single gateway, sequential requests",
+    "test keys temporarily stored in local temp directory and removed normally; not production key custody"
+  ]
+}

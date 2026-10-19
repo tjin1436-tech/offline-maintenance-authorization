@@ -1,0 +1,378 @@
+[
+  {
+    "group": 1,
+    "case": "online_completion",
+    "expected": [
+      "DONE",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "actual": [
+      "DONE",
+      [
+        "ACCEPTED"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "group": 1,
+    "case": "wrong_robot",
+    "expected": [
+      "BAD_SCOPE",
+      0
+    ],
+    "actual": [
+      "BAD_SCOPE",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 1,
+    "case": "wrong_subject",
+    "expected": [
+      "BAD_SUBJECT",
+      0
+    ],
+    "actual": [
+      "BAD_SUBJECT",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 1,
+    "case": "forged_grant",
+    "expected": "BAD_GRANT",
+    "actual": "BAD_GRANT",
+    "pass": true
+  },
+  {
+    "group": 2,
+    "case": "offline_cached_grant",
+    "expected": [
+      "DONE",
+      [
+        "UNAVAILABLE"
+      ],
+      1
+    ],
+    "actual": [
+      "DONE",
+      [
+        "UNAVAILABLE"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "group": 2,
+    "case": "offline_no_grant",
+    "expected": [
+      "NO_GRANT",
+      "UNAVAILABLE",
+      0
+    ],
+    "actual": [
+      "NO_GRANT",
+      "UNAVAILABLE",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 2,
+    "case": "offline_forbidden_operation",
+    "expected": [
+      "BAD_OPERATION",
+      0
+    ],
+    "actual": [
+      "BAD_OPERATION",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 2,
+    "case": "outage_does_not_restart_ttl",
+    "expected": [
+      "EXPIRED",
+      0
+    ],
+    "actual": [
+      "EXPIRED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 3,
+    "case": "just_before_expiry",
+    "expected": "DONE",
+    "actual": "DONE",
+    "pass": true
+  },
+  {
+    "group": 3,
+    "case": "at_expiry",
+    "expected": [
+      "EXPIRED",
+      0
+    ],
+    "actual": [
+      "EXPIRED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 3,
+    "case": "after_expiry",
+    "expected": [
+      "EXPIRED",
+      0
+    ],
+    "actual": [
+      "EXPIRED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 3,
+    "case": "quota_boundary",
+    "expected": [
+      "DONE",
+      "DONE",
+      "QUOTA_EXHAUSTED",
+      2
+    ],
+    "actual": [
+      "DONE",
+      "DONE",
+      "QUOTA_EXHAUSTED",
+      2
+    ],
+    "pass": true
+  },
+  {
+    "group": 4,
+    "case": "revoked_existing_lease",
+    "expected": "DONE",
+    "actual": "DONE",
+    "pass": true
+  },
+  {
+    "group": 4,
+    "case": "revoked_lease_expires",
+    "expected": "EXPIRED",
+    "actual": "EXPIRED",
+    "pass": true
+  },
+  {
+    "group": 4,
+    "case": "reconnect_no_renewal",
+    "expected": "REVOKED",
+    "actual": "REVOKED",
+    "pass": true
+  },
+  {
+    "group": 4,
+    "case": "late_upload_of_valid_execution",
+    "expected": [
+      "DONE",
+      [
+        "ACCEPTED"
+      ]
+    ],
+    "actual": [
+      "DONE",
+      [
+        "ACCEPTED"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "group": 5,
+    "case": "modified_log",
+    "expected": "BAD_SIGNATURE",
+    "actual": "BAD_SIGNATURE",
+    "pass": true
+  },
+  {
+    "group": 5,
+    "case": "duplicate_upload",
+    "expected": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "group": 5,
+    "case": "observed_signed_conflict",
+    "expected": [
+      "ACCEPTED",
+      "CONFLICT",
+      1,
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "CONFLICT",
+      1,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "group": 5,
+    "case": "tail_deletion_without_checkpoint",
+    "expected": [
+      "ACCEPTED",
+      1,
+      "INDETERMINATE"
+    ],
+    "actual": [
+      "ACCEPTED",
+      1,
+      "INDETERMINATE"
+    ],
+    "pass": true
+  },
+  {
+    "group": 6,
+    "case": "restart_preserves_quota_and_replay",
+    "expected": [
+      "DONE",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      1
+    ],
+    "actual": [
+      "DONE",
+      "REPLAY",
+      "QUOTA_EXHAUSTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "group": 6,
+    "case": "commit_then_ack_loss",
+    "expected": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "actual": [
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "DUPLICATE"
+      ],
+      1
+    ],
+    "pass": true
+  },
+  {
+    "group": 6,
+    "case": "sync_resume",
+    "expected": [
+      [
+        "ACCEPTED"
+      ],
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "ACCEPTED"
+      ],
+      2
+    ],
+    "actual": [
+      [
+        "ACCEPTED"
+      ],
+      [
+        "UNAVAILABLE"
+      ],
+      [
+        "ACCEPTED"
+      ],
+      2
+    ],
+    "pass": true
+  },
+  {
+    "group": 6,
+    "case": "crash_after_robot_receipt",
+    "expected": [
+      "CRASHED",
+      "PENDING_OR_CONFLICT",
+      "RECOVERED",
+      "REPLAY",
+      1
+    ],
+    "actual": [
+      "CRASHED",
+      "PENDING_OR_CONFLICT",
+      "RECOVERED",
+      "REPLAY",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "group": 6,
+    "case": "restart_unknown_clock",
+    "expected": [
+      "CLOCK_UNTRUSTED",
+      0
+    ],
+    "actual": [
+      "CLOCK_UNTRUSTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "group": 6,
+    "case": "crash_before_robot_no_false_completion",
+    "expected": [
+      "CRASHED",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      0
+    ],
+    "actual": [
+      "CRASHED",
+      "NEEDS_RECONCILIATION",
+      [
+        "PENDING"
+      ],
+      0
+    ],
+    "pass": true
+  }
+]

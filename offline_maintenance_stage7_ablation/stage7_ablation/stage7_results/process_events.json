@@ -1,0 +1,4097 @@
+[
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 31012,
+    "wall_ms": 1791804658856,
+    "url": "http://127.0.0.1:55370",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 680,
+    "wall_ms": 1791804659245,
+    "url": "http://127.0.0.1:55371",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 31012,
+    "wall_ms": 1791804659314,
+    "kind": "execute",
+    "op_id": "no_fault-full-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 31012,
+    "wall_ms": 1791804659316,
+    "op_id": "no_fault-full-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 680,
+    "state_hash": "0x0237ef53193f34beb28302e239d4fd189841d1560bb15b581ca9d2876dafadab",
+    "file_hash": "b118073994e1cd39bba4a28d0c424fbf1c52f2f536cfd06bb42bba4815ebf936"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 680,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804659600
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 680,
+    "file_hash": "b118073994e1cd39bba4a28d0c424fbf1c52f2f536cfd06bb42bba4815ebf936",
+    "state_hash": "0x0237ef53193f34beb28302e239d4fd189841d1560bb15b581ca9d2876dafadab",
+    "archive_path": "cases\\no_fault-full-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 31012,
+    "state_hash": "0xb00a78718d784b97b91ce3924b0a229d2a1594da5a3b2170ab78cd7334f2d0e6",
+    "file_hash": "7032de4ff3b089847d765f63c418a9b48205640c4993b4bc9cb4cfb488c7deee"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 31012,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804659622
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 31012,
+    "file_hash": "7032de4ff3b089847d765f63c418a9b48205640c4993b4bc9cb4cfb488c7deee",
+    "state_hash": "0xb00a78718d784b97b91ce3924b0a229d2a1594da5a3b2170ab78cd7334f2d0e6",
+    "archive_path": "cases\\no_fault-full-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 26732,
+    "wall_ms": 1791804660003,
+    "url": "http://127.0.0.1:55380",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 37840,
+    "wall_ms": 1791804660375,
+    "url": "http://127.0.0.1:55381",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 26732,
+    "wall_ms": 1791804660409,
+    "kind": "execute",
+    "op_id": "no_fault-late_reserve-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 26732,
+    "wall_ms": 1791804660412,
+    "op_id": "no_fault-late_reserve-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 37840,
+    "state_hash": "0xc9cdbccff8318ccd4db0688b3d832f7a6206fc22b535e28a308fa995e229a8b4",
+    "file_hash": "8a5080751625850ca486633b073347bb4356bfa7a0baacc2a65d9fb88e137a2a"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 37840,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804660666
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 37840,
+    "file_hash": "8a5080751625850ca486633b073347bb4356bfa7a0baacc2a65d9fb88e137a2a",
+    "state_hash": "0xc9cdbccff8318ccd4db0688b3d832f7a6206fc22b535e28a308fa995e229a8b4",
+    "archive_path": "cases\\no_fault-late_reserve-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 26732,
+    "state_hash": "0x6a151e47fdc1bba62bfb8a080052f9f3aea91900473cfdb62865fa4420ccdaf6",
+    "file_hash": "329ccc36e2700599ad68a6dc861189658d649ba6adf6fb5dc87094684b18f796"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 26732,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804660686
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 26732,
+    "file_hash": "329ccc36e2700599ad68a6dc861189658d649ba6adf6fb5dc87094684b18f796",
+    "state_hash": "0x6a151e47fdc1bba62bfb8a080052f9f3aea91900473cfdb62865fa4420ccdaf6",
+    "archive_path": "cases\\no_fault-late_reserve-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 3556,
+    "wall_ms": 1791804661050,
+    "url": "http://127.0.0.1:55388",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 49252,
+    "wall_ms": 1791804661485,
+    "url": "http://127.0.0.1:55390",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 3556,
+    "wall_ms": 1791804661524,
+    "kind": "execute",
+    "op_id": "no_fault-retry_pending-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 3556,
+    "wall_ms": 1791804661527,
+    "op_id": "no_fault-retry_pending-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 49252,
+    "state_hash": "0xda878b9cfe937b496894d5dd1830f01c73124efcd55acbf5daba863c287f29ec",
+    "file_hash": "923c87c50e1ea037782b72f1da1892f0d2ce617332f23ad4e44412d7e4814f6c"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 49252,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804661796
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 49252,
+    "file_hash": "923c87c50e1ea037782b72f1da1892f0d2ce617332f23ad4e44412d7e4814f6c",
+    "state_hash": "0xda878b9cfe937b496894d5dd1830f01c73124efcd55acbf5daba863c287f29ec",
+    "archive_path": "cases\\no_fault-retry_pending-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 3556,
+    "state_hash": "0x29471ee9793176668e232e693ee9e526ca0c2364516ed11cb3ed5c7965f16b68",
+    "file_hash": "3ed45cfb1a70d52aa4dbd1be88f629e4ac70871dcb8913f8b08b7299e5044d0b"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 3556,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804661816
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 3556,
+    "file_hash": "3ed45cfb1a70d52aa4dbd1be88f629e4ac70871dcb8913f8b08b7299e5044d0b",
+    "state_hash": "0x29471ee9793176668e232e693ee9e526ca0c2364516ed11cb3ed5c7965f16b68",
+    "archive_path": "cases\\no_fault-retry_pending-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 42844,
+    "wall_ms": 1791804662202,
+    "url": "http://127.0.0.1:55396",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 36772,
+    "wall_ms": 1791804662590,
+    "url": "http://127.0.0.1:55397",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 36772,
+    "wall_ms": 1791804662613,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 36772,
+    "wall_ms": 1791804662613
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 36772,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804662629
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 42900,
+    "wall_ms": 1791804663035,
+    "url": "http://127.0.0.1:55400",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 42844,
+    "wall_ms": 1791804663073,
+    "kind": "receipt",
+    "op_id": "before_dispatch-full-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 42900,
+    "state_hash": "0x95158430b012dab30db1c2e19d2f8911bf68b05cc69e34ae1a4c7f6c6d396609",
+    "file_hash": "1f082007697078f8e564f1ac0104cb3d4830287b7dd45ce0d74bacefb62a18a0"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 42900,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804663108
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 42900,
+    "file_hash": "1f082007697078f8e564f1ac0104cb3d4830287b7dd45ce0d74bacefb62a18a0",
+    "state_hash": "0x95158430b012dab30db1c2e19d2f8911bf68b05cc69e34ae1a4c7f6c6d396609",
+    "archive_path": "cases\\before_dispatch-full-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 42844,
+    "state_hash": "0xac90ffc330d9256e42295de28aaa9915026850145bdf3b587d635ee370e69a2c",
+    "file_hash": "12947c685318aed22615ea47d0e7e9cf2baf5fdbbe7e80cf21bb80763c33b665"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 42844,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804663128
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 42844,
+    "file_hash": "12947c685318aed22615ea47d0e7e9cf2baf5fdbbe7e80cf21bb80763c33b665",
+    "state_hash": "0xac90ffc330d9256e42295de28aaa9915026850145bdf3b587d635ee370e69a2c",
+    "archive_path": "cases\\before_dispatch-full-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 7908,
+    "wall_ms": 1791804663524,
+    "url": "http://127.0.0.1:55405",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 50688,
+    "wall_ms": 1791804663950,
+    "url": "http://127.0.0.1:55407",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 50688,
+    "wall_ms": 1791804663965,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 50688,
+    "wall_ms": 1791804663979
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 50688,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804663994
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 29972,
+    "wall_ms": 1791804664393,
+    "url": "http://127.0.0.1:55412",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 7908,
+    "wall_ms": 1791804664433,
+    "kind": "execute",
+    "op_id": "before_dispatch-late_reserve-r1-op2"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 7908,
+    "wall_ms": 1791804664436,
+    "op_id": "before_dispatch-late_reserve-r1-op2"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 29972,
+    "state_hash": "0x5a9aa84597e55123516ca403d4cea4c2ffca2dc560871180efeb3170d09ad583",
+    "file_hash": "a9da4c190454d68d045a9abbda5784b83f76f201c12f7d091577a81f8385d644"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 29972,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804664702
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 29972,
+    "file_hash": "a9da4c190454d68d045a9abbda5784b83f76f201c12f7d091577a81f8385d644",
+    "state_hash": "0x5a9aa84597e55123516ca403d4cea4c2ffca2dc560871180efeb3170d09ad583",
+    "archive_path": "cases\\before_dispatch-late_reserve-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 7908,
+    "state_hash": "0x279e50439cfc02670bbf7711029b3371ca375a56c375935635ecec4e54ffc77a",
+    "file_hash": "ad8d6f28f1c1d39dc53b46e9c61f67b6a6d78e77737d796c6e166f6ce9fdb47e"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 7908,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804664723
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 7908,
+    "file_hash": "ad8d6f28f1c1d39dc53b46e9c61f67b6a6d78e77737d796c6e166f6ce9fdb47e",
+    "state_hash": "0x279e50439cfc02670bbf7711029b3371ca375a56c375935635ecec4e54ffc77a",
+    "archive_path": "cases\\before_dispatch-late_reserve-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 53380,
+    "wall_ms": 1791804665101,
+    "url": "http://127.0.0.1:55418",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 54908,
+    "wall_ms": 1791804665525,
+    "url": "http://127.0.0.1:55419",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 54908,
+    "wall_ms": 1791804665543,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 54908,
+    "wall_ms": 1791804665544
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 54908,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804665561
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 34932,
+    "wall_ms": 1791804666000,
+    "url": "http://127.0.0.1:55423",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 53380,
+    "wall_ms": 1791804666038,
+    "kind": "execute",
+    "op_id": "before_dispatch-retry_pending-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 53380,
+    "wall_ms": 1791804666041,
+    "op_id": "before_dispatch-retry_pending-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 34932,
+    "state_hash": "0xef88ff1a92798dd84316d94e65a49e7f3a37e7f485eee62b2928e6161bce3f75",
+    "file_hash": "abaac6534028ff9046e20625fabdf79b421f8a1e5ffbe6478af50943768c05e3"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 34932,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804666283
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 34932,
+    "file_hash": "abaac6534028ff9046e20625fabdf79b421f8a1e5ffbe6478af50943768c05e3",
+    "state_hash": "0xef88ff1a92798dd84316d94e65a49e7f3a37e7f485eee62b2928e6161bce3f75",
+    "archive_path": "cases\\before_dispatch-retry_pending-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 53380,
+    "state_hash": "0xa45c79e3e5a2a80e8fc8b8a3d98c004f1452a9924a1afb2457e169ab5131696d",
+    "file_hash": "ee6ba3a26b2d3311410c2834894f636421aea2584d3bf6c813fdd765efaeb6dd"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 53380,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804666303
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 53380,
+    "file_hash": "ee6ba3a26b2d3311410c2834894f636421aea2584d3bf6c813fdd765efaeb6dd",
+    "state_hash": "0xa45c79e3e5a2a80e8fc8b8a3d98c004f1452a9924a1afb2457e169ab5131696d",
+    "archive_path": "cases\\before_dispatch-retry_pending-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 35816,
+    "wall_ms": 1791804666704,
+    "url": "http://127.0.0.1:55429",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 45916,
+    "wall_ms": 1791804667078,
+    "url": "http://127.0.0.1:55430",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 35816,
+    "wall_ms": 1791804667114,
+    "kind": "execute",
+    "op_id": "after_effect-full-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 35816,
+    "wall_ms": 1791804667117,
+    "op_id": "after_effect-full-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 45916,
+    "wall_ms": 1791804667123,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 45916,
+    "wall_ms": 1791804667124
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 45916,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804667140
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 52596,
+    "wall_ms": 1791804667514,
+    "url": "http://127.0.0.1:55435",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 35816,
+    "wall_ms": 1791804667541,
+    "kind": "receipt",
+    "op_id": "after_effect-full-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 52596,
+    "state_hash": "0x93a69d3cb50416bac81a08d996b4215533a83697c9592098c7d4a01f1947395f",
+    "file_hash": "346b0676ecfd486139ae3fd0ffaf82dd316462533f8d5542f004fa6feb367e45"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 52596,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804667778
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 52596,
+    "file_hash": "346b0676ecfd486139ae3fd0ffaf82dd316462533f8d5542f004fa6feb367e45",
+    "state_hash": "0x93a69d3cb50416bac81a08d996b4215533a83697c9592098c7d4a01f1947395f",
+    "archive_path": "cases\\after_effect-full-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 35816,
+    "state_hash": "0x541be7334fc9439ea3e5537dcb142e7a576bc4ba82e9e48d75e2305c8394003f",
+    "file_hash": "6862d642592bb44b3e0a33fe9e3e601b48607252084618714481412dfaa5ff71"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 35816,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804667803
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 35816,
+    "file_hash": "6862d642592bb44b3e0a33fe9e3e601b48607252084618714481412dfaa5ff71",
+    "state_hash": "0x541be7334fc9439ea3e5537dcb142e7a576bc4ba82e9e48d75e2305c8394003f",
+    "archive_path": "cases\\after_effect-full-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 56296,
+    "wall_ms": 1791804668181,
+    "url": "http://127.0.0.1:55441",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 34648,
+    "wall_ms": 1791804668571,
+    "url": "http://127.0.0.1:55443",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 56296,
+    "wall_ms": 1791804668610,
+    "kind": "execute",
+    "op_id": "after_effect-late_reserve-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 56296,
+    "wall_ms": 1791804668618,
+    "op_id": "after_effect-late_reserve-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 34648,
+    "wall_ms": 1791804668624,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 34648,
+    "wall_ms": 1791804668624
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 34648,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804668639
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 22764,
+    "wall_ms": 1791804669007,
+    "url": "http://127.0.0.1:55447",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 56296,
+    "wall_ms": 1791804669048,
+    "kind": "execute",
+    "op_id": "after_effect-late_reserve-r1-op2"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 56296,
+    "wall_ms": 1791804669051,
+    "op_id": "after_effect-late_reserve-r1-op2"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 22764,
+    "state_hash": "0xbe4b89eeab69ee2c58725d41788b6e70abb5cfe5a5cf2f4e1d2672a3cc2e0956",
+    "file_hash": "282398712640f69781dd99955dd6884ab04eecdf5ada97e5c5c63cea5c54c017"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 22764,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804669308
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 22764,
+    "file_hash": "282398712640f69781dd99955dd6884ab04eecdf5ada97e5c5c63cea5c54c017",
+    "state_hash": "0xbe4b89eeab69ee2c58725d41788b6e70abb5cfe5a5cf2f4e1d2672a3cc2e0956",
+    "archive_path": "cases\\after_effect-late_reserve-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 56296,
+    "state_hash": "0xcc5bb70c8f619bdc763c4273f1b3a52eaf9ba1d471283e1894e35483372cff59",
+    "file_hash": "509ee4bb87a3a102e4b9b9cc403754635cf390011bcc605cfd08be9b182672c0"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 56296,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804669328
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 56296,
+    "file_hash": "509ee4bb87a3a102e4b9b9cc403754635cf390011bcc605cfd08be9b182672c0",
+    "state_hash": "0xcc5bb70c8f619bdc763c4273f1b3a52eaf9ba1d471283e1894e35483372cff59",
+    "archive_path": "cases\\after_effect-late_reserve-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 16564,
+    "wall_ms": 1791804669785,
+    "url": "http://127.0.0.1:55453",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 6888,
+    "wall_ms": 1791804670188,
+    "url": "http://127.0.0.1:55454",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 16564,
+    "wall_ms": 1791804670256,
+    "kind": "execute",
+    "op_id": "after_effect-retry_pending-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 16564,
+    "wall_ms": 1791804670261,
+    "op_id": "after_effect-retry_pending-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 6888,
+    "wall_ms": 1791804670272,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 6888,
+    "wall_ms": 1791804670273
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 6888,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804670306
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 26652,
+    "wall_ms": 1791804670750,
+    "url": "http://127.0.0.1:55462",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 16564,
+    "wall_ms": 1791804670782,
+    "kind": "execute",
+    "op_id": "after_effect-retry_pending-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 26652,
+    "state_hash": "0xe4a7609be04df165d94d55cb4bf501f65db3a547685be97ed70225a8bb67fbf8",
+    "file_hash": "ec29120cbf77552f6ac2f5735df26a58c6c15fdfc6922f443b830f9d9d9bbaee"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 26652,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804671016
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 26652,
+    "file_hash": "ec29120cbf77552f6ac2f5735df26a58c6c15fdfc6922f443b830f9d9d9bbaee",
+    "state_hash": "0xe4a7609be04df165d94d55cb4bf501f65db3a547685be97ed70225a8bb67fbf8",
+    "archive_path": "cases\\after_effect-retry_pending-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 16564,
+    "state_hash": "0x62bcb2e86c00034399849e9e128884630064f590a520b3c4bd7e0b642da07b3b",
+    "file_hash": "77bef4bef1c3998e746f2e595f8feb7fa9f0ff9fa22948cc3cf08652c72dc436"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 16564,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804671038
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 16564,
+    "file_hash": "77bef4bef1c3998e746f2e595f8feb7fa9f0ff9fa22948cc3cf08652c72dc436",
+    "state_hash": "0x62bcb2e86c00034399849e9e128884630064f590a520b3c4bd7e0b642da07b3b",
+    "archive_path": "cases\\after_effect-retry_pending-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 2028,
+    "wall_ms": 1791804671440,
+    "url": "http://127.0.0.1:55469",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 43944,
+    "wall_ms": 1791804671844,
+    "url": "http://127.0.0.1:55470",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 2028,
+    "wall_ms": 1791804671887,
+    "kind": "execute",
+    "op_id": "during_done-full-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 2028,
+    "wall_ms": 1791804671890,
+    "op_id": "during_done-full-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 43944,
+    "wall_ms": 1791804671898,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 43944,
+    "wall_ms": 1791804671899
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 43944,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804671916
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 5320,
+    "wall_ms": 1791804672291,
+    "url": "http://127.0.0.1:55474",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 2028,
+    "wall_ms": 1791804672327,
+    "kind": "receipt",
+    "op_id": "during_done-full-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 5320,
+    "state_hash": "0x186749453d5ecdb86daa08e49a8c38727bc5bdc66aca1647a774f4beacfb65ad",
+    "file_hash": "dca3d32de9143fe83c29f5b78618ce9e39999b3f284b66e2e48a647b0ec661fb"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 5320,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804672579
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 5320,
+    "file_hash": "dca3d32de9143fe83c29f5b78618ce9e39999b3f284b66e2e48a647b0ec661fb",
+    "state_hash": "0x186749453d5ecdb86daa08e49a8c38727bc5bdc66aca1647a774f4beacfb65ad",
+    "archive_path": "cases\\during_done-full-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 2028,
+    "state_hash": "0x40c84eff3bbfd82ce3aa021a1a95809354ef35d8f0d2e42a24332ad3bc23c669",
+    "file_hash": "d2b6ca5540a4f532cab039d75d2209b820293458fa2661a89ca36e9287f96b3c"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 2028,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804672600
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 2028,
+    "file_hash": "d2b6ca5540a4f532cab039d75d2209b820293458fa2661a89ca36e9287f96b3c",
+    "state_hash": "0x40c84eff3bbfd82ce3aa021a1a95809354ef35d8f0d2e42a24332ad3bc23c669",
+    "archive_path": "cases\\during_done-full-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 42560,
+    "wall_ms": 1791804673028,
+    "url": "http://127.0.0.1:55480",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 33240,
+    "wall_ms": 1791804673405,
+    "url": "http://127.0.0.1:55482",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 42560,
+    "wall_ms": 1791804673442,
+    "kind": "execute",
+    "op_id": "during_done-late_reserve-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 42560,
+    "wall_ms": 1791804673446,
+    "op_id": "during_done-late_reserve-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 33240,
+    "wall_ms": 1791804673456,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 33240,
+    "wall_ms": 1791804673456
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 33240,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804673471
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 5592,
+    "wall_ms": 1791804673836,
+    "url": "http://127.0.0.1:55486",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 42560,
+    "wall_ms": 1791804673866,
+    "kind": "receipt",
+    "op_id": "during_done-late_reserve-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 5592,
+    "state_hash": "0x22043991742249b0ee5e089a64077f64a712070cc3b19b3dafb7ae67de657eba",
+    "file_hash": "97732fbf84a6d132e6ae9d3d26dce57a38d78dcbba932631e5545e22578ca8b9"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 5592,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804674149
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 5592,
+    "file_hash": "97732fbf84a6d132e6ae9d3d26dce57a38d78dcbba932631e5545e22578ca8b9",
+    "state_hash": "0x22043991742249b0ee5e089a64077f64a712070cc3b19b3dafb7ae67de657eba",
+    "archive_path": "cases\\during_done-late_reserve-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 42560,
+    "state_hash": "0x1a38c7054cad515ede93ff0dc7d43d282979b283fd91c832878257f9fa9c34f8",
+    "file_hash": "db34c1a0ec594cd2bc4b9a83bb456cdb43e74d8b82e6520a657e5f73013d54b4"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 42560,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804674176
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 42560,
+    "file_hash": "db34c1a0ec594cd2bc4b9a83bb456cdb43e74d8b82e6520a657e5f73013d54b4",
+    "state_hash": "0x1a38c7054cad515ede93ff0dc7d43d282979b283fd91c832878257f9fa9c34f8",
+    "archive_path": "cases\\during_done-late_reserve-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 50756,
+    "wall_ms": 1791804674547,
+    "url": "http://127.0.0.1:55494",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 848,
+    "wall_ms": 1791804674941,
+    "url": "http://127.0.0.1:55495",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 50756,
+    "wall_ms": 1791804674983,
+    "kind": "execute",
+    "op_id": "during_done-retry_pending-r1-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 50756,
+    "wall_ms": 1791804674986,
+    "op_id": "during_done-retry_pending-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 848,
+    "wall_ms": 1791804674994,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 848,
+    "wall_ms": 1791804674995
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 848,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804675009
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 8924,
+    "wall_ms": 1791804675367,
+    "url": "http://127.0.0.1:55499",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 50756,
+    "wall_ms": 1791804675401,
+    "kind": "execute",
+    "op_id": "during_done-retry_pending-r1-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 8924,
+    "state_hash": "0x2de1e418d38a05032f7ecc826f56b798af26439df1c677d952949c9afcbd4683",
+    "file_hash": "94de6090078f24f3c8b92192c2db9f2b6c230450eca9beec2426165e09872c99"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 8924,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804675638
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 8924,
+    "file_hash": "94de6090078f24f3c8b92192c2db9f2b6c230450eca9beec2426165e09872c99",
+    "state_hash": "0x2de1e418d38a05032f7ecc826f56b798af26439df1c677d952949c9afcbd4683",
+    "archive_path": "cases\\during_done-retry_pending-r1\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 50756,
+    "state_hash": "0xfb244d9f3116bfaf60321d1b7b687cf57d8676ce5f4196cbf491bef7c2d14541",
+    "file_hash": "60044b6b09e0ff1e81b117f5dfb4bb3e1b99eca107ed6078704fc8af69c6bb79"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 50756,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804675659
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 50756,
+    "file_hash": "60044b6b09e0ff1e81b117f5dfb4bb3e1b99eca107ed6078704fc8af69c6bb79",
+    "state_hash": "0xfb244d9f3116bfaf60321d1b7b687cf57d8676ce5f4196cbf491bef7c2d14541",
+    "archive_path": "cases\\during_done-retry_pending-r1\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 55836,
+    "wall_ms": 1791804676083,
+    "url": "http://127.0.0.1:55507",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 39756,
+    "wall_ms": 1791804676455,
+    "url": "http://127.0.0.1:55508",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 55836,
+    "wall_ms": 1791804676494,
+    "kind": "execute",
+    "op_id": "no_fault-late_reserve-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 55836,
+    "wall_ms": 1791804676497,
+    "op_id": "no_fault-late_reserve-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 39756,
+    "state_hash": "0x6d5ea31c7af400c61d211936ce4fba5f63c741c806b93473fb450a2f08b88422",
+    "file_hash": "2409624b0d44e31ae56e8e460f134a92930d8b4bbd8989d96bd7a43548141fee"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 39756,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804676745
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 39756,
+    "file_hash": "2409624b0d44e31ae56e8e460f134a92930d8b4bbd8989d96bd7a43548141fee",
+    "state_hash": "0x6d5ea31c7af400c61d211936ce4fba5f63c741c806b93473fb450a2f08b88422",
+    "archive_path": "cases\\no_fault-late_reserve-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 55836,
+    "state_hash": "0x7185af7b112111e89d96c2c154d3b0b7118678cd5c1f7ef77eab215ae76a056d",
+    "file_hash": "ecaaeda0ed28f85d91d1d9b3c627c2b6598420b0fe545d48609c50b57b8afa48"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 55836,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804676765
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 55836,
+    "file_hash": "ecaaeda0ed28f85d91d1d9b3c627c2b6598420b0fe545d48609c50b57b8afa48",
+    "state_hash": "0x7185af7b112111e89d96c2c154d3b0b7118678cd5c1f7ef77eab215ae76a056d",
+    "archive_path": "cases\\no_fault-late_reserve-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 16600,
+    "wall_ms": 1791804677141,
+    "url": "http://127.0.0.1:55516",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 31364,
+    "wall_ms": 1791804677509,
+    "url": "http://127.0.0.1:55518",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 16600,
+    "wall_ms": 1791804677548,
+    "kind": "execute",
+    "op_id": "no_fault-retry_pending-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 16600,
+    "wall_ms": 1791804677551,
+    "op_id": "no_fault-retry_pending-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 31364,
+    "state_hash": "0x36be24a0fd8fdebf99983658145c887ebff69d9ec31ae7ec1d0cc47d9330a6b0",
+    "file_hash": "4a3188baa0b52d9fb3a87ec629c3856fd2921733309d682e6538554df2c7be03"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 31364,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804677788
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 31364,
+    "file_hash": "4a3188baa0b52d9fb3a87ec629c3856fd2921733309d682e6538554df2c7be03",
+    "state_hash": "0x36be24a0fd8fdebf99983658145c887ebff69d9ec31ae7ec1d0cc47d9330a6b0",
+    "archive_path": "cases\\no_fault-retry_pending-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 16600,
+    "state_hash": "0x22b77f40e9d0096537a325a6d2c762a8b7b448d000a9762d726aa0ad73ad2cb4",
+    "file_hash": "27f1c770137f31bcc6d20add47e865e09992711e65d601f6e40368a522522af6"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 16600,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804677808
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 16600,
+    "file_hash": "27f1c770137f31bcc6d20add47e865e09992711e65d601f6e40368a522522af6",
+    "state_hash": "0x22b77f40e9d0096537a325a6d2c762a8b7b448d000a9762d726aa0ad73ad2cb4",
+    "archive_path": "cases\\no_fault-retry_pending-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 28880,
+    "wall_ms": 1791804678185,
+    "url": "http://127.0.0.1:55524",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 55908,
+    "wall_ms": 1791804678549,
+    "url": "http://127.0.0.1:55526",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 28880,
+    "wall_ms": 1791804678589,
+    "kind": "execute",
+    "op_id": "no_fault-full-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 28880,
+    "wall_ms": 1791804678592,
+    "op_id": "no_fault-full-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 55908,
+    "state_hash": "0x16a561713d26c0f8779e6f503ef42ddc4ac1b1a685c1ae7577c61acbd7d62c6c",
+    "file_hash": "7e04f8912292a007a0e175fa7e8662c6b24b7b7f993571a60c8763f552120472"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 55908,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804678863
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 55908,
+    "file_hash": "7e04f8912292a007a0e175fa7e8662c6b24b7b7f993571a60c8763f552120472",
+    "state_hash": "0x16a561713d26c0f8779e6f503ef42ddc4ac1b1a685c1ae7577c61acbd7d62c6c",
+    "archive_path": "cases\\no_fault-full-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 28880,
+    "state_hash": "0x318acf47227ec9535abce8c296717c8222b8ceea5ff63eb370e9cc0b6a87117c",
+    "file_hash": "ec1ac9d79ffc107c55f5929f00377befef3f5bebeddedb3163754afc71e511aa"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 28880,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804678883
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 28880,
+    "file_hash": "ec1ac9d79ffc107c55f5929f00377befef3f5bebeddedb3163754afc71e511aa",
+    "state_hash": "0x318acf47227ec9535abce8c296717c8222b8ceea5ff63eb370e9cc0b6a87117c",
+    "archive_path": "cases\\no_fault-full-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 29256,
+    "wall_ms": 1791804679306,
+    "url": "http://127.0.0.1:55532",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 27576,
+    "wall_ms": 1791804679697,
+    "url": "http://127.0.0.1:55533",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 27576,
+    "wall_ms": 1791804679712,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 27576,
+    "wall_ms": 1791804679719
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 27576,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804679730
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 2164,
+    "wall_ms": 1791804680098,
+    "url": "http://127.0.0.1:55536",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 29256,
+    "wall_ms": 1791804680135,
+    "kind": "execute",
+    "op_id": "before_dispatch-late_reserve-r2-op2"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 29256,
+    "wall_ms": 1791804680139,
+    "op_id": "before_dispatch-late_reserve-r2-op2"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 2164,
+    "state_hash": "0xd23b2a07c422f26d577c63686df49df7b551243bd9d8bf9c6c912f5c8e7ddd90",
+    "file_hash": "d9fc21c7dd4bea95c6ca1ef5a50711d65b75b902bee46e2790d0e7156bd17010"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 2164,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804680372
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 2164,
+    "file_hash": "d9fc21c7dd4bea95c6ca1ef5a50711d65b75b902bee46e2790d0e7156bd17010",
+    "state_hash": "0xd23b2a07c422f26d577c63686df49df7b551243bd9d8bf9c6c912f5c8e7ddd90",
+    "archive_path": "cases\\before_dispatch-late_reserve-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 29256,
+    "state_hash": "0x6079b0681c29eb1f8db18cb074a6b3a8287562fd85d47d4e91aff942067fb9e4",
+    "file_hash": "383e3c22fd1e3593406bd6aa4277c4d83912b4702ce8acc5b17bc57ed1b61af2"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 29256,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804680392
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 29256,
+    "file_hash": "383e3c22fd1e3593406bd6aa4277c4d83912b4702ce8acc5b17bc57ed1b61af2",
+    "state_hash": "0x6079b0681c29eb1f8db18cb074a6b3a8287562fd85d47d4e91aff942067fb9e4",
+    "archive_path": "cases\\before_dispatch-late_reserve-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 41096,
+    "wall_ms": 1791804680783,
+    "url": "http://127.0.0.1:55542",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 15240,
+    "wall_ms": 1791804681150,
+    "url": "http://127.0.0.1:55544",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 15240,
+    "wall_ms": 1791804681168,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 15240,
+    "wall_ms": 1791804681180
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 15240,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804681192
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 4872,
+    "wall_ms": 1791804681562,
+    "url": "http://127.0.0.1:55547",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 41096,
+    "wall_ms": 1791804681598,
+    "kind": "execute",
+    "op_id": "before_dispatch-retry_pending-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 41096,
+    "wall_ms": 1791804681601,
+    "op_id": "before_dispatch-retry_pending-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 4872,
+    "state_hash": "0x256de0055dcedd783d2682a7e8da9342a930b892122ee4099b014bf4386e3f8c",
+    "file_hash": "8335de8925817c6dbe4533d24cfe3fdca154293e6e65229823de376984f5b228"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 4872,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804681834
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 4872,
+    "file_hash": "8335de8925817c6dbe4533d24cfe3fdca154293e6e65229823de376984f5b228",
+    "state_hash": "0x256de0055dcedd783d2682a7e8da9342a930b892122ee4099b014bf4386e3f8c",
+    "archive_path": "cases\\before_dispatch-retry_pending-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 41096,
+    "state_hash": "0x40180a64437da2177c0f80f6cc483590b7e70a05be073ec15b96c347c6558950",
+    "file_hash": "00b1fcdfef370acf88e645e2f71aa761b21ce4f931e891127ca2aaf34366c580"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 41096,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804681855
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 41096,
+    "file_hash": "00b1fcdfef370acf88e645e2f71aa761b21ce4f931e891127ca2aaf34366c580",
+    "state_hash": "0x40180a64437da2177c0f80f6cc483590b7e70a05be073ec15b96c347c6558950",
+    "archive_path": "cases\\before_dispatch-retry_pending-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 38388,
+    "wall_ms": 1791804682222,
+    "url": "http://127.0.0.1:55553",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 34320,
+    "wall_ms": 1791804682592,
+    "url": "http://127.0.0.1:55554",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 34320,
+    "wall_ms": 1791804682612,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 34320,
+    "wall_ms": 1791804682612
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 34320,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804682625
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 6552,
+    "wall_ms": 1791804683006,
+    "url": "http://127.0.0.1:55557",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 38388,
+    "wall_ms": 1791804683040,
+    "kind": "receipt",
+    "op_id": "before_dispatch-full-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 6552,
+    "state_hash": "0x31bae2b74816650813b2e712f925b00da6db4c9610ebf81a884ae3455a6642f4",
+    "file_hash": "82f063c3057d23dac98e6fb7e50575c29d03ce03996f8383e603ac8b8c676611"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 6552,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804683070
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 6552,
+    "file_hash": "82f063c3057d23dac98e6fb7e50575c29d03ce03996f8383e603ac8b8c676611",
+    "state_hash": "0x31bae2b74816650813b2e712f925b00da6db4c9610ebf81a884ae3455a6642f4",
+    "archive_path": "cases\\before_dispatch-full-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 38388,
+    "state_hash": "0xac90ffc330d9256e42295de28aaa9915026850145bdf3b587d635ee370e69a2c",
+    "file_hash": "12947c685318aed22615ea47d0e7e9cf2baf5fdbbe7e80cf21bb80763c33b665"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 38388,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804683089
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 38388,
+    "file_hash": "12947c685318aed22615ea47d0e7e9cf2baf5fdbbe7e80cf21bb80763c33b665",
+    "state_hash": "0xac90ffc330d9256e42295de28aaa9915026850145bdf3b587d635ee370e69a2c",
+    "archive_path": "cases\\before_dispatch-full-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 39076,
+    "wall_ms": 1791804683479,
+    "url": "http://127.0.0.1:55563",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 31520,
+    "wall_ms": 1791804683841,
+    "url": "http://127.0.0.1:55564",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 39076,
+    "wall_ms": 1791804683875,
+    "kind": "execute",
+    "op_id": "after_effect-late_reserve-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 39076,
+    "wall_ms": 1791804683878,
+    "op_id": "after_effect-late_reserve-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 31520,
+    "wall_ms": 1791804683885,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 31520,
+    "wall_ms": 1791804683900
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 31520,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804683911
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 41568,
+    "wall_ms": 1791804684270,
+    "url": "http://127.0.0.1:55568",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 39076,
+    "wall_ms": 1791804684301,
+    "kind": "execute",
+    "op_id": "after_effect-late_reserve-r2-op2"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 39076,
+    "wall_ms": 1791804684303,
+    "op_id": "after_effect-late_reserve-r2-op2"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 41568,
+    "state_hash": "0x6f9ef2656263e97636c56dd41b0bed522a8f5a3cea0b8bc8d4f6eb70b48f07b2",
+    "file_hash": "804627a625d87c4225b0f8a2a0583c7d42a8f2da4b0aa5b3f42c29907207bb11"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 41568,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804684526
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 41568,
+    "file_hash": "804627a625d87c4225b0f8a2a0583c7d42a8f2da4b0aa5b3f42c29907207bb11",
+    "state_hash": "0x6f9ef2656263e97636c56dd41b0bed522a8f5a3cea0b8bc8d4f6eb70b48f07b2",
+    "archive_path": "cases\\after_effect-late_reserve-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 39076,
+    "state_hash": "0x253be4a0df4fe33dc8cb88bc22f598088d3aa8c76892cdf7d5c1085fd2216ed9",
+    "file_hash": "c67fcbbd7f1b17ce6bfa10c4ce103586d9f78ea726475f4528347dd6386aaebb"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 39076,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804684547
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 39076,
+    "file_hash": "c67fcbbd7f1b17ce6bfa10c4ce103586d9f78ea726475f4528347dd6386aaebb",
+    "state_hash": "0x253be4a0df4fe33dc8cb88bc22f598088d3aa8c76892cdf7d5c1085fd2216ed9",
+    "archive_path": "cases\\after_effect-late_reserve-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 55636,
+    "wall_ms": 1791804684972,
+    "url": "http://127.0.0.1:63732",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 40336,
+    "wall_ms": 1791804685345,
+    "url": "http://127.0.0.1:63733",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 55636,
+    "wall_ms": 1791804685385,
+    "kind": "execute",
+    "op_id": "after_effect-retry_pending-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 55636,
+    "wall_ms": 1791804685388,
+    "op_id": "after_effect-retry_pending-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 40336,
+    "wall_ms": 1791804685394,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 40336,
+    "wall_ms": 1791804685395
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 40336,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804685407
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 54740,
+    "wall_ms": 1791804685776,
+    "url": "http://127.0.0.1:63739",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 55636,
+    "wall_ms": 1791804685803,
+    "kind": "execute",
+    "op_id": "after_effect-retry_pending-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 54740,
+    "state_hash": "0xf5d495b6d15413cb1f127ede51343793d63ec688b557716efbca33e7500ad79d",
+    "file_hash": "63e8a9107cdaf321a5b3033c790173fbd533799cd5619d3956605a657d0ab1b1"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 54740,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804686058
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 54740,
+    "file_hash": "63e8a9107cdaf321a5b3033c790173fbd533799cd5619d3956605a657d0ab1b1",
+    "state_hash": "0xf5d495b6d15413cb1f127ede51343793d63ec688b557716efbca33e7500ad79d",
+    "archive_path": "cases\\after_effect-retry_pending-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 55636,
+    "state_hash": "0xff00df0556f56d5f4a9c80c7b840a8c663a439f28f612706d9c93fb54f9cca29",
+    "file_hash": "b3ce3f1f1850ead2ae2c1a25d24b2b9de7e6d11e915fd935a18fd2e9576d16f3"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 55636,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804686080
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 55636,
+    "file_hash": "b3ce3f1f1850ead2ae2c1a25d24b2b9de7e6d11e915fd935a18fd2e9576d16f3",
+    "state_hash": "0xff00df0556f56d5f4a9c80c7b840a8c663a439f28f612706d9c93fb54f9cca29",
+    "archive_path": "cases\\after_effect-retry_pending-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 32212,
+    "wall_ms": 1791804686473,
+    "url": "http://127.0.0.1:63745",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 14684,
+    "wall_ms": 1791804686831,
+    "url": "http://127.0.0.1:63746",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 32212,
+    "wall_ms": 1791804686869,
+    "kind": "execute",
+    "op_id": "after_effect-full-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 32212,
+    "wall_ms": 1791804686872,
+    "op_id": "after_effect-full-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 14684,
+    "wall_ms": 1791804686877,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 14684,
+    "wall_ms": 1791804686879
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 14684,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804686890
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 23160,
+    "wall_ms": 1791804687244,
+    "url": "http://127.0.0.1:63751",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 32212,
+    "wall_ms": 1791804687272,
+    "kind": "receipt",
+    "op_id": "after_effect-full-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 23160,
+    "state_hash": "0xfe28de0c58daa8843cb104d16be2d70d0e72463ea7bb6b9f0f135f51ea7ef515",
+    "file_hash": "681bf936ebce4c35dec06b09f1c9cc9bcad831feefc3c108152a5a5f52e7b0ce"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 23160,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804687514
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 23160,
+    "file_hash": "681bf936ebce4c35dec06b09f1c9cc9bcad831feefc3c108152a5a5f52e7b0ce",
+    "state_hash": "0xfe28de0c58daa8843cb104d16be2d70d0e72463ea7bb6b9f0f135f51ea7ef515",
+    "archive_path": "cases\\after_effect-full-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 32212,
+    "state_hash": "0xa452045bcc52eddc4f9ec6d0d1155bde6349127a090b690ce137e63e95a8ea6a",
+    "file_hash": "b80aa436c96dd082fd2cc301d13d7e4b74d85155cf9f487a6e1111ba95cd3a11"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 32212,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804687535
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 32212,
+    "file_hash": "b80aa436c96dd082fd2cc301d13d7e4b74d85155cf9f487a6e1111ba95cd3a11",
+    "state_hash": "0xa452045bcc52eddc4f9ec6d0d1155bde6349127a090b690ce137e63e95a8ea6a",
+    "archive_path": "cases\\after_effect-full-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 46648,
+    "wall_ms": 1791804687945,
+    "url": "http://127.0.0.1:63757",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 55840,
+    "wall_ms": 1791804688309,
+    "url": "http://127.0.0.1:63759",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 46648,
+    "wall_ms": 1791804688344,
+    "kind": "execute",
+    "op_id": "during_done-late_reserve-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 46648,
+    "wall_ms": 1791804688347,
+    "op_id": "during_done-late_reserve-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 55840,
+    "wall_ms": 1791804688359,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 55840,
+    "wall_ms": 1791804688360
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 55840,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804688371
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 41684,
+    "wall_ms": 1791804688731,
+    "url": "http://127.0.0.1:63763",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 46648,
+    "wall_ms": 1791804688759,
+    "kind": "receipt",
+    "op_id": "during_done-late_reserve-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 41684,
+    "state_hash": "0x120ffdafc566dec193b9fc67604b391d789799d889d9a1457f0cefa2ea37e26d",
+    "file_hash": "201810e2aa005aeb58853df86ecc8d6ab95cab6415f2a54480ac3d6a60b30707"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 41684,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804689007
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 41684,
+    "file_hash": "201810e2aa005aeb58853df86ecc8d6ab95cab6415f2a54480ac3d6a60b30707",
+    "state_hash": "0x120ffdafc566dec193b9fc67604b391d789799d889d9a1457f0cefa2ea37e26d",
+    "archive_path": "cases\\during_done-late_reserve-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 46648,
+    "state_hash": "0x308db536b0e9b222581716f2e038bccd60287fd8cfbde1b5d51cc4c2f8fd798e",
+    "file_hash": "243f44482a26818fd9552efa14d039fb009d1742d78bca0970c610119772241f"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 46648,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804689027
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 46648,
+    "file_hash": "243f44482a26818fd9552efa14d039fb009d1742d78bca0970c610119772241f",
+    "state_hash": "0x308db536b0e9b222581716f2e038bccd60287fd8cfbde1b5d51cc4c2f8fd798e",
+    "archive_path": "cases\\during_done-late_reserve-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 17544,
+    "wall_ms": 1791804689423,
+    "url": "http://127.0.0.1:63769",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 34028,
+    "wall_ms": 1791804689799,
+    "url": "http://127.0.0.1:63770",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 17544,
+    "wall_ms": 1791804689838,
+    "kind": "execute",
+    "op_id": "during_done-retry_pending-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 17544,
+    "wall_ms": 1791804689841,
+    "op_id": "during_done-retry_pending-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 34028,
+    "wall_ms": 1791804689849,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 34028,
+    "wall_ms": 1791804689863
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 34028,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804689875
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 47836,
+    "wall_ms": 1791804690237,
+    "url": "http://127.0.0.1:63774",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 17544,
+    "wall_ms": 1791804690267,
+    "kind": "execute",
+    "op_id": "during_done-retry_pending-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 47836,
+    "state_hash": "0x7a23b51d6576f9e332c45801df70903e51bf616bb87812bf63977bec754a84a3",
+    "file_hash": "39741104fa2f355553e5501e9b85e8b6eb0a72f1cac4ddb0f5e34a8f7498eb30"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 47836,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804690521
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 47836,
+    "file_hash": "39741104fa2f355553e5501e9b85e8b6eb0a72f1cac4ddb0f5e34a8f7498eb30",
+    "state_hash": "0x7a23b51d6576f9e332c45801df70903e51bf616bb87812bf63977bec754a84a3",
+    "archive_path": "cases\\during_done-retry_pending-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 17544,
+    "state_hash": "0x4fb5fbb9c5d96c32eed4ab4fbc2cafa2e22a40b54fa332ca248f4f6c928fad4a",
+    "file_hash": "8714442ab362ff071b15fe2aaeb2ffddaf6f82c5d3cf7f76ca3e236247d186d8"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 17544,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804690543
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 17544,
+    "file_hash": "8714442ab362ff071b15fe2aaeb2ffddaf6f82c5d3cf7f76ca3e236247d186d8",
+    "state_hash": "0x4fb5fbb9c5d96c32eed4ab4fbc2cafa2e22a40b54fa332ca248f4f6c928fad4a",
+    "archive_path": "cases\\during_done-retry_pending-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 25908,
+    "wall_ms": 1791804690935,
+    "url": "http://127.0.0.1:63781",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 1276,
+    "wall_ms": 1791804691290,
+    "url": "http://127.0.0.1:63782",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 25908,
+    "wall_ms": 1791804691326,
+    "kind": "execute",
+    "op_id": "during_done-full-r2-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 25908,
+    "wall_ms": 1791804691329,
+    "op_id": "during_done-full-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 1276,
+    "wall_ms": 1791804691336,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 1276,
+    "wall_ms": 1791804691337
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 1276,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804691349
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 53004,
+    "wall_ms": 1791804691712,
+    "url": "http://127.0.0.1:63786",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 25908,
+    "wall_ms": 1791804691743,
+    "kind": "receipt",
+    "op_id": "during_done-full-r2-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 53004,
+    "state_hash": "0x8e618a0b0d2084bad6547a7bd639af2315136cfd0a869dd53454217e536e3003",
+    "file_hash": "836b0dae8ab3e3a94c7c028c0b56fc041cf17599e407f1e57f18f5f50b4e69a8"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 53004,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804691997
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 53004,
+    "file_hash": "836b0dae8ab3e3a94c7c028c0b56fc041cf17599e407f1e57f18f5f50b4e69a8",
+    "state_hash": "0x8e618a0b0d2084bad6547a7bd639af2315136cfd0a869dd53454217e536e3003",
+    "archive_path": "cases\\during_done-full-r2\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 25908,
+    "state_hash": "0xc8f3e4298d5e66252c6e77e37581b1cdd8f221a8c66deb5c88427f24d078f775",
+    "file_hash": "39c671ccced5c2768df9f96606fe5f2a6dd311075e5deba102fffd864b1426d4"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 25908,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804692023
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 25908,
+    "file_hash": "39c671ccced5c2768df9f96606fe5f2a6dd311075e5deba102fffd864b1426d4",
+    "state_hash": "0xc8f3e4298d5e66252c6e77e37581b1cdd8f221a8c66deb5c88427f24d078f775",
+    "archive_path": "cases\\during_done-full-r2\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 25164,
+    "wall_ms": 1791804692400,
+    "url": "http://127.0.0.1:63792",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 54540,
+    "wall_ms": 1791804692765,
+    "url": "http://127.0.0.1:63793",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 25164,
+    "wall_ms": 1791804692804,
+    "kind": "execute",
+    "op_id": "no_fault-retry_pending-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 25164,
+    "wall_ms": 1791804692807,
+    "op_id": "no_fault-retry_pending-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 54540,
+    "state_hash": "0x69138bc73c8f6dc21e90c32e2ff34218f2d952db7190b9673ee49d01aab6be09",
+    "file_hash": "2d18fce9e940772199c89a6c7e20396e6ab08dedcee72aef186a002b56a35162"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 54540,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804693061
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 54540,
+    "file_hash": "2d18fce9e940772199c89a6c7e20396e6ab08dedcee72aef186a002b56a35162",
+    "state_hash": "0x69138bc73c8f6dc21e90c32e2ff34218f2d952db7190b9673ee49d01aab6be09",
+    "archive_path": "cases\\no_fault-retry_pending-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 25164,
+    "state_hash": "0x051d329b959736ee0068f64e1f760b8775affe9e2a92bf82f3e21a48341d6e90",
+    "file_hash": "20d5e1bfab274cdee6b017aad7666c933880ce939549fa73cec3bedb68f2475b"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 25164,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804693082
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 25164,
+    "file_hash": "20d5e1bfab274cdee6b017aad7666c933880ce939549fa73cec3bedb68f2475b",
+    "state_hash": "0x051d329b959736ee0068f64e1f760b8775affe9e2a92bf82f3e21a48341d6e90",
+    "archive_path": "cases\\no_fault-retry_pending-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 20228,
+    "wall_ms": 1791804693493,
+    "url": "http://127.0.0.1:63800",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 5188,
+    "wall_ms": 1791804693854,
+    "url": "http://127.0.0.1:63801",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 20228,
+    "wall_ms": 1791804693903,
+    "kind": "execute",
+    "op_id": "no_fault-full-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 20228,
+    "wall_ms": 1791804693908,
+    "op_id": "no_fault-full-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 5188,
+    "state_hash": "0xdc006779963d636e7e29f40fd3b49961702d10098205af08eab07badff98a28e",
+    "file_hash": "f27ad7475fa8a035b16702fd61830bfeabddb4bcde743682494082ac6fc6dfbc"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 5188,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804694175
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 5188,
+    "file_hash": "f27ad7475fa8a035b16702fd61830bfeabddb4bcde743682494082ac6fc6dfbc",
+    "state_hash": "0xdc006779963d636e7e29f40fd3b49961702d10098205af08eab07badff98a28e",
+    "archive_path": "cases\\no_fault-full-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 20228,
+    "state_hash": "0x366ee4c06c6270aefb37ff5761ea9678c08802b8d4190ef2664d6c87cbac1bb1",
+    "file_hash": "9d9a58f4c34cca906d0714d41c3b2aa0fc771725c5c8e2a33510ab1d6aa407a5"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 20228,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804694195
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 20228,
+    "file_hash": "9d9a58f4c34cca906d0714d41c3b2aa0fc771725c5c8e2a33510ab1d6aa407a5",
+    "state_hash": "0x366ee4c06c6270aefb37ff5761ea9678c08802b8d4190ef2664d6c87cbac1bb1",
+    "archive_path": "cases\\no_fault-full-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 47484,
+    "wall_ms": 1791804694576,
+    "url": "http://127.0.0.1:63809",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 13288,
+    "wall_ms": 1791804694933,
+    "url": "http://127.0.0.1:63810",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 47484,
+    "wall_ms": 1791804694968,
+    "kind": "execute",
+    "op_id": "no_fault-late_reserve-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 47484,
+    "wall_ms": 1791804694971,
+    "op_id": "no_fault-late_reserve-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 13288,
+    "state_hash": "0x662e8e522f9ef0eec768fde35c9e71c7a6e60dc40d1aa40fb69001c6f3e19559",
+    "file_hash": "eb33dd9bb5aa0c23c1f601f6998223b767767ccb644a61d2597d8f805246ac61"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 13288,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804695222
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 13288,
+    "file_hash": "eb33dd9bb5aa0c23c1f601f6998223b767767ccb644a61d2597d8f805246ac61",
+    "state_hash": "0x662e8e522f9ef0eec768fde35c9e71c7a6e60dc40d1aa40fb69001c6f3e19559",
+    "archive_path": "cases\\no_fault-late_reserve-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 47484,
+    "state_hash": "0xf2d44999a59134a76df4a9292330d1db7eab732b5fe09e61b17aab9f96581ec9",
+    "file_hash": "8d35a759cc0e1b469a396668a37d54603b4ddf80519c2247af3cfe54b291ee49"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 47484,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804695243
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 47484,
+    "file_hash": "8d35a759cc0e1b469a396668a37d54603b4ddf80519c2247af3cfe54b291ee49",
+    "state_hash": "0xf2d44999a59134a76df4a9292330d1db7eab732b5fe09e61b17aab9f96581ec9",
+    "archive_path": "cases\\no_fault-late_reserve-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 54880,
+    "wall_ms": 1791804695609,
+    "url": "http://127.0.0.1:63816",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 19684,
+    "wall_ms": 1791804696009,
+    "url": "http://127.0.0.1:63818",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 19684,
+    "wall_ms": 1791804696026,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 19684,
+    "wall_ms": 1791804696041
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 19684,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804696053
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 1124,
+    "wall_ms": 1791804696430,
+    "url": "http://127.0.0.1:63821",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 54880,
+    "wall_ms": 1791804696466,
+    "kind": "execute",
+    "op_id": "before_dispatch-retry_pending-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 54880,
+    "wall_ms": 1791804696497,
+    "op_id": "before_dispatch-retry_pending-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 1124,
+    "state_hash": "0x618a4bd305ed9c7b060fd8a2099ace1d7589da63dead7d29d7b20843b50b5d5f",
+    "file_hash": "ba093df47c9f0180da9e141a063a54658baeeb5ef07a326b6c958c819069f0f2"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 1124,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804696730
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 1124,
+    "file_hash": "ba093df47c9f0180da9e141a063a54658baeeb5ef07a326b6c958c819069f0f2",
+    "state_hash": "0x618a4bd305ed9c7b060fd8a2099ace1d7589da63dead7d29d7b20843b50b5d5f",
+    "archive_path": "cases\\before_dispatch-retry_pending-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 54880,
+    "state_hash": "0x13f34e144345425b976e3ab4fbfcfa1399b31847bd52a9eb368d8492f3b85559",
+    "file_hash": "5caea822443282b553aabe57ff8e599cc48144c0699fd3a07bb6f629032d6469"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 54880,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804696750
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 54880,
+    "file_hash": "5caea822443282b553aabe57ff8e599cc48144c0699fd3a07bb6f629032d6469",
+    "state_hash": "0x13f34e144345425b976e3ab4fbfcfa1399b31847bd52a9eb368d8492f3b85559",
+    "archive_path": "cases\\before_dispatch-retry_pending-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 40612,
+    "wall_ms": 1791804697165,
+    "url": "http://127.0.0.1:63827",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 23556,
+    "wall_ms": 1791804697558,
+    "url": "http://127.0.0.1:63829",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 23556,
+    "wall_ms": 1791804697574,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 23556,
+    "wall_ms": 1791804697576
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 23556,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804697587
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 48940,
+    "wall_ms": 1791804697939,
+    "url": "http://127.0.0.1:63832",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 40612,
+    "wall_ms": 1791804697972,
+    "kind": "receipt",
+    "op_id": "before_dispatch-full-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 48940,
+    "state_hash": "0x04b99839ea6a72bac7ed345f1fb568bfac46d09a1128b7fc53828a2d15ebe4b1",
+    "file_hash": "40e6dea315dbd73204ac4fc316ec12932aa5bba32f1516a266b66fccd87f8298"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 48940,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804698004
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 48940,
+    "file_hash": "40e6dea315dbd73204ac4fc316ec12932aa5bba32f1516a266b66fccd87f8298",
+    "state_hash": "0x04b99839ea6a72bac7ed345f1fb568bfac46d09a1128b7fc53828a2d15ebe4b1",
+    "archive_path": "cases\\before_dispatch-full-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 40612,
+    "state_hash": "0xac90ffc330d9256e42295de28aaa9915026850145bdf3b587d635ee370e69a2c",
+    "file_hash": "12947c685318aed22615ea47d0e7e9cf2baf5fdbbe7e80cf21bb80763c33b665"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 40612,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804698028
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 40612,
+    "file_hash": "12947c685318aed22615ea47d0e7e9cf2baf5fdbbe7e80cf21bb80763c33b665",
+    "state_hash": "0xac90ffc330d9256e42295de28aaa9915026850145bdf3b587d635ee370e69a2c",
+    "archive_path": "cases\\before_dispatch-full-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 26372,
+    "wall_ms": 1791804698433,
+    "url": "http://127.0.0.1:63838",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 55944,
+    "wall_ms": 1791804698804,
+    "url": "http://127.0.0.1:63839",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 55944,
+    "wall_ms": 1791804698819,
+    "phase": "after_reserve"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 55944,
+    "wall_ms": 1791804698824
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 55944,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804698836
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 47608,
+    "wall_ms": 1791804699201,
+    "url": "http://127.0.0.1:63842",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 26372,
+    "wall_ms": 1791804699237,
+    "kind": "execute",
+    "op_id": "before_dispatch-late_reserve-r3-op2"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 26372,
+    "wall_ms": 1791804699240,
+    "op_id": "before_dispatch-late_reserve-r3-op2"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 47608,
+    "state_hash": "0xe4aeccadf963423766bb8d70e20472edae897e2551428b64cb25ec1e21f85c28",
+    "file_hash": "b4eee6da7c7661a927eb13b632e2288d20b53b9e8e1a89bf7932978d0a75f0c7"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 47608,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804699481
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 47608,
+    "file_hash": "b4eee6da7c7661a927eb13b632e2288d20b53b9e8e1a89bf7932978d0a75f0c7",
+    "state_hash": "0xe4aeccadf963423766bb8d70e20472edae897e2551428b64cb25ec1e21f85c28",
+    "archive_path": "cases\\before_dispatch-late_reserve-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 26372,
+    "state_hash": "0x9a8bf202e8efa3a15657754b5f235a3394cc5e789dab3aa128c4c7b467bdc34a",
+    "file_hash": "47214b061329646cec951931bb36fe1fec38440ea01c96baf03ee07883dbaba5"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 26372,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804699501
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 26372,
+    "file_hash": "47214b061329646cec951931bb36fe1fec38440ea01c96baf03ee07883dbaba5",
+    "state_hash": "0x9a8bf202e8efa3a15657754b5f235a3394cc5e789dab3aa128c4c7b467bdc34a",
+    "archive_path": "cases\\before_dispatch-late_reserve-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 44940,
+    "wall_ms": 1791804699897,
+    "url": "http://127.0.0.1:63848",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 28948,
+    "wall_ms": 1791804700286,
+    "url": "http://127.0.0.1:63849",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 44940,
+    "wall_ms": 1791804700324,
+    "kind": "execute",
+    "op_id": "after_effect-retry_pending-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 44940,
+    "wall_ms": 1791804700327,
+    "op_id": "after_effect-retry_pending-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 28948,
+    "wall_ms": 1791804700333,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 28948,
+    "wall_ms": 1791804700335
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 28948,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804700347
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 12356,
+    "wall_ms": 1791804700725,
+    "url": "http://127.0.0.1:63854",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 44940,
+    "wall_ms": 1791804700755,
+    "kind": "execute",
+    "op_id": "after_effect-retry_pending-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 12356,
+    "state_hash": "0xbe6cd29b5abfbcab9bfebf4154d5e0e78ae41ce126683f403db02bbe84cc3941",
+    "file_hash": "825a6d1fa2e36f78885af550a3c4fb79849ef738028202b9466882a4c071e624"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 12356,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804701017
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 12356,
+    "file_hash": "825a6d1fa2e36f78885af550a3c4fb79849ef738028202b9466882a4c071e624",
+    "state_hash": "0xbe6cd29b5abfbcab9bfebf4154d5e0e78ae41ce126683f403db02bbe84cc3941",
+    "archive_path": "cases\\after_effect-retry_pending-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 44940,
+    "state_hash": "0xee9e7a9258b7b8085fa7b9f7273502c542be7d142d667a949b74ac29cfdcb2e6",
+    "file_hash": "a3329537c802694647251bb5bb872c046e9bda53ca5de2cd90e9a0c3198fc284"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 44940,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804701037
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 44940,
+    "file_hash": "a3329537c802694647251bb5bb872c046e9bda53ca5de2cd90e9a0c3198fc284",
+    "state_hash": "0xee9e7a9258b7b8085fa7b9f7273502c542be7d142d667a949b74ac29cfdcb2e6",
+    "archive_path": "cases\\after_effect-retry_pending-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 32316,
+    "wall_ms": 1791804701430,
+    "url": "http://127.0.0.1:63860",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 29536,
+    "wall_ms": 1791804701844,
+    "url": "http://127.0.0.1:63861",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 32316,
+    "wall_ms": 1791804701881,
+    "kind": "execute",
+    "op_id": "after_effect-full-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 32316,
+    "wall_ms": 1791804701884,
+    "op_id": "after_effect-full-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 29536,
+    "wall_ms": 1791804701889,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 29536,
+    "wall_ms": 1791804701891
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 29536,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804701902
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 14584,
+    "wall_ms": 1791804702264,
+    "url": "http://127.0.0.1:63865",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 32316,
+    "wall_ms": 1791804702292,
+    "kind": "receipt",
+    "op_id": "after_effect-full-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 14584,
+    "state_hash": "0x046e1ab1fcbc9aba560de5eb57d39108dd045e695bad46131cfd7552c74e8ace",
+    "file_hash": "fb93b264ffcfc6118875274ac9d376427f95c208d8a090efad999ba23a507eee"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 14584,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804702547
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 14584,
+    "file_hash": "fb93b264ffcfc6118875274ac9d376427f95c208d8a090efad999ba23a507eee",
+    "state_hash": "0x046e1ab1fcbc9aba560de5eb57d39108dd045e695bad46131cfd7552c74e8ace",
+    "archive_path": "cases\\after_effect-full-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 32316,
+    "state_hash": "0x98a1fc5abfafef6a520e7aa20004324ecb040d9a88cef42cb7fd57d5f6c56d34",
+    "file_hash": "b779c7b54b18e51ae09d3d8b617d1cfcd2c50ad6cdef03912a589c13a5fac0a1"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 32316,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804702567
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 32316,
+    "file_hash": "b779c7b54b18e51ae09d3d8b617d1cfcd2c50ad6cdef03912a589c13a5fac0a1",
+    "state_hash": "0x98a1fc5abfafef6a520e7aa20004324ecb040d9a88cef42cb7fd57d5f6c56d34",
+    "archive_path": "cases\\after_effect-full-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 21144,
+    "wall_ms": 1791804702953,
+    "url": "http://127.0.0.1:63871",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 51540,
+    "wall_ms": 1791804703365,
+    "url": "http://127.0.0.1:63873",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 21144,
+    "wall_ms": 1791804703400,
+    "kind": "execute",
+    "op_id": "after_effect-late_reserve-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 21144,
+    "wall_ms": 1791804703403,
+    "op_id": "after_effect-late_reserve-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 51540,
+    "wall_ms": 1791804703410,
+    "phase": "after_robot"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 51540,
+    "wall_ms": 1791804703411
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 51540,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804703425
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 4208,
+    "wall_ms": 1791804703796,
+    "url": "http://127.0.0.1:63877",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 21144,
+    "wall_ms": 1791804703835,
+    "kind": "execute",
+    "op_id": "after_effect-late_reserve-r3-op2"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 21144,
+    "wall_ms": 1791804703837,
+    "op_id": "after_effect-late_reserve-r3-op2"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 4208,
+    "state_hash": "0xea84379435caff6f042899a5e5df7c4acab09e3c1c01500abdbe89dd0dff21e0",
+    "file_hash": "f398ba68aef37714070ab0d42e28f750c63d8547b75eb4a65cd5a45d22ead6cc"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 4208,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804704086
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 4208,
+    "file_hash": "f398ba68aef37714070ab0d42e28f750c63d8547b75eb4a65cd5a45d22ead6cc",
+    "state_hash": "0xea84379435caff6f042899a5e5df7c4acab09e3c1c01500abdbe89dd0dff21e0",
+    "archive_path": "cases\\after_effect-late_reserve-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 21144,
+    "state_hash": "0x27ec4563f1d56666431be3455219cb947b0246e05e840b7cb442094b6836a335",
+    "file_hash": "597da457b50eb58beccf12734a91b768e4bfef2950ecd178b69e1f8b804a8f60"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 21144,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804704106
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 21144,
+    "file_hash": "597da457b50eb58beccf12734a91b768e4bfef2950ecd178b69e1f8b804a8f60",
+    "state_hash": "0x27ec4563f1d56666431be3455219cb947b0246e05e840b7cb442094b6836a335",
+    "archive_path": "cases\\after_effect-late_reserve-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 53072,
+    "wall_ms": 1791804704483,
+    "url": "http://127.0.0.1:63885",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 50228,
+    "wall_ms": 1791804704849,
+    "url": "http://127.0.0.1:63886",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 53072,
+    "wall_ms": 1791804704886,
+    "kind": "execute",
+    "op_id": "during_done-retry_pending-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 53072,
+    "wall_ms": 1791804704889,
+    "op_id": "during_done-retry_pending-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 50228,
+    "wall_ms": 1791804704897,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 50228,
+    "wall_ms": 1791804704898
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 50228,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804704910
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 47188,
+    "wall_ms": 1791804705281,
+    "url": "http://127.0.0.1:63890",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 53072,
+    "wall_ms": 1791804705311,
+    "kind": "execute",
+    "op_id": "during_done-retry_pending-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 47188,
+    "state_hash": "0x4155f9ea0a8d56a5bd2613693e1ff3ae6f3d13ef0ee68b8ca71c0bae5eaf50dc",
+    "file_hash": "4fc207edfb6608486e6b9f842991c9bdaaaea9d8881b71fc821b72bddddc1ff5"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 47188,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804705562
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 47188,
+    "file_hash": "4fc207edfb6608486e6b9f842991c9bdaaaea9d8881b71fc821b72bddddc1ff5",
+    "state_hash": "0x4155f9ea0a8d56a5bd2613693e1ff3ae6f3d13ef0ee68b8ca71c0bae5eaf50dc",
+    "archive_path": "cases\\during_done-retry_pending-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 53072,
+    "state_hash": "0x5afd86dcf8a9088c8547962763fe4f2b902e67a74e00d2102994dcbd42f319f5",
+    "file_hash": "7f1876de713d232f2bc27efba59b07fb4e041226eed5578d8494dcbd7c3979ea"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 53072,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804705582
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 53072,
+    "file_hash": "7f1876de713d232f2bc27efba59b07fb4e041226eed5578d8494dcbd7c3979ea",
+    "state_hash": "0x5afd86dcf8a9088c8547962763fe4f2b902e67a74e00d2102994dcbd42f319f5",
+    "archive_path": "cases\\during_done-retry_pending-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 19880,
+    "wall_ms": 1791804705957,
+    "url": "http://127.0.0.1:63897",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 28348,
+    "wall_ms": 1791804706366,
+    "url": "http://127.0.0.1:63898",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 19880,
+    "wall_ms": 1791804706406,
+    "kind": "execute",
+    "op_id": "during_done-full-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 19880,
+    "wall_ms": 1791804706409,
+    "op_id": "during_done-full-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 28348,
+    "wall_ms": 1791804706417,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 28348,
+    "wall_ms": 1791804706433
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 28348,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804706445
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 54700,
+    "wall_ms": 1791804706823,
+    "url": "http://127.0.0.1:63902",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 19880,
+    "wall_ms": 1791804706853,
+    "kind": "receipt",
+    "op_id": "during_done-full-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 54700,
+    "state_hash": "0x789c8d81b88b268b1f83b9a737796ae84e004f5036b2c55bc64eb560813a91ae",
+    "file_hash": "db5c2422d19fbd8f944579304c407fff3112c291b8c909692ff45db6e518e2e8"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 54700,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804707134
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 54700,
+    "file_hash": "db5c2422d19fbd8f944579304c407fff3112c291b8c909692ff45db6e518e2e8",
+    "state_hash": "0x789c8d81b88b268b1f83b9a737796ae84e004f5036b2c55bc64eb560813a91ae",
+    "archive_path": "cases\\during_done-full-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 19880,
+    "state_hash": "0x0e01874e760abe0247e04bb850fc059b02570e4798206b3ff2e9ed868e98fbd2",
+    "file_hash": "b3c5d72fbc00b680f0e33588cad59c3433502a8ace09d94690d2c6f5033bbac1"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 19880,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804707155
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 19880,
+    "file_hash": "b3c5d72fbc00b680f0e33588cad59c3433502a8ace09d94690d2c6f5033bbac1",
+    "state_hash": "0x0e01874e760abe0247e04bb850fc059b02570e4798206b3ff2e9ed868e98fbd2",
+    "archive_path": "cases\\during_done-full-r3\\robot.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "READY",
+    "pid": 37368,
+    "wall_ms": 1791804707547,
+    "url": "http://127.0.0.1:63909",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 41668,
+    "wall_ms": 1791804707921,
+    "url": "http://127.0.0.1:63910",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 37368,
+    "wall_ms": 1791804707955,
+    "kind": "execute",
+    "op_id": "during_done-late_reserve-r3-op1"
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_EFFECT",
+    "pid": 37368,
+    "wall_ms": 1791804707959,
+    "op_id": "during_done-late_reserve-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CHECKPOINT",
+    "pid": 41668,
+    "wall_ms": 1791804707968,
+    "phase": "during_done"
+  },
+  {
+    "type": "FORCED_TERMINATION",
+    "role": "gateway",
+    "pid": 41668,
+    "wall_ms": 1791804707970
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 41668,
+    "code": null,
+    "signal": "SIGKILL",
+    "wall_ms": 1791804707984
+  },
+  {
+    "role": "gateway",
+    "type": "READY",
+    "pid": 26780,
+    "wall_ms": 1791804708349,
+    "url": "http://127.0.0.1:63915",
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    }
+  },
+  {
+    "role": "robot",
+    "type": "ROBOT_CALL",
+    "pid": 37368,
+    "wall_ms": 1791804708381,
+    "kind": "receipt",
+    "op_id": "during_done-late_reserve-r3-op1"
+  },
+  {
+    "role": "gateway",
+    "type": "CLOSED",
+    "pid": 26780,
+    "state_hash": "0x61c179e614744b9642fd4a3287a6ffbfc2926c9195f901de7f43400f35791f5c",
+    "file_hash": "27786006adc262223b80c33d85a4e85f420d947528ad854e221279fb8fef6c62"
+  },
+  {
+    "type": "EXIT",
+    "role": "gateway",
+    "pid": 26780,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804708628
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "gateway",
+    "pid": 26780,
+    "file_hash": "27786006adc262223b80c33d85a4e85f420d947528ad854e221279fb8fef6c62",
+    "state_hash": "0x61c179e614744b9642fd4a3287a6ffbfc2926c9195f901de7f43400f35791f5c",
+    "archive_path": "cases\\during_done-late_reserve-r3\\gateway.sqlite"
+  },
+  {
+    "role": "robot",
+    "type": "CLOSED",
+    "pid": 37368,
+    "state_hash": "0xc2374dddb452e2607cc8779ea4e7401f0e6759056750c7b333ca4cc9076aa848",
+    "file_hash": "21ce2cbd3a18e2d6508d6a7c3003879b43fc150c04e7a98186d1fb6e426c52ba"
+  },
+  {
+    "type": "EXIT",
+    "role": "robot",
+    "pid": 37368,
+    "code": 0,
+    "signal": null,
+    "wall_ms": 1791804708649
+  },
+  {
+    "type": "DATABASE_EXPORTED",
+    "role": "robot",
+    "pid": 37368,
+    "file_hash": "21ce2cbd3a18e2d6508d6a7c3003879b43fc150c04e7a98186d1fb6e426c52ba",
+    "state_hash": "0xc2374dddb452e2607cc8779ea4e7401f0e6759056750c7b333ca4cc9076aa848",
+    "archive_path": "cases\\during_done-late_reserve-r3\\robot.sqlite"
+  }
+]

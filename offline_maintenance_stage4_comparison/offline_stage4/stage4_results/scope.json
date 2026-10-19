@@ -1,0 +1,22 @@
+{
+  "stage": "synthetic_trace_policy_simulation",
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "network_traces": 150,
+  "risks": 2,
+  "policies": 8,
+  "suites": 3,
+  "policy_runs": 7200,
+  "witness_runs": 240,
+  "trace_hash": "099fbaf9218da80d6d8cf8bd0a10c1c409c963b00f09b37273b9d513ea10507d",
+  "limitations": [
+    "synthetic network/tasks, not deployed-system observations",
+    "discrete 10-second logical clock",
+    "no EVM gas or consensus timing measured",
+    "instantaneous connectivity knowledge and zero service latency",
+    "online upload clears all backlog immediately; final reconnection imposed at horizon",
+    "issued old lease honored until original deadline/quota even after revocation notice",
+    "requester uses current cached grant; conservative all-issued upper bound ignores quota and supersession",
+    "bootstrap unit is a whole trace; pointwise exploratory intervals, not corrected multiple tests"
+  ]
+}

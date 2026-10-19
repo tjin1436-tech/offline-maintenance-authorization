@@ -1,0 +1,22 @@
+{
+  "scope": "software_reference_experiments",
+  "registry": "HTTP simulation, not blockchain",
+  "environment": {
+    "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cryptography": "46.0.0"
+  },
+  "robot": "SQLite receipt simulation, not physical robot",
+  "clock": "injected logical seconds, no latency measurement",
+  "cryptography": "Ed25519 via cryptography; random fresh ephemeral keys each case",
+  "cases": 26,
+  "passed": 26,
+  "limitations": [
+    "single gateway, sequential requests",
+    "no adversarial key compromise defense",
+    "execution time is an assumption",
+    "no process-kill/power-loss test",
+    "tail completeness needs independent checkpoint",
+    "no EVM/gas/consensus validation"
+  ]
+}

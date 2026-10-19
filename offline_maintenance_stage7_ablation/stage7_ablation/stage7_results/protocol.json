@@ -1,0 +1,68 @@
+{
+  "version": "stage7-recovery-ablation-v1",
+  "created_at": "2026-10-12T11:30:56.244Z",
+  "repeats": 3,
+  "variants": [
+    "full",
+    "late_reserve",
+    "retry_pending"
+  ],
+  "scenarios": [
+    [
+      "no_fault",
+      null
+    ],
+    [
+      "before_dispatch",
+      "after_reserve"
+    ],
+    [
+      "after_effect",
+      "after_robot"
+    ],
+    [
+      "during_done",
+      "during_done"
+    ]
+  ],
+  "expected_cases": 36,
+  "quota": 1,
+  "grant_ttl_ms": 120000,
+  "environments": {
+    "node": "v24.15.0",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 5 7640HS w/ Radeon 760M Graphics     "
+  },
+  "source_sha256": {
+    "run_ablation.cjs": "3354ab23e9d1ee6c2f89d7d50e51b6112a711f7f6c8a81fbd07cc83fd5e54376",
+    "audit_ablation.cjs": "e0e3e021c5a18ebafed9b71dc81b0aa96f947ad57f29cc1421e23b9a7471f919",
+    "worker.cjs": "1d7965fc79b0c8146fa3e0a3b12d9162cba0ed344a2be3ac8bab35b7d95df21d",
+    "store.cjs": "9f15c35922d42ac957fd227acda252ed6e642bd9c0dc87ebc01d14b07223a015",
+    "harness.cjs": "ca7491edb19d649d149b130027ca0c7000135cb461bcfa4da500c75ba584e706",
+    "net.cjs": "2df80f95ec57be7c4ca2df359c6bef3f10af8d8b1cc412fb125414c84634f480",
+    "common.cjs": "f701c4c8ca73ae7849865de1fb65341ad1ff87a6edbed07776842605201cf62f",
+    "chain_node.cjs": "ef73af621782762feb249f1117855fcf8e115bba2cbf2f7380c0be8ab84aa70e",
+    "contracts/OfflineRegistry.sol": "8150e56671419b22830de8118cac68bea1f8100ac482903433c02a2d05abc1da",
+    "package-lock.json": "63f0dd7fe0b85f68e6c177ea2729e67eda7c0c32a78280e74ecad75d0783c4fe",
+    "original_worker.cjs": "6b2b5420d2d67350d38cd80c930c2e4837cd41f99a857f569dd7a7cc1d091c8d",
+    "stage6_source_hashes.json": "bda2b4eecc3ddeefb15f4077e293cd6a692d8c6ea38c25cc513b11fd1f02797b"
+  },
+  "design": {
+    "full": "Unchanged stage6 gateway behavior plus common observation events.",
+    "late_reserve": "Move the atomic quota reservation AND PENDING insert from before dispatch to after a verified robot reply. Keep SQLite durability, signatures, robot deduplication, completion transaction and EVM unchanged.",
+    "retry_pending": "Keep reservation unchanged; on /recover resend the identical signed command for PENDING instead of querying /receipt. Robot durable deduplication remains enabled.",
+    "schedule": "Initial op1; kill at selected checkpoint; restart; recover once; attempt distinct op2 under the SAME quota-one grant; replay op1; flush completed evidence. Rotate variant order by repeat.",
+    "endpoints": "Checkpoint before_dispatch is after reservation for full/retry_pending, before any reservation for late_reserve, immediately before the same robot HTTP dispatch.",
+    "outcome": "Safety violations in ablated variants are measured outcomes, not runner/audit failures. No significance or latency claims from these controlled repetitions."
+  },
+  "limits": [
+    "Single host loopback; simulated atomic effect+durable receipt, NOT physical robot actions.",
+    "Forced process termination, NOT power loss; robot is not killed in this stage.",
+    "Trusted clock, storage and receipt endpoint. No expiry/revocation/network-loss injection.",
+    "late_reserve removes the pre-execution reservation/intent pair as a unit; it does not identify the independent contribution of counter vs intent.",
+    "retry_pending remains protected by robot-side durable deduplication; lack of duplicates is conditional on that protection.",
+    "No long-duration, throughput, centralized-backend or blockchain-benefit comparison. Keep Linux and Windows batches separate."
+  ]
+}

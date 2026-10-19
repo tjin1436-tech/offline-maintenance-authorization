@@ -1,0 +1,9 @@
+{
+  "name": "offline-maintenance-stage3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local EVM functional experiments, not public-chain performance evidence",
+  "scripts": {"test": "node run_evm_experiments.cjs", "audit": "node audit_results.cjs"},
+  "engines": {"node": ">=22"},
+  "dependencies": {"ethers": "6.13.5", "ganache": "7.9.2", "solc": "0.8.28"}
+}

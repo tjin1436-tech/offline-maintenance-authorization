@@ -1,0 +1,42 @@
+{
+  "record": {
+    "body": {
+      "sequence": 1,
+      "grant": {
+        "body": {
+          "grant_id": "C11_gateway_crash_after_commit-1",
+          "subject": "kVG61OGFSQqJFuwzOk7gb/2pT8ApVMm1d6MCnh1wHJs=",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "wo-1",
+          "version": 1,
+          "issued_at": 0,
+          "expires_at": 900,
+          "quota": 2,
+          "operations": [
+            "diagnose",
+            "adjust"
+          ]
+        },
+        "signature": "tBeXecTU/dbmRGe2PHcZdM1xo/E0qjwiAU1Bapi912rzu5NDZpW4bZ7qmUR55I5r1UxjHH2/3j3/Si1ZKQVjAg=="
+      },
+      "request": {
+        "body": {
+          "op_id": "op-1",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "wo-1",
+          "version": 1,
+          "grant_id": "C11_gateway_crash_after_commit-1"
+        },
+        "signature": "Z5BMHZoBRYO2ax98PZFBshjXjQjHM3z5oWgKX5CIycrZOq+EjOPUyqD10P5r70vlD1Qs5S+PtZ7qXWVX9XstAA=="
+      },
+      "executed_at": 100,
+      "previous_hash": "GENESIS",
+      "result": "DONE"
+    },
+    "signature": "Jes8POo2swMGXEckjAVkE7vXl3Xc8GP9G1elwBNOR6LeFt8PGSvxnCF93Ib7Mn0LIA5O0G4ATtsGLlVkQuD0Cg=="
+  },
+  "synced": true
+}

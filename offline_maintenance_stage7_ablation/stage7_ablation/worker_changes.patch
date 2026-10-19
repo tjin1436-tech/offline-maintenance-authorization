@@ -1,0 +1,63 @@
+--- stage6/worker.cjs
++++ stage7/worker.cjs
+@@ -69,6 +69,7 @@
+     if(gRow.used>=g.quota)return {status:403,body:{result:'QUOTA'}};
+     await checkpoint('before_reserve');
+     const reserveStart=performance.now();
++    const persistReservation=async()=>{
+     db.begin();
+     try {
+       db.run('UPDATE grants SET used=used+1 WHERE grant_id=?',g.grant_id);
+@@ -77,13 +78,16 @@
+         b.op_id,C.hash(r),g.grant_id,gRow.used+1,now,gRow.last_hash,JSON.stringify(r));
+       db.commit();
+     } catch(e) {db.rollback();throw e;}
++    };
++    if(config.ablation!=='late_reserve')await persistReservation();
+     const reserve_ms=performance.now()-reserveStart;
+     await checkpoint('after_reserve');
+-    const op=db.get('SELECT * FROM ops WHERE op_id=?',b.op_id),robotStart=performance.now();
++    const op=config.ablation==='late_reserve'?{op_id:b.op_id,request_hash:C.hash(r),grant_id:g.grant_id,seq:gRow.used+1,admitted_at:now,previous_hash:gRow.last_hash,request:JSON.stringify(r)}:db.get('SELECT * FROM ops WHERE op_id=?',b.op_id),robotStart=performance.now();
+     const rr=await request(config.robot_url+'/execute',{command:C.sign(robotCommand(op),key)},2000);
+     const robot_ms=performance.now()-robotStart;
+     if(rr.status!==200||!validAck(rr.body.ack,op))return {status:409,body:{result:'PENDING',reserve_ms,robot_ms}};
+     await checkpoint('after_robot');
++    if(config.ablation==='late_reserve')await persistReservation();
+     const doneStart=performance.now();await finish(op,rr.body.ack);const done_ms=performance.now()-doneStart;
+     await checkpoint('after_done');
+     return {body:{result:'DONE',op_id:b.op_id,timings:{reserve_ms,robot_ms,done_ms,total_ms:performance.now()-started}}};
+@@ -91,7 +95,9 @@
+   if(url==='/recover') {
+     const results=[];
+     for(const op of db.all("SELECT * FROM ops WHERE state='PENDING' ORDER BY grant_id,seq")) {
+-      const rr=await request(config.robot_url+'/receipt',{query:C.sign({op_id:op.op_id,command_hash:C.hash(robotCommand(op))},key)},2000);
++      const rr=config.ablation==='retry_pending'
++        ?await request(config.robot_url+'/execute',{command:C.sign(robotCommand(op),key)},2000)
++        :await request(config.robot_url+'/receipt',{query:C.sign({op_id:op.op_id,command_hash:C.hash(robotCommand(op))},key)},2000);
+       if(rr.status===200&&validAck(rr.body.ack,op)){await finish(op,rr.body.ack);results.push({op_id:op.op_id,result:'RECOVERED'});}
+       else results.push({op_id:op.op_id,result:'PENDING'});
+     }
+@@ -119,6 +125,7 @@
+   if(url==='/state')return {body:db.snapshot()};
+   if(url==='/receipt') {
+     if(!C.verify(body.query,config.keys.gateway))return {status:403,body:{result:'BAD_SIGNATURE'}};
++    event('ROBOT_CALL',{kind:'receipt',op_id:body.query.body.op_id});
+     const old=db.get('SELECT * FROM robot_receipts WHERE op_id=?',body.query.body.op_id);
+     if(!old||old.command_hash!==body.query.body.command_hash)return {status:404,body:{result:'UNKNOWN'}};
+     return {body:{ack:JSON.parse(old.ack)}};
+@@ -128,6 +135,7 @@
+     if(!C.verify(command,config.keys.gateway))return {status:403,body:{result:'BAD_SIGNATURE'}};
+     const b=command.body;
+     if(b.robot!=='robot-1'||b.operation!=='diagnose')return {status:403,body:{result:'BAD_SCOPE'}};
++    event('ROBOT_CALL',{kind:'execute',op_id:b.op_id});
+     const hash=C.hash(b),old=db.get('SELECT * FROM robot_receipts WHERE op_id=?',b.op_id);
+     if(old)return old.command_hash===hash?{body:{ack:JSON.parse(old.ack),duplicate:true}}:{status:409,body:{result:'CONFLICT'}};
+     const ack=C.sign({op_id:b.op_id,command_hash:hash,robot:b.robot,operation:b.operation,result:'DONE',received_at:Date.now()},key);
+@@ -141,6 +149,7 @@
+ }
+ async function start(c) {
+   config=c;clockTrusted=c.clock_trusted!==false;
++  assert(['full','late_reserve','retry_pending'].includes(c.ablation||'full'),'unknown ablation');
+   const privateKey=crypto.createPrivateKey(fs.readFileSync(c.key_path));key={privateKey,publicKey:crypto.createPublicKey(privateKey)};
+   db=new Store(c.db_path,c.mode||'durable');
+   server=await serve((url,body)=>exclusive(()=>c.role==='robot'?robot(url,body):gateway(url,body)));

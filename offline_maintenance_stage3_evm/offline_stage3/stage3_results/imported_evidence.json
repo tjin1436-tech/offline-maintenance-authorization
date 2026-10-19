@@ -1,0 +1,1814 @@
+[
+  {
+    "group": 1,
+    "case": "online_completion",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "/pSSw/9K43CD/x2B+G0OXKBCsZU4+w6lErt1W+dcL84=",
+      "gateway": "KAYZH8eBf9Jh2Oty2Z5OQPkZO/nyEa839/BLIVHobUc=",
+      "subject": "33npNNT5nNyy3G6UlUKLz+IZMdJkElPSf0J24CdYWMg="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "33npNNT5nNyy3G6UlUKLz+IZMdJkElPSf0J24CdYWMg=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "jvFiypXji9SOHG9FVyDVvpjABk0x4fTcWzqVzY+in/DT7mImBOOeq9zMQA87wFTGJ8nh8mh0FXW5zYcntaRlBw=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "/4FFAchMs5mMhFw/7G+rwNTzBzKMKdAqWEkopQhjNKF/49kFZ/PmitXNogDw/tD5aGx3Zu1+KLDDx4vduV6SBw=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "aOANzs0d1o3fQPzKbnT1N/wz/xQMLwG8+2JSL+Tkty3Yjg7WKCopoPA21Hyg7ivcogw31uHEkRa7xo0r+vcVCQ=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "33npNNT5nNyy3G6UlUKLz+IZMdJkElPSf0J24CdYWMg=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "jvFiypXji9SOHG9FVyDVvpjABk0x4fTcWzqVzY+in/DT7mImBOOeq9zMQA87wFTGJ8nh8mh0FXW5zYcntaRlBw=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "/4FFAchMs5mMhFw/7G+rwNTzBzKMKdAqWEkopQhjNKF/49kFZ/PmitXNogDw/tD5aGx3Zu1+KLDDx4vduV6SBw=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "aOANzs0d1o3fQPzKbnT1N/wz/xQMLwG8+2JSL+Tkty3Yjg7WKCopoPA21Hyg7ivcogw31uHEkRa7xo0r+vcVCQ=="
+        }
+      }
+    ],
+    "registry_count": 1,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 1,
+    "case": "wrong_robot",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "Fy9RaBVTctqWdzSKn59m/TIX6lGVbUtkS4ZSi9e2U9g=",
+      "gateway": "VIPWVTaXorKdagzwKLc0+LOA983wF7Pe/kZ1rbVCXxI=",
+      "subject": "AxYTSlI1nrBp2D9FV7MVbhUu8VmcPHmGdxaSXgIdbmI="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 1,
+    "case": "wrong_subject",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "/YBqua9t7KBsa0s5Egu/hxlgX6YnuF8gZ4CD0I7KOw0=",
+      "gateway": "ESJZAuLE9txr3RLOirzJVscpORkPTBlw/HJLlSsIShM=",
+      "subject": "jioDVWGQOK8Jqp2GIosUHpTFBvjVSaSxxy8/Gl04l24="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 1,
+    "case": "forged_grant",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "K00cg1p0wwrJ6GA6ddq7eCeHc6gzfX+pGZsNL199Pas=",
+      "gateway": "0+l0uscYJsVsnQ9ZjGKyamdxwygTbRWfoNxfKSTAWwc=",
+      "subject": "q+2+25xaGVaIcEi9FAorZog/c7xdoTdeCP+0jlOrduA="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 2,
+    "case": "offline_cached_grant",
+    "virtual_time": {
+      "now": 120,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "D6fxoAwsPSWv4NET6oWN+mELTO9yLmOUkD7RFHZ8eVU=",
+      "gateway": "pX2e6m3giHOq7nb8CDT5o2jYyDibV7MAluqMrDxUHDo=",
+      "subject": "k8UJFSfkDCxN9o3rJDYKkIgPPE5aUXojxDMjWKhJvVw="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "k8UJFSfkDCxN9o3rJDYKkIgPPE5aUXojxDMjWKhJvVw=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "dUWvOT1UTK6o5q0FiygjLehICYV0q1ubhd/EhzYbWIaPChG9KJKBIipzGh8eoVRx0z1/fpJuuji/KDdWgsJZBg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "6qn+g4IefLdSkHA3lmbXWldcDdUdQBSwb2e0SsMOe/kydqdA8Xcd0YWA8+cxoj/l/V8i7mNuEeagSqwGND9NCg=="
+          },
+          "executed_at": 120,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "j9ofUfcvdgbR4dmuk/Hk5jl4k1EkPmA9ODHVRM4eeKahoUkB5x62oW0fsvNA/+pKn2EhvwZNhyUPKreOB1uyCA=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "TCP_CONNECTION_DROPPED",
+        "route": "/records"
+      }
+    ],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 2,
+    "case": "offline_no_grant",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "Wo5mGolceFiW+L92yDeLShtu2QPvuwLjYDGpGueg6EM=",
+      "gateway": "OgZNshKxSBBGEp7KgCyY2mx2fDP22I0jh15qPR4gmE4=",
+      "subject": "SoaZCGpnKBe+OSp9d2e3wGb9gX+0xPhvTQ4DBcENYuY="
+    },
+    "local_records": [],
+    "remote_events": [
+      {
+        "event": "TCP_CONNECTION_DROPPED",
+        "route": "/grant"
+      }
+    ],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 2,
+    "case": "offline_forbidden_operation",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "ms7r6FxpxLTnM8fY+/RKsHZ+XDkQuiUQQrSEITgSx08=",
+      "gateway": "LAQ/vUbENu1cEIuZXlkidFMpmz+yy6YgBy/jsZcoU78=",
+      "subject": "S9u/fiPA7F5uzKRj/77OHlncSORjPRkRAiWT4O5HJ8E="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 2,
+    "case": "outage_does_not_restart_ttl",
+    "virtual_time": {
+      "now": 901,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "DoiVn5WQ5tCbEYmN8jMj3iLg3aNwVYJzZEE1u5fFlF0=",
+      "gateway": "WOK4bbtTtvG0pGLMMHyFuJoyu0gO7p2MhiOqOAJmabQ=",
+      "subject": "Vte40bbTFSutv5AvydvihHsdCCZ9/0iHystTAwAsDuE="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 3,
+    "case": "just_before_expiry",
+    "virtual_time": {
+      "now": 899,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "ihKRJmJU58l1k2Nc5KV47ibfhtTpMNA/Jp9FMTqZlRM=",
+      "gateway": "EGbp2KraatX8ve2DNbPpTPC/PPCI7mqOdPeZ0UH8CAI=",
+      "subject": "RXoB3Gb2xIuhGl27t9csYYtGonkziGqcZi6kgm/qdZk="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "RXoB3Gb2xIuhGl27t9csYYtGonkziGqcZi6kgm/qdZk=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "58EciZsBEcdAblYM/VvpWchbezJVQR+bHYF/+EDPvr2/p/Usm26gSqnNKkaM+Tdjp7Q/e3CKBw+STV/7L3NrDw=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "btXStsycnhPnlgr7BhUJTRZfSJ42jgQnH+CXvtzJj3cz/kqRPD7NrS0Z1AganVVLcGwx/8bfw957XlUnI5T1CQ=="
+          },
+          "executed_at": 899,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "IvYFosCV5vNP6N3HFvO2Yak6vLF1L1cZvffjR3daVaMt4BKAB4jKSOqNEIz9maN70f6LsxGrnj9LMQh3UsefAw=="
+      }
+    ],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 3,
+    "case": "at_expiry",
+    "virtual_time": {
+      "now": 900,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "o0GtA90/E1+Fz/fQ5pm8xmXccZfqJI3H8riglcOrOxQ=",
+      "gateway": "aq9fs3uX9rGEaReW/GXWwok2uCNb7v1HAh7wJdyM0eA=",
+      "subject": "KTKilNg4PWQaOoQXFBe7JYL6iMDXYkGS/5stc3YEKQs="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 3,
+    "case": "after_expiry",
+    "virtual_time": {
+      "now": 901,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "igz1W4pOY0WElmwZIcV240FxwoqNtzh/Q2HXMgL+GFM=",
+      "gateway": "qaJlk/V8B/Zx7w0H9bGS5kOKVhv3QQlTgk2wQh+xvj4=",
+      "subject": "mRy72oDYxDcodBXSjqwfvhlWbYMEYBw9fXLUdROhwQw="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 3,
+    "case": "quota_boundary",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "Or1BCnuVvY2Pp8U0HXxRf/XxqqdHl6lJri4xe3Rt3kA=",
+      "gateway": "UfeJAL6nn9YxWo+xBSe9djSCSWvnysxSJ0/iyzPOWKc=",
+      "subject": "IJowmw5xRMtOzKDOt0rjU3bqHam6yBYwkAcg95AHPk0="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "IJowmw5xRMtOzKDOt0rjU3bqHam6yBYwkAcg95AHPk0=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "JgH8/4rBglQCYQpa8jCrKV9IWoKp56kzrG/hFAgBMkU5VTUkfUl95UWjv49jJ8uqweqOJKRbrsuJNGgQdT7VBw=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-0",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "VcqWu9B33VWnr5DksrbS2t35W7s05LBvc8LWXQ7uFZizDSq/6jB2frHBtsxxgxUR4LArT9/H65NLfgU062k7Cg=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "r68IrR6yge/R0/lJCM/22PhUeZFPatAN/53yn14xBP9TYyA9Zmr6VZcIKueoS3Os9f8sRyIABoGElS7qtiGUAQ=="
+      },
+      {
+        "body": {
+          "sequence": 2,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "IJowmw5xRMtOzKDOt0rjU3bqHam6yBYwkAcg95AHPk0=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "JgH8/4rBglQCYQpa8jCrKV9IWoKp56kzrG/hFAgBMkU5VTUkfUl95UWjv49jJ8uqweqOJKRbrsuJNGgQdT7VBw=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "5LXssefKiuVwDoVZMBdBB2W8GCcdR+8+DIKWr2nUUEffhc9r2bixJXKeQrVtilZH5m9t7FWIlSfAgPqvzQJ8BQ=="
+          },
+          "executed_at": 0,
+          "previous_hash": "a083734d2b10aa66a4a1d9613b010dbdce87d5bafde8c77f67f159b59f8bdeec",
+          "result": "DONE"
+        },
+        "signature": "XEpcHifz88eq3IOXr7+2F8G8JFDhyC3B99ReGPigT1bfP51EG3AIv+ngmaP+epF9zbFul/IrbgGzUCMLPz7sDQ=="
+      }
+    ],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 2
+  },
+  {
+    "group": 4,
+    "case": "revoked_existing_lease",
+    "virtual_time": {
+      "now": 400,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "j9PpvVOaAhuFf8ZtdpVfheWvfxz+jHFpD3A4V64QuKU=",
+      "gateway": "GPWnfei/dIKB4v6+hwnZFnfrR8wjZBWK4PrO0LyrzIU=",
+      "subject": "3mtszgs3PzNNXCGifp1FF0ivfg6kyb2M15ulMnjHmQ8="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "3mtszgs3PzNNXCGifp1FF0ivfg6kyb2M15ulMnjHmQ8=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "HTe+2KgeD5IBP5Yz+sna9+qOd0sr0YlZQdPY9Es4yA2LAz2JJie11Im2/M1Th+lyHMeSElJKSEGZ1sHUWxUmDg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "LjSLTMAML1HPz1GG44VdEWPTeliKJAqpJeVxKsPoejz/ARW5T6hjg4RkOVYzbt7hghvpPgyzF75oBIpZV6GnBw=="
+          },
+          "executed_at": 400,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "zA7UmPmVdra5SvU2v2WIzAVUJydeoRJYL5/KwcVSbNqXcj0WjI7w63s025EMFJ9+pwM9X4jfWcLvMKrGVk2wAw=="
+      }
+    ],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 4,
+    "case": "revoked_lease_expires",
+    "virtual_time": {
+      "now": 900,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "ZS4Y60fSYLH8TeJhHDtR1n6pl/Y66giOgFLfrNGidn4=",
+      "gateway": "a8jHvSnyoCeQALgS0Az2A+kIOO/ftsCzakn2qdzh0rA=",
+      "subject": "v39huet1MGi6ezE3oTJGMfbpyayHESOzhpGXzwAJHJk="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 4,
+    "case": "reconnect_no_renewal",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "DOPIlF9XJLXhpIalmlsYet7bBw2PKz9sUw+WS1jyC9E=",
+      "gateway": "rh4UvdNUx7MAgWU28vxwEiWPaSKsH564CT29PD075Bw=",
+      "subject": "cBu8xgRQ6iz38ugJ6R14+EM4vOSRTj6BIbONV21qaxI="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 4,
+    "case": "late_upload_of_valid_execution",
+    "virtual_time": {
+      "now": 1200,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "549AClDN4jWicVmv8g129b/vzBwu3W/kAHtGPl9WkSs=",
+      "gateway": "ekQlCqLEdBfb8PepioMDFSq/MEaotaMXC8xb8qENUvo=",
+      "subject": "k6fpDzjCYx2GvEc1vHJEHTk5yvDeo+Uk+ZYYISJ5doE="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "k6fpDzjCYx2GvEc1vHJEHTk5yvDeo+Uk+ZYYISJ5doE=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "Im8Ao+gr//j8Q/7xafkd+E2x/FXwZbJlW0wm6P38Lvy+mTy8ak+jUvt4lhkYw8Ur0rN1dKAEcQ3gzsHO7QGeBA=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "1yS9z8X0nnCcXGCx/GUSFxMojGsS1YWLAID9cSk2bhg5YITG+HE49U9uUB85Y9iAWVImKdUiK0lliGDsaXdABg=="
+          },
+          "executed_at": 400,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "lSqnTrxcDOGWgm9RPj43HJE60n0EUHdk8rk+cbjBtcwmfCHV9t1/RUZm59XvJeV1mOOD4J9x33i/HmIaaQLaDA=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 400,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "k6fpDzjCYx2GvEc1vHJEHTk5yvDeo+Uk+ZYYISJ5doE=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "Im8Ao+gr//j8Q/7xafkd+E2x/FXwZbJlW0wm6P38Lvy+mTy8ak+jUvt4lhkYw8Ur0rN1dKAEcQ3gzsHO7QGeBA=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "1yS9z8X0nnCcXGCx/GUSFxMojGsS1YWLAID9cSk2bhg5YITG+HE49U9uUB85Y9iAWVImKdUiK0lliGDsaXdABg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "lSqnTrxcDOGWgm9RPj43HJE60n0EUHdk8rk+cbjBtcwmfCHV9t1/RUZm59XvJeV1mOOD4J9x33i/HmIaaQLaDA=="
+        }
+      }
+    ],
+    "registry_count": 1,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 5,
+    "case": "modified_log",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "togJUs3AI3yIiapZBxJfqQsvRLFPsRmOvysKHNED774=",
+      "gateway": "8lokbXBuDwOJ4EV52npir/Qi1UmcVs0m6ALMlxKnXBk=",
+      "subject": "jTHSW7p7rVYdHXgT35JBKplJ2gk9KmIf3ZsLosLYQ34="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "jTHSW7p7rVYdHXgT35JBKplJ2gk9KmIf3ZsLosLYQ34=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "GquN+A4U2FDgQIlPd3CMY26H1jpkBTZBXudH4W9YOu39pIkjROtSuhvtBAzcU30ffNVCgFKvTnCMtwclkSkeDg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "cvNqYjL+H09s9ACeJ0iBX476PZuj6yoMNqMax4nEEKuKX7TY6YjtUykRQhjryzxNZ5NvOjtqTcKFm8tIqVqZBw=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "jB1zANkczumq2n4bZmZWN+XHbrIZ8P+69T6qZFUgVuZugdNb4u6OMKy0mb9IdenAY2qcARftWAx+ArU4SgsfCQ=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "BAD_SIGNATURE",
+        "record": {
+          "body": {
+            "executed_at": 123,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "jTHSW7p7rVYdHXgT35JBKplJ2gk9KmIf3ZsLosLYQ34=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "GquN+A4U2FDgQIlPd3CMY26H1jpkBTZBXudH4W9YOu39pIkjROtSuhvtBAzcU30ffNVCgFKvTnCMtwclkSkeDg=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "cvNqYjL+H09s9ACeJ0iBX476PZuj6yoMNqMax4nEEKuKX7TY6YjtUykRQhjryzxNZ5NvOjtqTcKFm8tIqVqZBw=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "jB1zANkczumq2n4bZmZWN+XHbrIZ8P+69T6qZFUgVuZugdNb4u6OMKy0mb9IdenAY2qcARftWAx+ArU4SgsfCQ=="
+        }
+      }
+    ],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 5,
+    "case": "duplicate_upload",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "ZMB4hVG7weg+EwzpkbA8W5Xz1GC80DGaMLvgpvvi7/8=",
+      "gateway": "aI4G5N/HPvLfxhzZoPocTLJK7jJ4k76vYUc182C8/Po=",
+      "subject": "NFVtuhAFENY5UrpojkRPwNXd7sbSRYHl9u/YV0geAuo="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "NFVtuhAFENY5UrpojkRPwNXd7sbSRYHl9u/YV0geAuo=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "uvj1fAeDEoDNhZW6TaHp92oA8BSXhspNXhZPgIogx6+muHOTJVkGc9+w8apjF9u0wX4MUCjHZKQcG863lahhBw=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "4CtGtwtOBzFL2v3cFHMnFzIFvSm34dBEFUxLC2FFsgXQOrrAPbnLyEVy+mHKDUhvEXiB1sWDdReeX7Mc5TL1DA=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "DKQa2bUFCK2nTF8ufFMCZm3AbrcpbWKwVInFLcZ2+vlhyv7/nRlMf02NMKMDnXwR/jLcAFxiTHtPzKKFbsHbAg=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "NFVtuhAFENY5UrpojkRPwNXd7sbSRYHl9u/YV0geAuo=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "uvj1fAeDEoDNhZW6TaHp92oA8BSXhspNXhZPgIogx6+muHOTJVkGc9+w8apjF9u0wX4MUCjHZKQcG863lahhBw=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "4CtGtwtOBzFL2v3cFHMnFzIFvSm34dBEFUxLC2FFsgXQOrrAPbnLyEVy+mHKDUhvEXiB1sWDdReeX7Mc5TL1DA=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "DKQa2bUFCK2nTF8ufFMCZm3AbrcpbWKwVInFLcZ2+vlhyv7/nRlMf02NMKMDnXwR/jLcAFxiTHtPzKKFbsHbAg=="
+        }
+      },
+      {
+        "event": "REGISTER",
+        "status": "DUPLICATE",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "NFVtuhAFENY5UrpojkRPwNXd7sbSRYHl9u/YV0geAuo=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "uvj1fAeDEoDNhZW6TaHp92oA8BSXhspNXhZPgIogx6+muHOTJVkGc9+w8apjF9u0wX4MUCjHZKQcG863lahhBw=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "4CtGtwtOBzFL2v3cFHMnFzIFvSm34dBEFUxLC2FFsgXQOrrAPbnLyEVy+mHKDUhvEXiB1sWDdReeX7Mc5TL1DA=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "DKQa2bUFCK2nTF8ufFMCZm3AbrcpbWKwVInFLcZ2+vlhyv7/nRlMf02NMKMDnXwR/jLcAFxiTHtPzKKFbsHbAg=="
+        }
+      }
+    ],
+    "registry_count": 1,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 5,
+    "case": "observed_signed_conflict",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "DLlnPfIEuzY3etRa0rofkS5m16kI/yYJj9qNgu0/lhA=",
+      "gateway": "i+Do/A+FFSm+HAaJHi9Ynj/pB3YnM5HRcwDMh/LsvCc=",
+      "subject": "Q3+x7+S8u7J7bato0iP30fK8+IAKDZiFved34bYMYOk="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "Q3+x7+S8u7J7bato0iP30fK8+IAKDZiFved34bYMYOk=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "dbIbUb8p5qdSTyrygZ8cUBjpa+/QZxmZadU1pbZIR1+7zIQIvlkA9uZhyOP9+euoUAHaoBjd06Vb5cHaa5cJBA=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "onUu0Knf1iM7XUjRp0QvqMmDmJ1iP1dh+uMi69t1tabmTLlgRb6yQgOdnIZzmUo0MPMycztoQdczg1ohfwiwAg=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "+f0AIM2hBWE5tOmBJFBFr8OPsmap4W5vuneW4IDy3/qmOQKUtnP9o2A/nTElGMUinLLQKmAWdLahm1wvFCUIAg=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "Q3+x7+S8u7J7bato0iP30fK8+IAKDZiFved34bYMYOk=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "dbIbUb8p5qdSTyrygZ8cUBjpa+/QZxmZadU1pbZIR1+7zIQIvlkA9uZhyOP9+euoUAHaoBjd06Vb5cHaa5cJBA=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "onUu0Knf1iM7XUjRp0QvqMmDmJ1iP1dh+uMi69t1tabmTLlgRb6yQgOdnIZzmUo0MPMycztoQdczg1ohfwiwAg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "+f0AIM2hBWE5tOmBJFBFr8OPsmap4W5vuneW4IDy3/qmOQKUtnP9o2A/nTElGMUinLLQKmAWdLahm1wvFCUIAg=="
+        }
+      },
+      {
+        "event": "REGISTER",
+        "status": "CONFLICT",
+        "record": {
+          "body": {
+            "executed_at": 1,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "Q3+x7+S8u7J7bato0iP30fK8+IAKDZiFved34bYMYOk=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "dbIbUb8p5qdSTyrygZ8cUBjpa+/QZxmZadU1pbZIR1+7zIQIvlkA9uZhyOP9+euoUAHaoBjd06Vb5cHaa5cJBA=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "onUu0Knf1iM7XUjRp0QvqMmDmJ1iP1dh+uMi69t1tabmTLlgRb6yQgOdnIZzmUo0MPMycztoQdczg1ohfwiwAg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "4l5zlBRg/QCR29xIt8frAZVm9KpB3SxrtzSR0I0d3ueI0y4Kjg2PWjzzBAlk0Yz6b2B6D9imcB6jqrBlyTh1Ag=="
+        }
+      }
+    ],
+    "registry_count": 1,
+    "conflicts": [
+      {
+        "key": [
+          "gw-1",
+          "lease-1",
+          1
+        ],
+        "existing": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "Q3+x7+S8u7J7bato0iP30fK8+IAKDZiFved34bYMYOk=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "dbIbUb8p5qdSTyrygZ8cUBjpa+/QZxmZadU1pbZIR1+7zIQIvlkA9uZhyOP9+euoUAHaoBjd06Vb5cHaa5cJBA=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "onUu0Knf1iM7XUjRp0QvqMmDmJ1iP1dh+uMi69t1tabmTLlgRb6yQgOdnIZzmUo0MPMycztoQdczg1ohfwiwAg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "+f0AIM2hBWE5tOmBJFBFr8OPsmap4W5vuneW4IDy3/qmOQKUtnP9o2A/nTElGMUinLLQKmAWdLahm1wvFCUIAg=="
+        },
+        "incoming": {
+          "body": {
+            "executed_at": 1,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "Q3+x7+S8u7J7bato0iP30fK8+IAKDZiFved34bYMYOk=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "dbIbUb8p5qdSTyrygZ8cUBjpa+/QZxmZadU1pbZIR1+7zIQIvlkA9uZhyOP9+euoUAHaoBjd06Vb5cHaa5cJBA=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "onUu0Knf1iM7XUjRp0QvqMmDmJ1iP1dh+uMi69t1tabmTLlgRb6yQgOdnIZzmUo0MPMycztoQdczg1ohfwiwAg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "4l5zlBRg/QCR29xIt8frAZVm9KpB3SxrtzSR0I0d3ueI0y4Kjg2PWjzzBAlk0Yz6b2B6D9imcB6jqrBlyTh1Ag=="
+        }
+      }
+    ],
+    "robot_count": 1
+  },
+  {
+    "group": 5,
+    "case": "tail_deletion_without_checkpoint",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "2aKNAu4U6OdGbq8x55MFI9pC+IN3F4+eI4gKdmih+Qw=",
+      "gateway": "iInHXRoNLL4Fpnst19DFQeJvxm4k2rijusffCEJqopk=",
+      "subject": "yLwROOcsfehA/j3jkdIfvMJGWxlv9UYcU/n9tBP9LEk="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "yLwROOcsfehA/j3jkdIfvMJGWxlv9UYcU/n9tBP9LEk=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "ZYhzoCy1K076Don68+yfotxXbTbb9Nb7G6BKGSsCJy4QMYN3xwtY1y0cvmOHG6c+FqhvkL37Qt5rgk4mXMlyCg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "1We38kVYKuEQhQVkED1bdm1K+8BZBJcvtJF5l+ZejPg/uCjIE5wzbQogo2WzvD8J2TbgmSCfbYfOs5eFq4TWCg=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "TGAqZsc9gKwlBwvrCR3tQ7daRQ3TmGDH5hEXJnurQ41HY0C82h9hluLFbISt+Gp1vt1JZJ5YTbLuSu8Mcp17Ag=="
+      },
+      {
+        "body": {
+          "sequence": 2,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "yLwROOcsfehA/j3jkdIfvMJGWxlv9UYcU/n9tBP9LEk=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "ZYhzoCy1K076Don68+yfotxXbTbb9Nb7G6BKGSsCJy4QMYN3xwtY1y0cvmOHG6c+FqhvkL37Qt5rgk4mXMlyCg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-2",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "vALhhJO3ZPuSWGBLVqAZsa+/KUqwHle1/rAC6HeRUmOICVXJu7v1QSRm9fTmSncF4HT1rPm715l2+XVXAx45Bg=="
+          },
+          "executed_at": 0,
+          "previous_hash": "d84af6d67f2161cf02fc7e8d5c330554ff15073b96031b2db51047f2f6f8095e",
+          "result": "DONE"
+        },
+        "signature": "9+3Zar2G2JD9nnG778yekJvOtSut0jO5FYuBmKM6mC+ZGj22loOzvpKoXiu9jVgx5kKW3NqUrUxxh2MaoomuAA=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "yLwROOcsfehA/j3jkdIfvMJGWxlv9UYcU/n9tBP9LEk=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "ZYhzoCy1K076Don68+yfotxXbTbb9Nb7G6BKGSsCJy4QMYN3xwtY1y0cvmOHG6c+FqhvkL37Qt5rgk4mXMlyCg=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "1We38kVYKuEQhQVkED1bdm1K+8BZBJcvtJF5l+ZejPg/uCjIE5wzbQogo2WzvD8J2TbgmSCfbYfOs5eFq4TWCg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "TGAqZsc9gKwlBwvrCR3tQ7daRQ3TmGDH5hEXJnurQ41HY0C82h9hluLFbISt+Gp1vt1JZJ5YTbLuSu8Mcp17Ag=="
+        }
+      }
+    ],
+    "registry_count": 1,
+    "conflicts": [],
+    "robot_count": 2
+  },
+  {
+    "group": 6,
+    "case": "restart_preserves_quota_and_replay",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "CuVAb//S3Ch9BHnubfjwlFAW1c/Or5nouQqhuuFW7qI=",
+      "gateway": "+mznHr4KZBMYKXiY3ginrerl9m6eUBK11HnEiViAm+k=",
+      "subject": "p0C0bU5C0TfKr1dZr+lETQ4Q+DHMSZLAQ94+32YbJfE="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 1,
+              "robot": "robot-1",
+              "subject": "p0C0bU5C0TfKr1dZr+lETQ4Q+DHMSZLAQ94+32YbJfE=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "Bmgq4Q5x51Yo8cngF+mi4wke0qi+mr7+gpvZioRwmJbMMun57Dovh9y4Jbgk36Vhlyzjjs2R7SzCCFegQva6Dw=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "CSj3gXdNyWDa8QrLDnm5AW/h2rAQl8Oxoab8tWG2sCLK5xlKdlFsa/Y3uFMF+3heCswMBCw+D3WQ7Hp+xsJtBA=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "7f9GGJ1VUqVT0vSMosoKEbh09zVGEYiUVZoT2eIMaqd5wV8W4ZSZiAt4wg0ckpnzAdMdTOw+OvK/aR6Rlzo5CQ=="
+      }
+    ],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 6,
+    "case": "commit_then_ack_loss",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "gmRN0VDSbB1YMvCQSfK0QQVSWIyo3baU20BwpWnckRc=",
+      "gateway": "UGQEicxJXgNgZWjYGSpYNma8Rg5LUB8M2pkdrV+U1BQ=",
+      "subject": "CAMIuKcppXB2Lu+rn1XN1EWNE7pHCzWnimkeFjbNNg4="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "CAMIuKcppXB2Lu+rn1XN1EWNE7pHCzWnimkeFjbNNg4=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "4BmhyF3W+9VfoVvwTaAlvBwTAbrbO4nG8Fu2P/0Or1bL4uvSuh43XJ4GN8efrrA/JK4+ekzAwxpanoA94fqRDg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "lyYXGHAoPC7mLRoXziL6aCY2qpSeWw574O62JdCB7F8GdXFI6fGpPxhtGToVG0PVE85BppehQLzgoA94NfZyDg=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "oiIOaRnbUWJPO9aOj6h/W6tr1zAjMj5nO9rSrm3Hi2XQKj/skQBwsVBX+VrVcIe9d7PFqBf0xRcnSkZncohtDQ=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "CAMIuKcppXB2Lu+rn1XN1EWNE7pHCzWnimkeFjbNNg4=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "4BmhyF3W+9VfoVvwTaAlvBwTAbrbO4nG8Fu2P/0Or1bL4uvSuh43XJ4GN8efrrA/JK4+ekzAwxpanoA94fqRDg=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "lyYXGHAoPC7mLRoXziL6aCY2qpSeWw574O62JdCB7F8GdXFI6fGpPxhtGToVG0PVE85BppehQLzgoA94NfZyDg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "oiIOaRnbUWJPO9aOj6h/W6tr1zAjMj5nO9rSrm3Hi2XQKj/skQBwsVBX+VrVcIe9d7PFqBf0xRcnSkZncohtDQ=="
+        }
+      },
+      {
+        "event": "ACK_LOST_AFTER_COMMIT"
+      },
+      {
+        "event": "REGISTER",
+        "status": "DUPLICATE",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "CAMIuKcppXB2Lu+rn1XN1EWNE7pHCzWnimkeFjbNNg4=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "4BmhyF3W+9VfoVvwTaAlvBwTAbrbO4nG8Fu2P/0Or1bL4uvSuh43XJ4GN8efrrA/JK4+ekzAwxpanoA94fqRDg=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "lyYXGHAoPC7mLRoXziL6aCY2qpSeWw574O62JdCB7F8GdXFI6fGpPxhtGToVG0PVE85BppehQLzgoA94NfZyDg=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "oiIOaRnbUWJPO9aOj6h/W6tr1zAjMj5nO9rSrm3Hi2XQKj/skQBwsVBX+VrVcIe9d7PFqBf0xRcnSkZncohtDQ=="
+        }
+      }
+    ],
+    "registry_count": 1,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 6,
+    "case": "sync_resume",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "HcUZqa8vwjuJnUnKiXx4NHY5UeZjBdtWTzmAFvpioF0=",
+      "gateway": "R1oPkAaHWVRMXSsnG0MZy4b9GMCkorjsOOdEiavpl/4=",
+      "subject": "hDWnjAXJgODVQf5gdkIZK+weDvgINsPuz/atyrtByTY="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "hDWnjAXJgODVQf5gdkIZK+weDvgINsPuz/atyrtByTY=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "a76TfzJDTyIvGnZtyhSL08nZdQ+6R9p2AAQ+W77g/igNVYMcm7n65NX0clY1eTOdK5yE/ARj80WMKr5PERjOCg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "SsL5riJFQ6tjlF8JM64Zau6VwAFiq2tV//VimT3SLCGCWG7ThR3y7qdvA7dhhQlyLx4tVK/qs13jsgGb3dUgAQ=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "C3EHdjyQmup0msGvP29SoCxvmrlxcP5Imz47BaZSkTwbJs9spRTpD1VCq97fxDpINqyiENWgCo1wbVCmXZToBQ=="
+      },
+      {
+        "body": {
+          "sequence": 2,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "hDWnjAXJgODVQf5gdkIZK+weDvgINsPuz/atyrtByTY=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "a76TfzJDTyIvGnZtyhSL08nZdQ+6R9p2AAQ+W77g/igNVYMcm7n65NX0clY1eTOdK5yE/ARj80WMKr5PERjOCg=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-2",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "egaFxOsCrk6/NtH87O6gjujCSNMkkJboEnAVNJwh5WjxBQWqP3Fq2BhANHUpGACTaoJ+ZsMEkkBixr4t2MdTDA=="
+          },
+          "executed_at": 0,
+          "previous_hash": "2c3d8f80ffda753256eef117c40d1fbd3b588e6ddc5030e5d421878d69bba97a",
+          "result": "DONE"
+        },
+        "signature": "VJzXdqFeLaloy8ufTm0ZsLuu5hSdsWYsbOL88k1ZniMgbWQejmGhVrxM5aOBSLJLEZgImOJxCxXiLifaV/ZqAA=="
+      }
+    ],
+    "remote_events": [
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "hDWnjAXJgODVQf5gdkIZK+weDvgINsPuz/atyrtByTY=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "a76TfzJDTyIvGnZtyhSL08nZdQ+6R9p2AAQ+W77g/igNVYMcm7n65NX0clY1eTOdK5yE/ARj80WMKr5PERjOCg=="
+            },
+            "previous_hash": "GENESIS",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-1",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "SsL5riJFQ6tjlF8JM64Zau6VwAFiq2tV//VimT3SLCGCWG7ThR3y7qdvA7dhhQlyLx4tVK/qs13jsgGb3dUgAQ=="
+            },
+            "result": "DONE",
+            "sequence": 1
+          },
+          "signature": "C3EHdjyQmup0msGvP29SoCxvmrlxcP5Imz47BaZSkTwbJs9spRTpD1VCq97fxDpINqyiENWgCo1wbVCmXZToBQ=="
+        }
+      },
+      {
+        "event": "TCP_CONNECTION_DROPPED",
+        "route": "/records"
+      },
+      {
+        "event": "REGISTER",
+        "status": "ACCEPTED",
+        "record": {
+          "body": {
+            "executed_at": 0,
+            "grant": {
+              "body": {
+                "expires_at": 900,
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "issued_at": 0,
+                "operations": [
+                  "diagnose",
+                  "adjust"
+                ],
+                "quota": 2,
+                "robot": "robot-1",
+                "subject": "hDWnjAXJgODVQf5gdkIZK+weDvgINsPuz/atyrtByTY=",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "a76TfzJDTyIvGnZtyhSL08nZdQ+6R9p2AAQ+W77g/igNVYMcm7n65NX0clY1eTOdK5yE/ARj80WMKr5PERjOCg=="
+            },
+            "previous_hash": "2c3d8f80ffda753256eef117c40d1fbd3b588e6ddc5030e5d421878d69bba97a",
+            "request": {
+              "body": {
+                "gateway": "gw-1",
+                "grant_id": "lease-1",
+                "op_id": "op-2",
+                "operation": "diagnose",
+                "robot": "robot-1",
+                "version": 1,
+                "work_order": "wo-1"
+              },
+              "signature": "egaFxOsCrk6/NtH87O6gjujCSNMkkJboEnAVNJwh5WjxBQWqP3Fq2BhANHUpGACTaoJ+ZsMEkkBixr4t2MdTDA=="
+            },
+            "result": "DONE",
+            "sequence": 2
+          },
+          "signature": "VJzXdqFeLaloy8ufTm0ZsLuu5hSdsWYsbOL88k1ZniMgbWQejmGhVrxM5aOBSLJLEZgImOJxCxXiLifaV/ZqAA=="
+        }
+      }
+    ],
+    "registry_count": 2,
+    "conflicts": [],
+    "robot_count": 2
+  },
+  {
+    "group": 6,
+    "case": "crash_after_robot_receipt",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "ed/gfSLSkRChRiAu/Z6+VWr0exJbOAdlwXX1H5pRIaQ=",
+      "gateway": "bGIG1/v69Afw3k4tQ3vr/J4PQFq08fA777QiRtVivWs=",
+      "subject": "ZghwBn5+ZMUIXarPCEuDsM3F8ZhmVwE0qNtaRCmYeFo="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "ZghwBn5+ZMUIXarPCEuDsM3F8ZhmVwE0qNtaRCmYeFo=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "PzzWUrnlez7d+1K0RQ+4epydFWVDSEVGCwgE1oXwdyX5RAn73vkCSCIvT8rJbfteO9ugGC78GWGQO/cgza0oBA=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "ty9TvtVPV3n9BEduEWdvFOaWXN33Ol9+zSx9CdouCQHm/enOENd7iTGR1FXQ/TOX9VTMXCAJQCysR31eUHaFAw=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "DONE"
+        },
+        "signature": "VZZC9LnlqnK89mqPE1bA7dqvGTIawvglzUsWU1KKCTllUIO0DlfCakXf2MvlHJshzh8QA0k6sroloBxeSilDCw=="
+      }
+    ],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 1
+  },
+  {
+    "group": 6,
+    "case": "restart_unknown_clock",
+    "virtual_time": {
+      "now": 0,
+      "trusted": false
+    },
+    "public_keys": {
+      "issuer": "deuvSeTMPEBlVptsWQ11XsTn7cFCg9HNDtgteBHVf70=",
+      "gateway": "XOnPiVdT9zlzSYoCajTELqaHIZOs34/mL49yWzLIUoE=",
+      "subject": "aYIrLnHKvB76f5MObdMB7CajO+VuXpL5uCdaFps7aj8="
+    },
+    "local_records": [],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  },
+  {
+    "group": 6,
+    "case": "crash_before_robot_no_false_completion",
+    "virtual_time": {
+      "now": 0,
+      "trusted": true
+    },
+    "public_keys": {
+      "issuer": "mSagk6Xc3REWaIUGbGUPQY9Lv+JyitZGtzoJVZPT4SE=",
+      "gateway": "l6bN4om/MSLr1wYHvx80E0YuRl9Z1lJiRezvpWeKNJo=",
+      "subject": "3DEMKrCY9xeHyYOR1RQVC+924wpjVUDM9eRm7+aqu3k="
+    },
+    "local_records": [
+      {
+        "body": {
+          "sequence": 1,
+          "grant": {
+            "body": {
+              "expires_at": 900,
+              "gateway": "gw-1",
+              "grant_id": "lease-1",
+              "issued_at": 0,
+              "operations": [
+                "diagnose",
+                "adjust"
+              ],
+              "quota": 2,
+              "robot": "robot-1",
+              "subject": "3DEMKrCY9xeHyYOR1RQVC+924wpjVUDM9eRm7+aqu3k=",
+              "version": 1,
+              "work_order": "wo-1"
+            },
+            "signature": "JsKyBzj6CkVuffdIfbwbXC5/AKKf+L+vIYRGWTld3ULJH3HSe0LqRISp/skL86SOylOKD8exY0YDk8A1PpXuBQ=="
+          },
+          "request": {
+            "body": {
+              "op_id": "op-1",
+              "operation": "diagnose",
+              "gateway": "gw-1",
+              "robot": "robot-1",
+              "work_order": "wo-1",
+              "version": 1,
+              "grant_id": "lease-1"
+            },
+            "signature": "3cIZKIaDS+e9O3YD/awakkiB0vy6J72hhPJnP0pnyQ3q118MQMeQ1VpMs+HTeGsQHcuTCIhEZi/QSZhsvF7WBQ=="
+          },
+          "executed_at": 0,
+          "previous_hash": "GENESIS",
+          "result": "PENDING"
+        },
+        "signature": "IeoZr1O3rpsAI8se9yJsrd4PC719BvIR/wTzQspXo+GNjMgz/eQ1kph4d8G5a2pOqgPdQTUNJQ1jKb1YOBVTDg=="
+      }
+    ],
+    "remote_events": [],
+    "registry_count": 0,
+    "conflicts": [],
+    "robot_count": 0
+  }
+]

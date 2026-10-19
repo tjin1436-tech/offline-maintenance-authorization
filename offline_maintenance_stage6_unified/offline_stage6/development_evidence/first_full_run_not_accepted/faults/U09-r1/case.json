@@ -1,0 +1,245 @@
+{
+  "id": "U09",
+  "repeat": 1,
+  "label": "two_record_resume",
+  "context": "U09-r1",
+  "expected": {
+    "done": 2,
+    "used": 2,
+    "robot_effects": 2,
+    "synced": 2
+  },
+  "checks": [
+    {
+      "name": "initial DONE",
+      "passed": true
+    },
+    {
+      "name": "second DONE",
+      "passed": true
+    },
+    {
+      "name": "expected retry results",
+      "passed": true
+    },
+    {
+      "name": "request replay",
+      "passed": true
+    },
+    {
+      "name": "final counts",
+      "passed": true
+    }
+  ],
+  "actions": [
+    {
+      "name": "execute",
+      "response": {
+        "status": 200,
+        "body": {
+          "result": "DONE",
+          "op_id": "U09-r1-op1",
+          "timings": {
+            "reserve_ms": 0.809077000000002,
+            "robot_ms": 22.456244000000027,
+            "done_ms": 1.3278980000000047,
+            "total_ms": 25.71995400000003
+          }
+        },
+        "duration_ms": 27.496259999999893
+      }
+    },
+    {
+      "name": "execute2",
+      "response": {
+        "status": 200,
+        "body": {
+          "result": "DONE",
+          "op_id": "U09-r1-op2",
+          "timings": {
+            "reserve_ms": 0.2285929999999894,
+            "robot_ms": 4.5408350000000155,
+            "done_ms": 0.6680749999999875,
+            "total_ms": 6.128752999999961
+          }
+        },
+        "duration_ms": 10.415707000000111
+      }
+    },
+    {
+      "name": "resume_flush",
+      "response": {
+        "status": 200,
+        "body": {
+          "results": [
+            {
+              "op_id": "U09-r1-op1",
+              "result": "DUPLICATE",
+              "tx_hash": "0x1aaddf9d9799cc70495666afe42a1578aa89dea65917db648d36700dd0b151fa"
+            },
+            {
+              "op_id": "U09-r1-op2",
+              "result": "ACCEPTED",
+              "tx_hash": "0xe6de520f211ebc4c97d4d72adde4ddf02ecf641fb611d66f3fde96a9faa2255e"
+            }
+          ]
+        },
+        "duration_ms": 81.77756600000066
+      }
+    },
+    {
+      "name": "replay",
+      "response": {
+        "status": 200,
+        "body": {
+          "result": "REPLAY",
+          "op_id": "U09-r1-op1"
+        },
+        "duration_ms": 2.6596410000001924
+      }
+    }
+  ],
+  "snapshots": {
+    "after_restart": {
+      "settings": {
+        "journal_mode": "delete",
+        "synchronous": 2,
+        "sqlite": "3.53.3"
+      },
+      "grants": [
+        {
+          "grant_id": "U09-r1-g9",
+          "envelope": "{\"body\":{\"grant_id\":\"U09-r1-g9\",\"subject\":\"GK/SINuK3WvpgFl3fRx1pL84gZsAQkEgb6H7ccp/uc8=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"issued_at\":1791734855604,\"expires_at\":1791734915604,\"quota\":2,\"operations\":[\"diagnose\"]},\"signature\":\"m5izC2rtuEme4idmvoCHGKeOZn5+GvKtgqDlaWbLSjisFO3aaq1btUzsLL8Z0hDpq0ZyKOdrFfjYKZOMhPVFAw==\"}",
+          "used": 2,
+          "last_hash": "0x3946edbb70757b6b08d6b5b08de71b208955a5b994fc9ecfcc0f4dd218654e46"
+        }
+      ],
+      "ops": [
+        {
+          "op_id": "U09-r1-op1",
+          "request_hash": "0x11f04a33ecd7f9a89e110c6575d7112b0b900af7fcd375e5ca360fbe6e4638a8",
+          "grant_id": "U09-r1-g9",
+          "seq": 1,
+          "state": "DONE",
+          "admitted_at": 1791734855616,
+          "previous_hash": "GENESIS",
+          "request": "{\"body\":{\"op_id\":\"U09-r1-op1\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"6c++pUXoqzHoFhZebpwEwQinAIE5lgVJ5cRLKk9qvREIfwW7MC3dFgdF7rh3WNF7SccA0hvLSxnR1RMMCJe+AA==\"}",
+          "record": "{\"body\":{\"sequence\":1,\"grant\":{\"body\":{\"grant_id\":\"U09-r1-g9\",\"subject\":\"GK/SINuK3WvpgFl3fRx1pL84gZsAQkEgb6H7ccp/uc8=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"issued_at\":1791734855604,\"expires_at\":1791734915604,\"quota\":2,\"operations\":[\"diagnose\"]},\"signature\":\"m5izC2rtuEme4idmvoCHGKeOZn5+GvKtgqDlaWbLSjisFO3aaq1btUzsLL8Z0hDpq0ZyKOdrFfjYKZOMhPVFAw==\"},\"request\":{\"body\":{\"op_id\":\"U09-r1-op1\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"6c++pUXoqzHoFhZebpwEwQinAIE5lgVJ5cRLKk9qvREIfwW7MC3dFgdF7rh3WNF7SccA0hvLSxnR1RMMCJe+AA==\"},\"executed_at\":1791734855616,\"previous_hash\":\"GENESIS\",\"result\":\"DONE\",\"receipt_hash\":\"0x722bb7555bb7ecba6600a18122d9e91987f717eed2d65002eb09755968b2331d\"},\"signature\":\"FO1/xfPJ9jEuurE8aiw0lIgoXgJpNM4IYXEaPsedmdqbGBnLsJJlIbYKrRRnw165CEo9S37oWKJgUaGKYFzuDw==\"}",
+          "ack": "{\"body\":{\"op_id\":\"U09-r1-op1\",\"command_hash\":\"0x8d7491f7913d2c472874687cc916f31892c7273df73ed8c816e727204f1c4593\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791734855633},\"signature\":\"TGSwOYCj6F5QFJgJt6qNFNxsLWq62lP3GvFWeIJclEhJ8E2YnTe4XgMPL7az0BKVtTYVG4GX1iE4hCMF8R32Cw==\"}",
+          "synced": 0,
+          "tx_hash": null
+        },
+        {
+          "op_id": "U09-r1-op2",
+          "request_hash": "0x32c086cd06b950271a1ce300b19dee9efbff431d040475e00a6eecdf545e563a",
+          "grant_id": "U09-r1-g9",
+          "seq": 2,
+          "state": "DONE",
+          "admitted_at": 1791734855646,
+          "previous_hash": "0x18d3175df84599b4657e5e42dd7d75a973b6c8a960334be4caa2f4a35cc92f9a",
+          "request": "{\"body\":{\"op_id\":\"U09-r1-op2\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"GPdhnpaI3oDX1FWk5b4P6R09mEzf5RRdsNNLTAIbBsgDkkn9er6lp2xOta0YPJ6R83guo7Se+o4WWwGCQyc2Cw==\"}",
+          "record": "{\"body\":{\"sequence\":2,\"grant\":{\"body\":{\"grant_id\":\"U09-r1-g9\",\"subject\":\"GK/SINuK3WvpgFl3fRx1pL84gZsAQkEgb6H7ccp/uc8=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"issued_at\":1791734855604,\"expires_at\":1791734915604,\"quota\":2,\"operations\":[\"diagnose\"]},\"signature\":\"m5izC2rtuEme4idmvoCHGKeOZn5+GvKtgqDlaWbLSjisFO3aaq1btUzsLL8Z0hDpq0ZyKOdrFfjYKZOMhPVFAw==\"},\"request\":{\"body\":{\"op_id\":\"U09-r1-op2\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"GPdhnpaI3oDX1FWk5b4P6R09mEzf5RRdsNNLTAIbBsgDkkn9er6lp2xOta0YPJ6R83guo7Se+o4WWwGCQyc2Cw==\"},\"executed_at\":1791734855646,\"previous_hash\":\"0x18d3175df84599b4657e5e42dd7d75a973b6c8a960334be4caa2f4a35cc92f9a\",\"result\":\"DONE\",\"receipt_hash\":\"0x5c8ad417b186ccf1f2eeb1948811182d76bcb3aad0f037708b7894fc35ea5614\"},\"signature\":\"1u4b4kDs5f2ke/BTETdQrfs9o1Mdm5zh9v7kapJ8hOwLzi4Oy5cpB8yc3TBJf97IpQ2aNnFY5EXAvKqgtNeqCg==\"}",
+          "ack": "{\"body\":{\"op_id\":\"U09-r1-op2\",\"command_hash\":\"0x0a9514bf683b9933e04a784a8023423831c4f0409c6df3f819f028c12c7e44f7\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791734855650},\"signature\":\"H76AsN0n0eOk+wpSF/F1IxwaRyK56TE4Z9azFHP+KV22l58jgqkDvtVX07B8lle5p+oSVtYdQsikcKaJqsL6BA==\"}",
+          "synced": 0,
+          "tx_hash": null
+        }
+      ],
+      "robot": []
+    }
+  },
+  "grant": {
+    "body": {
+      "grant_id": "U09-r1-g9",
+      "subject": "GK/SINuK3WvpgFl3fRx1pL84gZsAQkEgb6H7ccp/uc8=",
+      "gateway": "gw-1",
+      "robot": "robot-1",
+      "work_order": "U09-r1",
+      "version": 1,
+      "issued_at": 1791734855604,
+      "expires_at": 1791734915604,
+      "quota": 2,
+      "operations": [
+        "diagnose"
+      ]
+    },
+    "signature": "m5izC2rtuEme4idmvoCHGKeOZn5+GvKtgqDlaWbLSjisFO3aaq1btUzsLL8Z0hDpq0ZyKOdrFfjYKZOMhPVFAw=="
+  },
+  "gateway": {
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.53.3"
+    },
+    "grants": [
+      {
+        "grant_id": "U09-r1-g9",
+        "envelope": "{\"body\":{\"grant_id\":\"U09-r1-g9\",\"subject\":\"GK/SINuK3WvpgFl3fRx1pL84gZsAQkEgb6H7ccp/uc8=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"issued_at\":1791734855604,\"expires_at\":1791734915604,\"quota\":2,\"operations\":[\"diagnose\"]},\"signature\":\"m5izC2rtuEme4idmvoCHGKeOZn5+GvKtgqDlaWbLSjisFO3aaq1btUzsLL8Z0hDpq0ZyKOdrFfjYKZOMhPVFAw==\"}",
+        "used": 2,
+        "last_hash": "0x3946edbb70757b6b08d6b5b08de71b208955a5b994fc9ecfcc0f4dd218654e46"
+      }
+    ],
+    "ops": [
+      {
+        "op_id": "U09-r1-op1",
+        "request_hash": "0x11f04a33ecd7f9a89e110c6575d7112b0b900af7fcd375e5ca360fbe6e4638a8",
+        "grant_id": "U09-r1-g9",
+        "seq": 1,
+        "state": "DONE",
+        "admitted_at": 1791734855616,
+        "previous_hash": "GENESIS",
+        "request": "{\"body\":{\"op_id\":\"U09-r1-op1\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"6c++pUXoqzHoFhZebpwEwQinAIE5lgVJ5cRLKk9qvREIfwW7MC3dFgdF7rh3WNF7SccA0hvLSxnR1RMMCJe+AA==\"}",
+        "record": "{\"body\":{\"sequence\":1,\"grant\":{\"body\":{\"grant_id\":\"U09-r1-g9\",\"subject\":\"GK/SINuK3WvpgFl3fRx1pL84gZsAQkEgb6H7ccp/uc8=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"issued_at\":1791734855604,\"expires_at\":1791734915604,\"quota\":2,\"operations\":[\"diagnose\"]},\"signature\":\"m5izC2rtuEme4idmvoCHGKeOZn5+GvKtgqDlaWbLSjisFO3aaq1btUzsLL8Z0hDpq0ZyKOdrFfjYKZOMhPVFAw==\"},\"request\":{\"body\":{\"op_id\":\"U09-r1-op1\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"6c++pUXoqzHoFhZebpwEwQinAIE5lgVJ5cRLKk9qvREIfwW7MC3dFgdF7rh3WNF7SccA0hvLSxnR1RMMCJe+AA==\"},\"executed_at\":1791734855616,\"previous_hash\":\"GENESIS\",\"result\":\"DONE\",\"receipt_hash\":\"0x722bb7555bb7ecba6600a18122d9e91987f717eed2d65002eb09755968b2331d\"},\"signature\":\"FO1/xfPJ9jEuurE8aiw0lIgoXgJpNM4IYXEaPsedmdqbGBnLsJJlIbYKrRRnw165CEo9S37oWKJgUaGKYFzuDw==\"}",
+        "ack": "{\"body\":{\"op_id\":\"U09-r1-op1\",\"command_hash\":\"0x8d7491f7913d2c472874687cc916f31892c7273df73ed8c816e727204f1c4593\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791734855633},\"signature\":\"TGSwOYCj6F5QFJgJt6qNFNxsLWq62lP3GvFWeIJclEhJ8E2YnTe4XgMPL7az0BKVtTYVG4GX1iE4hCMF8R32Cw==\"}",
+        "synced": 1,
+        "tx_hash": "0x1aaddf9d9799cc70495666afe42a1578aa89dea65917db648d36700dd0b151fa"
+      },
+      {
+        "op_id": "U09-r1-op2",
+        "request_hash": "0x32c086cd06b950271a1ce300b19dee9efbff431d040475e00a6eecdf545e563a",
+        "grant_id": "U09-r1-g9",
+        "seq": 2,
+        "state": "DONE",
+        "admitted_at": 1791734855646,
+        "previous_hash": "0x18d3175df84599b4657e5e42dd7d75a973b6c8a960334be4caa2f4a35cc92f9a",
+        "request": "{\"body\":{\"op_id\":\"U09-r1-op2\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"GPdhnpaI3oDX1FWk5b4P6R09mEzf5RRdsNNLTAIbBsgDkkn9er6lp2xOta0YPJ6R83guo7Se+o4WWwGCQyc2Cw==\"}",
+        "record": "{\"body\":{\"sequence\":2,\"grant\":{\"body\":{\"grant_id\":\"U09-r1-g9\",\"subject\":\"GK/SINuK3WvpgFl3fRx1pL84gZsAQkEgb6H7ccp/uc8=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"issued_at\":1791734855604,\"expires_at\":1791734915604,\"quota\":2,\"operations\":[\"diagnose\"]},\"signature\":\"m5izC2rtuEme4idmvoCHGKeOZn5+GvKtgqDlaWbLSjisFO3aaq1btUzsLL8Z0hDpq0ZyKOdrFfjYKZOMhPVFAw==\"},\"request\":{\"body\":{\"op_id\":\"U09-r1-op2\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"U09-r1\",\"version\":1,\"grant_id\":\"U09-r1-g9\"},\"signature\":\"GPdhnpaI3oDX1FWk5b4P6R09mEzf5RRdsNNLTAIbBsgDkkn9er6lp2xOta0YPJ6R83guo7Se+o4WWwGCQyc2Cw==\"},\"executed_at\":1791734855646,\"previous_hash\":\"0x18d3175df84599b4657e5e42dd7d75a973b6c8a960334be4caa2f4a35cc92f9a\",\"result\":\"DONE\",\"receipt_hash\":\"0x5c8ad417b186ccf1f2eeb1948811182d76bcb3aad0f037708b7894fc35ea5614\"},\"signature\":\"1u4b4kDs5f2ke/BTETdQrfs9o1Mdm5zh9v7kapJ8hOwLzi4Oy5cpB8yc3TBJf97IpQ2aNnFY5EXAvKqgtNeqCg==\"}",
+        "ack": "{\"body\":{\"op_id\":\"U09-r1-op2\",\"command_hash\":\"0x0a9514bf683b9933e04a784a8023423831c4f0409c6df3f819f028c12c7e44f7\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791734855650},\"signature\":\"H76AsN0n0eOk+wpSF/F1IxwaRyK56TE4Z9azFHP+KV22l58jgqkDvtVX07B8lle5p+oSVtYdQsikcKaJqsL6BA==\"}",
+        "synced": 1,
+        "tx_hash": "0xe6de520f211ebc4c97d4d72adde4ddf02ecf641fb611d66f3fde96a9faa2255e"
+      }
+    ],
+    "robot": []
+  },
+  "robot": {
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.53.3"
+    },
+    "grants": [],
+    "ops": [],
+    "robot": [
+      {
+        "op_id": "U09-r1-op1",
+        "command_hash": "0x8d7491f7913d2c472874687cc916f31892c7273df73ed8c816e727204f1c4593",
+        "command": "{\"body\":{\"op_id\":\"U09-r1-op1\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"U09-r1-g9\",\"work_order\":\"U09-r1\",\"version\":1,\"request_hash\":\"0x11f04a33ecd7f9a89e110c6575d7112b0b900af7fcd375e5ca360fbe6e4638a8\"},\"signature\":\"2b2dU1YzhxhZSSv283Za9OZ+GI2zpCAMjfVIg4NeDHcgj7Vo4RhhcovDzOYKOKChIzPl1Q7dwq+MPhY8cyoODw==\"}",
+        "ack": "{\"body\":{\"op_id\":\"U09-r1-op1\",\"command_hash\":\"0x8d7491f7913d2c472874687cc916f31892c7273df73ed8c816e727204f1c4593\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791734855633},\"signature\":\"TGSwOYCj6F5QFJgJt6qNFNxsLWq62lP3GvFWeIJclEhJ8E2YnTe4XgMPL7az0BKVtTYVG4GX1iE4hCMF8R32Cw==\"}",
+        "effect_count": 1
+      },
+      {
+        "op_id": "U09-r1-op2",
+        "command_hash": "0x0a9514bf683b9933e04a784a8023423831c4f0409c6df3f819f028c12c7e44f7",
+        "command": "{\"body\":{\"op_id\":\"U09-r1-op2\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"U09-r1-g9\",\"work_order\":\"U09-r1\",\"version\":1,\"request_hash\":\"0x32c086cd06b950271a1ce300b19dee9efbff431d040475e00a6eecdf545e563a\"},\"signature\":\"HvagjcWufHItbRuRGnpq1//ngXA5Wbdcy8hRxQ6gB1pQaA5xcGkenPk+y8dv1wVvhxl8Zr4MATRfZgDlgkA0CA==\"}",
+        "ack": "{\"body\":{\"op_id\":\"U09-r1-op2\",\"command_hash\":\"0x0a9514bf683b9933e04a784a8023423831c4f0409c6df3f819f028c12c7e44f7\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791734855650},\"signature\":\"H76AsN0n0eOk+wpSF/F1IxwaRyK56TE4Z9azFHP+KV22l58jgqkDvtVX07B8lle5p+oSVtYdQsikcKaJqsL6BA==\"}",
+        "effect_count": 1
+      }
+    ]
+  },
+  "observed": {
+    "done": 2,
+    "used": 2,
+    "robot_effects": 2,
+    "synced": 2
+  },
+  "passed": true
+}

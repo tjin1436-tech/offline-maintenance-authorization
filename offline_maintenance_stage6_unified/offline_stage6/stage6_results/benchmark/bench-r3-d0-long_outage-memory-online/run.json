@@ -1,0 +1,300 @@
+{
+  "context": "bench-r3-d0-long_outage-memory-online",
+  "repeat": 3,
+  "delay_ms": 0,
+  "scenario": "long_outage",
+  "mode": "memory",
+  "policy": "online",
+  "attempts": [
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r3-d0-long_outage-memory-online-op0",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g258"
+        },
+        "signature": "ol/RtILWKTV10k8ddB0tDXcs+waiqxPlfFRMYa4Yj004yB5xiMosz874NIF4I32lfnbgREFezVS6HGiAufe/Cg=="
+      },
+      "wall_ms": 1791778619953,
+      "planned_offset_ms": 0,
+      "status": 403,
+      "body": {
+        "result": "ONLINE_UNAVAILABLE"
+      },
+      "duration_ms": 205.95770000002813
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r3-d0-long_outage-memory-online-op1",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g258"
+        },
+        "signature": "HQWNMhQzj1nacKHbHkvwultb9+v4jD6U+GL566u3gEpAo+XZpAHgBlt1iNMlB6ELFkhE6Z3KSB6LbbkbiP3sDw=="
+      },
+      "wall_ms": 1791778620859,
+      "planned_offset_ms": 900,
+      "status": 403,
+      "body": {
+        "result": "ONLINE_UNAVAILABLE"
+      },
+      "duration_ms": 203.53759999998147
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r3-d0-long_outage-memory-online-op2",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g258"
+        },
+        "signature": "syt6S/zw7zuEW6RiFj2ztqO9PnTYXkXaHUq9hR2eyH7YU5Oi0aXQHX29fV1zBA+JF/3QyYzCg7nJ7mHRtx+lAg=="
+      },
+      "wall_ms": 1791778621768,
+      "planned_offset_ms": 1800,
+      "status": 403,
+      "body": {
+        "result": "ONLINE_UNAVAILABLE"
+      },
+      "duration_ms": 204.9491000000271
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r3-d0-long_outage-memory-online-op3",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g258"
+        },
+        "signature": "lyn3KrLi0Yba+kTRtGZt3B6dYSET/IMtNCV6X+06iL5jYZpIqKO4UwLxcy7aqUwu2wSfKJEgCLSssJTYhkdCBw=="
+      },
+      "wall_ms": 1791778622664,
+      "planned_offset_ms": 2700,
+      "status": 403,
+      "body": {
+        "result": "ONLINE_UNAVAILABLE"
+      },
+      "duration_ms": 218.7860000000219
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r3-d0-long_outage-memory-online-op4",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g258"
+        },
+        "signature": "nlcay7t57HJLCMqbaedlmFg+dFznNwgaYEMTZg0kcxXC57VzUqqVZv06IZdUqy9dvGZMmFIIb54B8gU/UcY5Dw=="
+      },
+      "wall_ms": 1791778623568,
+      "planned_offset_ms": 3600,
+      "status": 403,
+      "body": {
+        "result": "ONLINE_UNAVAILABLE"
+      },
+      "duration_ms": 204.08309999998892
+    },
+    {
+      "phase": "recovery",
+      "signed": {
+        "body": {
+          "op_id": "bench-r3-d0-long_outage-memory-online-recovery",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g259"
+        },
+        "signature": "Kchs7t+bThcpn1QDmt0qNsV6lIgnqAm5/c3Tt/idewUiSARRD3Dt6MZQlHyrTGC27iJqUlIqKGbmoTGBtMShCw=="
+      },
+      "wall_ms": 1791778624491,
+      "status": 200,
+      "body": {
+        "result": "DONE",
+        "op_id": "bench-r3-d0-long_outage-memory-online-recovery",
+        "timings": {
+          "reserve_ms": 0.5489999999999782,
+          "robot_ms": 13.095600000000559,
+          "done_ms": 0.955300000000534,
+          "total_ms": 20.248900000000503
+        }
+      },
+      "duration_ms": 21.493000000016764
+    }
+  ],
+  "grants": [
+    {
+      "grant": {
+        "body": {
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g258",
+          "subject": "ypSps6hnHS6QtumxFaywtDDFWXHQzcSk0TouhTq/4So=",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "issued_at": 1791778619943,
+          "expires_at": 1791778620943,
+          "quota": 100,
+          "operations": [
+            "diagnose"
+          ]
+        },
+        "signature": "iKsU8/yp2GufZQ+80H3sNhn1atZMj7BkqHhZ78f/IMgM+OT0y4NDQmih3Zt4vor9ESp4vIlff6pkL/46FLQ9CA=="
+      },
+      "ttl_ms": 1000,
+      "history_ms": [
+        500,
+        500,
+        750,
+        750,
+        500,
+        750,
+        500,
+        500
+      ],
+      "preparation_ms": 11.194100000022445
+    },
+    {
+      "grant": {
+        "body": {
+          "grant_id": "bench-r3-d0-long_outage-memory-online-g259",
+          "subject": "ypSps6hnHS6QtumxFaywtDDFWXHQzcSk0TouhTq/4So=",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r3-d0-long_outage-memory-online",
+          "version": 1,
+          "issued_at": 1791778624467,
+          "expires_at": 1791778625467,
+          "quota": 100,
+          "operations": [
+            "diagnose"
+          ]
+        },
+        "signature": "hplUT0xyEeowOP+Y9VJtAAQlL+1NLBadxbVtJUMD+9b3me9TFaV0461iOXuJwcLkRzKlKnQ7jGfBow6x35pXAA=="
+      },
+      "ttl_ms": 1000,
+      "history_ms": [
+        500,
+        500,
+        750,
+        750,
+        500,
+        750,
+        500,
+        500,
+        4512.161199999973
+      ],
+      "preparation_ms": 3.4895000000251457
+    }
+  ],
+  "history_ms": [
+    500,
+    500,
+    750,
+    750,
+    500,
+    750,
+    500,
+    500,
+    4512.161199999973
+  ],
+  "outage_begin_wall_ms": 1791778619953,
+  "outage_end_wall_ms": 1791778624465,
+  "measured_outage_ms": 4512.161199999973,
+  "flush": {
+    "status": 200,
+    "body": {
+      "results": [
+        {
+          "op_id": "bench-r3-d0-long_outage-memory-online-recovery",
+          "result": "ACCEPTED",
+          "tx_hash": "0x107d4e22f91866e2ac6b8eb73da29939b1fada744a1c39e812678ceea18a0dd6"
+        }
+      ]
+    },
+    "duration_ms": 183.04140000004554
+  },
+  "flush_ms": 183.0505000000121,
+  "gateway": {
+    "settings": {
+      "journal_mode": "memory",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    },
+    "grants": [
+      {
+        "grant_id": "bench-r3-d0-long_outage-memory-online-g258",
+        "envelope": "{\"body\":{\"grant_id\":\"bench-r3-d0-long_outage-memory-online-g258\",\"subject\":\"ypSps6hnHS6QtumxFaywtDDFWXHQzcSk0TouhTq/4So=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r3-d0-long_outage-memory-online\",\"version\":1,\"issued_at\":1791778619943,\"expires_at\":1791778620943,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"iKsU8/yp2GufZQ+80H3sNhn1atZMj7BkqHhZ78f/IMgM+OT0y4NDQmih3Zt4vor9ESp4vIlff6pkL/46FLQ9CA==\"}",
+        "used": 0,
+        "last_hash": "GENESIS"
+      },
+      {
+        "grant_id": "bench-r3-d0-long_outage-memory-online-g259",
+        "envelope": "{\"body\":{\"grant_id\":\"bench-r3-d0-long_outage-memory-online-g259\",\"subject\":\"ypSps6hnHS6QtumxFaywtDDFWXHQzcSk0TouhTq/4So=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r3-d0-long_outage-memory-online\",\"version\":1,\"issued_at\":1791778624467,\"expires_at\":1791778625467,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"hplUT0xyEeowOP+Y9VJtAAQlL+1NLBadxbVtJUMD+9b3me9TFaV0461iOXuJwcLkRzKlKnQ7jGfBow6x35pXAA==\"}",
+        "used": 1,
+        "last_hash": "0xa012c34ddfe1dd32785b392a1190000091779022f01c6d226eb794d1bc79c791"
+      }
+    ],
+    "ops": [
+      {
+        "op_id": "bench-r3-d0-long_outage-memory-online-recovery",
+        "request_hash": "0xd37fd24bedf6ae4746af098777d0cc8f506230e08de345e6e16bca0f855ab944",
+        "grant_id": "bench-r3-d0-long_outage-memory-online-g259",
+        "seq": 1,
+        "state": "DONE",
+        "admitted_at": 1791778624475,
+        "previous_hash": "GENESIS",
+        "request": "{\"body\":{\"op_id\":\"bench-r3-d0-long_outage-memory-online-recovery\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r3-d0-long_outage-memory-online\",\"version\":1,\"grant_id\":\"bench-r3-d0-long_outage-memory-online-g259\"},\"signature\":\"Kchs7t+bThcpn1QDmt0qNsV6lIgnqAm5/c3Tt/idewUiSARRD3Dt6MZQlHyrTGC27iJqUlIqKGbmoTGBtMShCw==\"}",
+        "record": "{\"body\":{\"sequence\":1,\"grant\":{\"body\":{\"grant_id\":\"bench-r3-d0-long_outage-memory-online-g259\",\"subject\":\"ypSps6hnHS6QtumxFaywtDDFWXHQzcSk0TouhTq/4So=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r3-d0-long_outage-memory-online\",\"version\":1,\"issued_at\":1791778624467,\"expires_at\":1791778625467,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"hplUT0xyEeowOP+Y9VJtAAQlL+1NLBadxbVtJUMD+9b3me9TFaV0461iOXuJwcLkRzKlKnQ7jGfBow6x35pXAA==\"},\"request\":{\"body\":{\"op_id\":\"bench-r3-d0-long_outage-memory-online-recovery\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r3-d0-long_outage-memory-online\",\"version\":1,\"grant_id\":\"bench-r3-d0-long_outage-memory-online-g259\"},\"signature\":\"Kchs7t+bThcpn1QDmt0qNsV6lIgnqAm5/c3Tt/idewUiSARRD3Dt6MZQlHyrTGC27iJqUlIqKGbmoTGBtMShCw==\"},\"executed_at\":1791778624475,\"previous_hash\":\"GENESIS\",\"result\":\"DONE\",\"receipt_hash\":\"0xcd20b27aaf1e170debcd3c152670c7c40a42ad203771a90711ef8115b64d69f7\"},\"signature\":\"nctcM52JCYPy4UlNb6VKTVUGLYqldAZB/ai/bQdnfxnC962fD9iV/qAT/ubf3FVzVxbcrf63Y3TvVXsfIVqmDA==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r3-d0-long_outage-memory-online-recovery\",\"command_hash\":\"0xee32d193b2686db6d65fcd529077c8639d778dadc8e5ce10b708182f0fd69494\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791778624481},\"signature\":\"tiba1QR46ekK1npbGUhgKiKnH2lI0j/3Tu2d2LTEHSalc+qkJkEZ3QIGgd8iSAw5KmCE0tTsXltqyHH9bUAnBA==\"}",
+        "synced": 1,
+        "tx_hash": "0x107d4e22f91866e2ac6b8eb73da29939b1fada744a1c39e812678ceea18a0dd6"
+      }
+    ],
+    "robot": []
+  },
+  "robot": {
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    },
+    "grants": [],
+    "ops": [],
+    "robot": [
+      {
+        "op_id": "bench-r3-d0-long_outage-memory-online-recovery",
+        "command_hash": "0xee32d193b2686db6d65fcd529077c8639d778dadc8e5ce10b708182f0fd69494",
+        "command": "{\"body\":{\"op_id\":\"bench-r3-d0-long_outage-memory-online-recovery\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"bench-r3-d0-long_outage-memory-online-g259\",\"work_order\":\"bench-r3-d0-long_outage-memory-online\",\"version\":1,\"request_hash\":\"0xd37fd24bedf6ae4746af098777d0cc8f506230e08de345e6e16bca0f855ab944\"},\"signature\":\"BZmYbv3NnXHRt5nwiEiR0JKbNqoVjaaOslpXzsswUzEDdV7xzQWjEFy4F0e8fIFtwvgXe5cQWdXeLAAQU3nRBw==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r3-d0-long_outage-memory-online-recovery\",\"command_hash\":\"0xee32d193b2686db6d65fcd529077c8639d778dadc8e5ce10b708182f0fd69494\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1791778624481},\"signature\":\"tiba1QR46ekK1npbGUhgKiKnH2lI0j/3Tu2d2LTEHSalc+qkJkEZ3QIGgd8iSAw5KmCE0tTsXltqyHH9bUAnBA==\"}",
+        "effect_count": 1
+      }
+    ]
+  },
+  "accepted": 1,
+  "offline_accepted": 0,
+  "passed": true
+}

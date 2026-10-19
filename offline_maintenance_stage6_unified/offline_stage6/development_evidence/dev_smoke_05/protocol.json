@@ -1,0 +1,101 @@
+{
+  "version": "stage6-unified-v1",
+  "output": "offline_stage6/dev_smoke_05",
+  "repeats": 1,
+  "soakSeconds": 0,
+  "mode": "smoke",
+  "created_at": "2026-10-11T16:02:00.605Z",
+  "fault_cases": [
+    [
+      "U01",
+      "before_reserve",
+      "reserve_not_started"
+    ],
+    [
+      "U02",
+      "during_reserve",
+      "reserve_transaction_rollback"
+    ],
+    [
+      "U03",
+      "after_reserve",
+      "unknown_stays_pending"
+    ],
+    [
+      "U04",
+      "after_robot",
+      "receipt_recovers_done"
+    ],
+    [
+      "U05",
+      "during_done",
+      "done_transaction_rollback"
+    ],
+    [
+      "U06",
+      "after_done",
+      "done_before_reply"
+    ],
+    [
+      "U07",
+      "after_chain",
+      "chain_accept_before_local_mark"
+    ],
+    [
+      "U08",
+      null,
+      "lost_bridge_response"
+    ],
+    [
+      "U09",
+      "after_chain",
+      "two_record_resume"
+    ],
+    [
+      "U10",
+      "after_sync",
+      "synced_before_reply"
+    ],
+    [
+      "U11",
+      null,
+      "robot_receipt_survives_restart"
+    ],
+    [
+      "U12",
+      "after_done",
+      "untrusted_clock_restart"
+    ]
+  ],
+  "expected_fault_cases": 12,
+  "expected_benchmark_runs": 6,
+  "environments": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "release": "6.18.44",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "total_memory": 10451464192
+  },
+  "source_sha256": {
+    "worker.cjs": "6b2b5420d2d67350d38cd80c930c2e4837cd41f99a857f569dd7a7cc1d091c8d",
+    "store.cjs": "9f15c35922d42ac957fd227acda252ed6e642bd9c0dc87ebc01d14b07223a015",
+    "harness.cjs": "9b51315b63c1ae8e1b3ce739874f7a77fced221155b54b55eb8a256e44f43ef5",
+    "run_validation.cjs": "8577ad58d963a8aaaefc8c4efa02fe42d01d98e2ad0e7337a41f2782b6903ecf",
+    "audit.cjs": "7a0f0446d6cd8c852cd34161ef3f45acf6d716d1b7f0431a7ac49eb17d345930",
+    "net.cjs": "2df80f95ec57be7c4ca2df359c6bef3f10af8d8b1cc412fb125414c84634f480",
+    "common.cjs": "f701c4c8ca73ae7849865de1fb65341ad1ff87a6edbed07776842605201cf62f",
+    "contracts/OfflineRegistry.sol": "8150e56671419b22830de8118cac68bea1f8100ac482903433c02a2d05abc1da"
+  },
+  "limits": [
+    "Loopback HTTP, software robot and one ephemeral Ganache node",
+    "Gateway and robot are separate processes; issuer/adapter/relays share controller",
+    "SIGKILL/TerminateProcess, not power loss or disk failure",
+    "Trusted local clock, keys, adapter, unrolled-back storage",
+    "Single serialized gateway; no shared multi-gateway quota",
+    "Memory comparator uses identical SQL and protocol but an in-memory gateway database; robot remains durable",
+    "This is not a rerun of stage5 or a centralized registry baseline",
+    "No automatic resend of unknown actions; PENDING may block indefinitely",
+    "No claim that Linux soak repairs or explains prior Windows Node crash"
+  ]
+}

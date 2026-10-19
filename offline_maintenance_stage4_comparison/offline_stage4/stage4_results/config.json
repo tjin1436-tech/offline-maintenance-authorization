@@ -1,0 +1,17 @@
+{
+  "horizon_s": 14400,
+  "step_s": 10,
+  "task_deadline_s": 120,
+  "retry_s": 30,
+  "quota": 100,
+  "history_window": 20,
+  "history_count": 40,
+  "minimum_ttl_s": 60,
+  "margin_s": 30,
+  "task_mean_interval_s": 90,
+  "seed_start": 1000,
+  "seeds": 30,
+  "bootstrap_reps": 500,
+  "primary_policy": "adaptive_q90",
+  "primary_baseline": "fixed_15m"
+}

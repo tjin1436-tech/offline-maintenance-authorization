@@ -1,0 +1,403 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "sessionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "sequence",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "originalHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "incomingHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "incomingMetadataHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "ConflictObserved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "sessionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "sequence",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "recordHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "DuplicateObserved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "sessionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "submitter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "grantHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "LeaseRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "sessionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint32",
+          "name": "sequence",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "recordHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "RecordAccepted",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "allowedOperations",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "name": "entries",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "recordHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "metadataHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "exists",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "sessionId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "leaseState",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "count",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "lastHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "exists",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "sessionId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "submitter",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "robot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "workOrder",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint64",
+              "name": "version",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "issuedAt",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "expiresAt",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint32",
+              "name": "quota",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "grantHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct OfflineRegistry.LeaseInput",
+          "name": "policy",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "operations",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "registerLease",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "sessionId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "sequence",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "previousHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "recordHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "requestId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "robot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "workOrder",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint64",
+              "name": "version",
+              "type": "uint64"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "operation",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint64",
+              "name": "executedAt",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct OfflineRegistry.RecordInput",
+          "name": "record",
+          "type": "tuple"
+        }
+      ],
+      "name": "submit",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalConflicts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalRecords",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60a0806040523460285733608052610bec908161002d823960805181818160d001526104030152f35b5f80fdfe6080806040526004361015610012575f80fd5b5f3560e01c908163125f8974146104d95750806355fac634146104bc5780638127aac91461046d578063832973f7146104325780638da5cb5b146103ee578063914ee592146103c7578063c909f418146103615763dd28816714610074575f80fd5b346102d357366003190161014081126102d357610120136102d357610124356001600160401b0381116102d357366023820112156102d35780600401356001600160401b0381116102d3573660248260051b840101116102d3577f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316330361032f5760043591825f52600260205260ff600860405f200154166102fb576001600160a01b03610129610b67565b161515806102e0575b61013b90610b7d565b6101436104f2565b6001600160401b0380610154610508565b16911611806102d7575b61016790610b7d565b5f83815260026020526040902083815592600184016001600160a01b0361018c610b67565b82546001600160a01b03191691161790556044356002850155606435600385015560843593600481016001600160401b0386168087036102d3576005965081546fffffffffffffffff00000000000000006101e5610508565b60401b1667ffffffffffffffff60801b6101fd6104f2565b60801b169163ffffffff60c01b610212610553565b60c01b169363ffffffff60c01b19916001600160401b0360c01b1617161717179055610104359485910155805f526002602052600860405f2001600160ff198254161790555f5b8381101561029357600190825f52600360205260405f2060248260051b860101355f5260205260405f208260ff1982541617905501610259565b84827f0ac2feae4e70a862e64315e14c4f54eccfc406cf5cf7870b06adb6c8de01f54060206001600160a01b036102c8610b67565b1693604051908152a3005b5f80fd5b5081151561015e565b5061013b63ffffffff6102f1610553565b1615159050610132565b60405162461bcd60e51b815260206004820152600c60248201526b4c454153455f45584953545360a01b6044820152606490fd5b60405162461bcd60e51b815260206004820152600a6024820152694f574e45525f4f4e4c5960b01b6044820152606490fd5b346102d35760403660031901126102d35760243563ffffffff811681036102d3576004355f52600460205263ffffffff60405f2091165f52602052606060405f2080549060ff600260018301549201541690604051928352602083015215156040820152f35b346102d3576101403660031901126102d35760206103e3610588565b60ff60405191168152f35b346102d3575f3660031901126102d3576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b346102d35760403660031901126102d3576004355f52600360205260405f206024355f52602052602060ff60405f2054166040519015158152f35b346102d35760203660031901126102d3576004355f526002602052606060405f2063ffffffff6006820154169060ff600860078301549201541690604051928352602083015215156040820152f35b346102d3575f3660031901126102d3576020600154604051908152f35b346102d3575f3660031901126102d3576020905f548152f35b60c4356001600160401b03811681036102d35790565b60a4356001600160401b03811681036102d35790565b90601f801991011681019081106001600160401b0382111761053f57604052565b634e487b7160e01b5f52604160045260245ffd5b60e43563ffffffff811681036102d35790565b5f1981146105745760010190565b634e487b7160e01b5f52601160045260245ffd5b600435805f52600260205260405f209060ff60088301541615610b325760018201546001600160a01b03163303610afc5760a4356002830154811480610aed575b80610ac2575b15610a9157815f52600360205260405f20906101043591825f5260205260ff60405f20541615610a5c5761012435936001600160401b038516908186141590816102d357600481019485546001600160401b038160401c168510159081610a43575b5015610a0a5760643593841515806109ff575b156109cf5760405160208101918983526024359563ffffffff87169b8c88036102d3578c6040850152604435958660608601528960808601526084359a8b60a087015260c086015260c43560e086015260e4356001600160401b0381168091036102d357610100860152610120850152506102d35761014082015261014081526106d06101608261051e565b51902095875f52600460205260405f205f908a5f5260205260405f2093600285019160ff8354166108b6576102d3576006810192600163ffffffff8554160163ffffffff81116105745763ffffffff168c03610882575460c01c63ffffffff168b1161084b576007019283540361081257885f52600560205260405f20875f5260205260ff60405f2054166107dc577f5763c98b5d393df9be389f9ea808b3c4359d62114edddbf255aa394089a4460097600187956020998c5f5260058b5260405f20905f528a5260405f208260ff198254161790558681550155600160ff198254161790558863ffffffff19825416179055556107ce5f54610566565b5f5550604051908152a35f90565b60405162461bcd60e51b815260206004820152600e60248201526d149154555154d517d4915554d15160921b6044820152606490fd5b60405162461bcd60e51b81526020600482015260116024820152700848288bea0a48aac929eaaa6be9082a69607b1b6044820152606490fd5b60405162461bcd60e51b815260206004820152600f60248201526e145553d51057d15612105554d51151608a1b6044820152606490fd5b60405162461bcd60e51b815260206004820152600c60248201526b053455155454e43455f4741560a41b6044820152606490fd5b9497505050505082849592955414806109c2575b61098d576102d3576040516020810190868252876040820152836060820152826080820152608081526108fe60a08261051e565b51902092835f52600660205260ff60405f20541615610924575b50505050505050600290565b7fb2f281f3ab74d73d4f5aa5546cfc1a7340e937f71a35f7ac86bacc605dffe96d946060945f52600660205260405f20600160ff1982541617905561096a600154610566565b60015550549160405192835260208301526040820152a35f808080808080610918565b5050602091507fd4bbe0aed5ea8519ad45a465fc93e1573fe063382e5d3a259a9f029800b7e2be9250604051908152a3600190565b50816001850154146108ca565b60405162461bcd60e51b81526020600482015260086024820152670848288be9082a6960c31b6044820152606490fd5b506084351515610644565b60405162461bcd60e51b81526020600482015260116024820152704241445f4445434c415245445f54494d4560781b6044820152606490fd5b9350506001600160401b035f9360801c1684105f610631565b60405162461bcd60e51b815260206004820152600d60248201526c2120a22fa7a822a920aa24a7a760991b6044820152606490fd5b60405162461bcd60e51b81526020600482015260096024820152684241445f53434f504560b81b6044820152606490fd5b5060e4356001600160401b038116908181036102d357506001600160401b03600485015416146105cf565b50600383015460c435146105c9565b60405162461bcd60e51b815260206004820152600e60248201526d5355424d49545445525f4f4e4c5960901b6044820152606490fd5b60405162461bcd60e51b815260206004820152600d60248201526c554e4b4e4f574e5f4c4541534560981b6044820152606490fd5b6024356001600160a01b03811681036102d35790565b15610b8457565b60405162461bcd60e51b815260206004820152600a6024820152694241445f504f4c49435960b01b6044820152606490fdfea2646970667358221220bbd53cacf79fcd22f5d94102b5aa7720399886e39f6bb2c43e76548f074334f064736f6c634300081c0033",
+  "compiler": "0.8.28+commit.7893614a.Emscripten.clang",
+  "sourceSha256": "0x8150e56671419b22830de8118cac68bea1f8100ac482903433c02a2d05abc1da",
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": true,
+    "evmVersion": "shanghai",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode.object",
+          "evm.deployedBytecode.object"
+        ]
+      }
+    }
+  }
+}

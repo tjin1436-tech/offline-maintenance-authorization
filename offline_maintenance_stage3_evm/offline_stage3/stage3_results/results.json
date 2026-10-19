@@ -1,0 +1,593 @@
+[
+  {
+    "case": "C1_valid_registration",
+    "repeat": 1,
+    "expected": [
+      "ACCEPTED",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C2_duplicate",
+    "repeat": 1,
+    "expected": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C3_signed_conflict",
+    "repeat": 1,
+    "expected": [
+      "ACCEPTED",
+      "CONFLICT",
+      true,
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "CONFLICT",
+      true,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C4_unauthorized_submitter",
+    "repeat": 1,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C5_wrong_previous_hash",
+    "repeat": 1,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C6_sequence_gap",
+    "repeat": 1,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C7_quota_exhaustion",
+    "repeat": 1,
+    "expected": [
+      "ACCEPTED",
+      "REVERTED",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "REVERTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C8_expiry_boundary",
+    "repeat": 1,
+    "expected": [
+      "PREFLIGHT_BAD_DECLARED_TIME",
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "PREFLIGHT_BAD_DECLARED_TIME",
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C9_invalid_signature_adapter",
+    "repeat": 1,
+    "expected": [
+      "PREFLIGHT_BAD_GATEWAY_SIGNATURE",
+      0
+    ],
+    "actual": [
+      "PREFLIGHT_BAD_GATEWAY_SIGNATURE",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C10_node_restart",
+    "repeat": 1,
+    "expected": [
+      "ACCEPTED",
+      1,
+      true,
+      true
+    ],
+    "actual": [
+      "ACCEPTED",
+      1,
+      true,
+      true
+    ],
+    "pass": true
+  },
+  {
+    "case": "C11_gateway_crash_after_commit",
+    "repeat": 1,
+    "expected": [
+      "ACCEPTED",
+      false,
+      "DUPLICATE",
+      true,
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      false,
+      "DUPLICATE",
+      true,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C12_offline_spool_then_upload",
+    "repeat": 1,
+    "expected": [
+      "RPC_UNAVAILABLE",
+      0,
+      "ACCEPTED",
+      "ACCEPTED",
+      2
+    ],
+    "actual": [
+      "RPC_UNAVAILABLE",
+      0,
+      "ACCEPTED",
+      "ACCEPTED",
+      2
+    ],
+    "pass": true
+  },
+  {
+    "case": "C13_trusted_bridge_boundary",
+    "repeat": 1,
+    "expected": [
+      "BAD_GATEWAY_SIGNATURE",
+      "ACCEPTED",
+      1
+    ],
+    "actual": [
+      "BAD_GATEWAY_SIGNATURE",
+      "ACCEPTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C1_valid_registration",
+    "repeat": 2,
+    "expected": [
+      "ACCEPTED",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C2_duplicate",
+    "repeat": 2,
+    "expected": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C3_signed_conflict",
+    "repeat": 2,
+    "expected": [
+      "ACCEPTED",
+      "CONFLICT",
+      true,
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "CONFLICT",
+      true,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C4_unauthorized_submitter",
+    "repeat": 2,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C5_wrong_previous_hash",
+    "repeat": 2,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C6_sequence_gap",
+    "repeat": 2,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C7_quota_exhaustion",
+    "repeat": 2,
+    "expected": [
+      "ACCEPTED",
+      "REVERTED",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "REVERTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C8_expiry_boundary",
+    "repeat": 2,
+    "expected": [
+      "PREFLIGHT_BAD_DECLARED_TIME",
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "PREFLIGHT_BAD_DECLARED_TIME",
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C9_invalid_signature_adapter",
+    "repeat": 2,
+    "expected": [
+      "PREFLIGHT_BAD_GATEWAY_SIGNATURE",
+      0
+    ],
+    "actual": [
+      "PREFLIGHT_BAD_GATEWAY_SIGNATURE",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C10_node_restart",
+    "repeat": 2,
+    "expected": [
+      "ACCEPTED",
+      1,
+      true,
+      true
+    ],
+    "actual": [
+      "ACCEPTED",
+      1,
+      true,
+      true
+    ],
+    "pass": true
+  },
+  {
+    "case": "C11_gateway_crash_after_commit",
+    "repeat": 2,
+    "expected": [
+      "ACCEPTED",
+      false,
+      "DUPLICATE",
+      true,
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      false,
+      "DUPLICATE",
+      true,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C12_offline_spool_then_upload",
+    "repeat": 2,
+    "expected": [
+      "RPC_UNAVAILABLE",
+      0,
+      "ACCEPTED",
+      "ACCEPTED",
+      2
+    ],
+    "actual": [
+      "RPC_UNAVAILABLE",
+      0,
+      "ACCEPTED",
+      "ACCEPTED",
+      2
+    ],
+    "pass": true
+  },
+  {
+    "case": "C13_trusted_bridge_boundary",
+    "repeat": 2,
+    "expected": [
+      "BAD_GATEWAY_SIGNATURE",
+      "ACCEPTED",
+      1
+    ],
+    "actual": [
+      "BAD_GATEWAY_SIGNATURE",
+      "ACCEPTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C1_valid_registration",
+    "repeat": 3,
+    "expected": [
+      "ACCEPTED",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C2_duplicate",
+    "repeat": 3,
+    "expected": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "DUPLICATE",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C3_signed_conflict",
+    "repeat": 3,
+    "expected": [
+      "ACCEPTED",
+      "CONFLICT",
+      true,
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "CONFLICT",
+      true,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C4_unauthorized_submitter",
+    "repeat": 3,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C5_wrong_previous_hash",
+    "repeat": 3,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C6_sequence_gap",
+    "repeat": 3,
+    "expected": [
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C7_quota_exhaustion",
+    "repeat": 3,
+    "expected": [
+      "ACCEPTED",
+      "REVERTED",
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      "REVERTED",
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C8_expiry_boundary",
+    "repeat": 3,
+    "expected": [
+      "PREFLIGHT_BAD_DECLARED_TIME",
+      "REVERTED",
+      0
+    ],
+    "actual": [
+      "PREFLIGHT_BAD_DECLARED_TIME",
+      "REVERTED",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C9_invalid_signature_adapter",
+    "repeat": 3,
+    "expected": [
+      "PREFLIGHT_BAD_GATEWAY_SIGNATURE",
+      0
+    ],
+    "actual": [
+      "PREFLIGHT_BAD_GATEWAY_SIGNATURE",
+      0
+    ],
+    "pass": true
+  },
+  {
+    "case": "C10_node_restart",
+    "repeat": 3,
+    "expected": [
+      "ACCEPTED",
+      1,
+      true,
+      true
+    ],
+    "actual": [
+      "ACCEPTED",
+      1,
+      true,
+      true
+    ],
+    "pass": true
+  },
+  {
+    "case": "C11_gateway_crash_after_commit",
+    "repeat": 3,
+    "expected": [
+      "ACCEPTED",
+      false,
+      "DUPLICATE",
+      true,
+      1
+    ],
+    "actual": [
+      "ACCEPTED",
+      false,
+      "DUPLICATE",
+      true,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "case": "C12_offline_spool_then_upload",
+    "repeat": 3,
+    "expected": [
+      "RPC_UNAVAILABLE",
+      0,
+      "ACCEPTED",
+      "ACCEPTED",
+      2
+    ],
+    "actual": [
+      "RPC_UNAVAILABLE",
+      0,
+      "ACCEPTED",
+      "ACCEPTED",
+      2
+    ],
+    "pass": true
+  },
+  {
+    "case": "C13_trusted_bridge_boundary",
+    "repeat": 3,
+    "expected": [
+      "BAD_GATEWAY_SIGNATURE",
+      "ACCEPTED",
+      1
+    ],
+    "actual": [
+      "BAD_GATEWAY_SIGNATURE",
+      "ACCEPTED",
+      1
+    ],
+    "pass": true
+  }
+]

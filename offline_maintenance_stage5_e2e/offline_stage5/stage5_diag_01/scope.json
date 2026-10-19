@@ -1,0 +1,38 @@
+{
+  "stage": "local_loopback_end_to_end",
+  "runs": 18,
+  "repeats": 1,
+  "policies": 3,
+  "scenarios": 3,
+  "injected_response_delays_ms": [
+    0,
+    50
+  ],
+  "heartbeat_interval_ms": 100,
+  "heartbeat_timeout_ms": 200,
+  "fixed_ttl_ms": 4000,
+  "adaptive_cap_ms": 6000,
+  "time_units": "signed grant and contract declared execution timestamps are Unix milliseconds; monotonic performance fields are local process milliseconds",
+  "environment": {
+    "node": "v24.15.0",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "cpu": "AMD Ryzen 5 7640HS w/ Radeon 760M Graphics     "
+  },
+  "limitations": [
+    "HTTP services share one Node process; local EVM node is a child process",
+    "command duration measures signed request to gateway response; client grant preparation is separate in auth_samples",
+    "policy order rotates over repeats; repeat=1 alone retains order and warmup effects",
+    "robot HTTP endpoint is an emulator; no physical robot action measured",
+    "controlled HTTP relay outage and response delay are injected, not real WAN observations",
+    "shortened TTLs test mechanisms and cannot establish minute-scale availability",
+    "5 planned commands plus one recovery command per run; no retries or request-load benchmark",
+    "no proactive half-life renewal: this benchmark tests pre-issued leases, not full stage4 scheduling",
+    "online authorization includes client grant issuance then online validation of that same bound grant",
+    "upload is explicitly triggered after recovery; setup/heartbeat/recovery probe costs are included in restoration-to-flush, not flush-only",
+    "same-process Date.now assumes trustworthy clock; crash and compromised bridge are outside this benchmark",
+    "local Ganache uses an ephemeral in-memory database; receipts are checked live and later replayed on a fresh node; no restart persistence claim",
+    "local Ganache development-node receipts do not establish public-chain finality or performance",
+    "few observations per run: request p95 is descriptive, not population inference"
+  ]
+}

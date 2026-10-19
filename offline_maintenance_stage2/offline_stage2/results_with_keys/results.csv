@@ -1,0 +1,27 @@
+﻿group,case,expected,actual,pass
+1,online_completion,"[""DONE"", [""ACCEPTED""], 1]","[""DONE"", [""ACCEPTED""], 1]",True
+1,wrong_robot,"[""BAD_SCOPE"", 0]","[""BAD_SCOPE"", 0]",True
+1,wrong_subject,"[""BAD_SUBJECT"", 0]","[""BAD_SUBJECT"", 0]",True
+1,forged_grant,BAD_GRANT,BAD_GRANT,True
+2,offline_cached_grant,"[""DONE"", [""UNAVAILABLE""], 1]","[""DONE"", [""UNAVAILABLE""], 1]",True
+2,offline_no_grant,"[""NO_GRANT"", ""UNAVAILABLE"", 0]","[""NO_GRANT"", ""UNAVAILABLE"", 0]",True
+2,offline_forbidden_operation,"[""BAD_OPERATION"", 0]","[""BAD_OPERATION"", 0]",True
+2,outage_does_not_restart_ttl,"[""EXPIRED"", 0]","[""EXPIRED"", 0]",True
+3,just_before_expiry,DONE,DONE,True
+3,at_expiry,"[""EXPIRED"", 0]","[""EXPIRED"", 0]",True
+3,after_expiry,"[""EXPIRED"", 0]","[""EXPIRED"", 0]",True
+3,quota_boundary,"[""DONE"", ""DONE"", ""QUOTA_EXHAUSTED"", 2]","[""DONE"", ""DONE"", ""QUOTA_EXHAUSTED"", 2]",True
+4,revoked_existing_lease,DONE,DONE,True
+4,revoked_lease_expires,EXPIRED,EXPIRED,True
+4,reconnect_no_renewal,REVOKED,REVOKED,True
+4,late_upload_of_valid_execution,"[""DONE"", [""ACCEPTED""]]","[""DONE"", [""ACCEPTED""]]",True
+5,modified_log,BAD_SIGNATURE,BAD_SIGNATURE,True
+5,duplicate_upload,"[""ACCEPTED"", ""DUPLICATE"", 1]","[""ACCEPTED"", ""DUPLICATE"", 1]",True
+5,observed_signed_conflict,"[""ACCEPTED"", ""CONFLICT"", 1, 1]","[""ACCEPTED"", ""CONFLICT"", 1, 1]",True
+5,tail_deletion_without_checkpoint,"[""ACCEPTED"", 1, ""INDETERMINATE""]","[""ACCEPTED"", 1, ""INDETERMINATE""]",True
+6,restart_preserves_quota_and_replay,"[""DONE"", ""REPLAY"", ""QUOTA_EXHAUSTED"", 1]","[""DONE"", ""REPLAY"", ""QUOTA_EXHAUSTED"", 1]",True
+6,commit_then_ack_loss,"[[""UNAVAILABLE""], [""DUPLICATE""], 1]","[[""UNAVAILABLE""], [""DUPLICATE""], 1]",True
+6,sync_resume,"[[""ACCEPTED""], [""UNAVAILABLE""], [""ACCEPTED""], 2]","[[""ACCEPTED""], [""UNAVAILABLE""], [""ACCEPTED""], 2]",True
+6,crash_after_robot_receipt,"[""CRASHED"", ""PENDING_OR_CONFLICT"", ""RECOVERED"", ""REPLAY"", 1]","[""CRASHED"", ""PENDING_OR_CONFLICT"", ""RECOVERED"", ""REPLAY"", 1]",True
+6,restart_unknown_clock,"[""CLOCK_UNTRUSTED"", 0]","[""CLOCK_UNTRUSTED"", 0]",True
+6,crash_before_robot_no_false_completion,"[""CRASHED"", ""NEEDS_RECONCILIATION"", [""PENDING""], 0]","[""CRASHED"", ""NEEDS_RECONCILIATION"", [""PENDING""], 0]",True

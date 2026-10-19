@@ -1,0 +1,101 @@
+{
+  "version": "stage6-unified-v1",
+  "output": "stage6_results",
+  "repeats": 3,
+  "soakSeconds": 120,
+  "mode": "full",
+  "created_at": "2026-10-12T04:10:49.194Z",
+  "fault_cases": [
+    [
+      "U01",
+      "before_reserve",
+      "reserve_not_started"
+    ],
+    [
+      "U02",
+      "during_reserve",
+      "reserve_transaction_rollback"
+    ],
+    [
+      "U03",
+      "after_reserve",
+      "unknown_stays_pending"
+    ],
+    [
+      "U04",
+      "after_robot",
+      "receipt_recovers_done"
+    ],
+    [
+      "U05",
+      "during_done",
+      "done_transaction_rollback"
+    ],
+    [
+      "U06",
+      "after_done",
+      "done_before_reply"
+    ],
+    [
+      "U07",
+      "after_chain",
+      "chain_accept_before_local_mark"
+    ],
+    [
+      "U08",
+      null,
+      "lost_bridge_response"
+    ],
+    [
+      "U09",
+      "after_chain",
+      "two_record_resume"
+    ],
+    [
+      "U10",
+      "after_sync",
+      "synced_before_reply"
+    ],
+    [
+      "U11",
+      null,
+      "robot_receipt_survives_restart"
+    ],
+    [
+      "U12",
+      "after_done",
+      "untrusted_clock_restart"
+    ]
+  ],
+  "expected_fault_cases": 36,
+  "expected_benchmark_runs": 108,
+  "environments": {
+    "node": "v24.15.0",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 5 7640HS w/ Radeon 760M Graphics     ",
+    "total_memory": 16312553472
+  },
+  "source_sha256": {
+    "worker.cjs": "6b2b5420d2d67350d38cd80c930c2e4837cd41f99a857f569dd7a7cc1d091c8d",
+    "store.cjs": "9f15c35922d42ac957fd227acda252ed6e642bd9c0dc87ebc01d14b07223a015",
+    "harness.cjs": "ca7491edb19d649d149b130027ca0c7000135cb461bcfa4da500c75ba584e706",
+    "run_validation.cjs": "d43bc0a73e3940843d6e8bdc57cbdde7c87c2e973d1570b2948ecaf7b42bdec2",
+    "audit.cjs": "9e1c51a1c12ee1cdc532dbeed3ea899065d042112aa0d915336be556a5414aac",
+    "net.cjs": "2df80f95ec57be7c4ca2df359c6bef3f10af8d8b1cc412fb125414c84634f480",
+    "common.cjs": "f701c4c8ca73ae7849865de1fb65341ad1ff87a6edbed07776842605201cf62f",
+    "contracts/OfflineRegistry.sol": "8150e56671419b22830de8118cac68bea1f8100ac482903433c02a2d05abc1da"
+  },
+  "limits": [
+    "Loopback HTTP, software robot and one ephemeral Ganache node",
+    "Gateway and robot are separate processes; issuer/adapter/relays share controller",
+    "SIGKILL/TerminateProcess, not power loss or disk failure",
+    "Trusted local clock, keys, adapter, unrolled-back storage",
+    "Single serialized gateway; no shared multi-gateway quota",
+    "Memory comparator uses identical SQL and protocol but an in-memory gateway database; robot remains durable",
+    "This is not a rerun of stage5 or a centralized registry baseline",
+    "No automatic resend of unknown actions; PENDING may block indefinitely",
+    "No claim that Linux soak repairs or explains prior Windows Node crash"
+  ]
+}

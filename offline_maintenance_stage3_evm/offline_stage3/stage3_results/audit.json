@@ -1,0 +1,778 @@
+{
+  "audit_success": true,
+  "cases": 39,
+  "receipts_requeried": 122,
+  "accepted": 44,
+  "duplicates": 6,
+  "conflicts": 3,
+  "reverted": 15,
+  "totalGasUsedAllTransactions": "21664684",
+  "signatureChecks": [
+    {
+      "case": "C1_valid_registration",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C2_duplicate",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C3_signed_conflict",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C4_unauthorized_submitter",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C5_wrong_previous_hash",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C6_sequence_gap",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C7_quota_exhaustion",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_QUOTA"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C8_expiry_boundary",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_DECLARED_TIME"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C9_invalid_signature_adapter",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": false,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_GATEWAY_SIGNATURE"
+        }
+      ],
+      "intentionallyInvalid": true
+    },
+    {
+      "case": "C10_node_restart",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C11_gateway_crash_after_commit",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C12_offline_spool_then_upload",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C13_trusted_bridge_boundary",
+      "repeat": 1,
+      "checked": [
+        {
+          "gateway": false,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_GATEWAY_SIGNATURE"
+        }
+      ],
+      "intentionallyInvalid": true
+    },
+    {
+      "case": "C1_valid_registration",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C2_duplicate",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C3_signed_conflict",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C4_unauthorized_submitter",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C5_wrong_previous_hash",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C6_sequence_gap",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C7_quota_exhaustion",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_QUOTA"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C8_expiry_boundary",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_DECLARED_TIME"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C9_invalid_signature_adapter",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": false,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_GATEWAY_SIGNATURE"
+        }
+      ],
+      "intentionallyInvalid": true
+    },
+    {
+      "case": "C10_node_restart",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C11_gateway_crash_after_commit",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C12_offline_spool_then_upload",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C13_trusted_bridge_boundary",
+      "repeat": 2,
+      "checked": [
+        {
+          "gateway": false,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_GATEWAY_SIGNATURE"
+        }
+      ],
+      "intentionallyInvalid": true
+    },
+    {
+      "case": "C1_valid_registration",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C2_duplicate",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C3_signed_conflict",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C4_unauthorized_submitter",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C5_wrong_previous_hash",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C6_sequence_gap",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C7_quota_exhaustion",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_QUOTA"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C8_expiry_boundary",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_DECLARED_TIME"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C9_invalid_signature_adapter",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": false,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_GATEWAY_SIGNATURE"
+        }
+      ],
+      "intentionallyInvalid": true
+    },
+    {
+      "case": "C10_node_restart",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C11_gateway_crash_after_commit",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C12_offline_spool_then_upload",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "C13_trusted_bridge_boundary",
+      "repeat": 3,
+      "checked": [
+        {
+          "gateway": false,
+          "issuer": true,
+          "subject": true,
+          "preflight": "BAD_GATEWAY_SIGNATURE"
+        }
+      ],
+      "intentionallyInvalid": true
+    },
+    {
+      "case": "IMPORTED:online_completion:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:offline_cached_grant:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:just_before_expiry:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:quota_boundary:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:revoked_existing_lease:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:late_upload_of_valid_execution:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:modified_log:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:duplicate_upload:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:observed_signed_conflict:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:tail_deletion_without_checkpoint:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:restart_preserves_quota_and_replay:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:commit_then_ack_loss:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:sync_resume:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        },
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    },
+    {
+      "case": "IMPORTED:crash_after_robot_receipt:",
+      "repeat": 0,
+      "checked": [
+        {
+          "gateway": true,
+          "issuer": true,
+          "subject": true,
+          "preflight": "VALID"
+        }
+      ],
+      "intentionallyInvalid": false
+    }
+  ],
+  "failures": [],
+  "warnings": [
+    "C13 deliberately shows that an authorized EVM account can bypass off-chain Ed25519 verification. This is a trust boundary, not a successful security defense.",
+    "Local development chain inclusion does not demonstrate distributed consensus, public-chain finality or physical robot correctness."
+  ]
+}
