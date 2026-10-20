@@ -1,0 +1,465 @@
+{
+  "context": "bench-r2-d0-short_outage-durable-adaptive",
+  "repeat": 2,
+  "delay_ms": 0,
+  "scenario": "short_outage",
+  "mode": "durable",
+  "policy": "adaptive",
+  "attempts": [
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op0",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178"
+        },
+        "signature": "/l2rW9xuXzmA4e2X4ZTW7Yg3BI5riN/IeBk6pAkxtQx2B+IDKKHeMMCt13tLPpiDXSiZ9aKRVsAFiz43TlbqCg=="
+      },
+      "wall_ms": 1792457555990,
+      "planned_offset_ms": 0,
+      "status": 200,
+      "body": {
+        "result": "DONE",
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op0",
+        "timings": {
+          "reserve_ms": 2.519299999999987,
+          "robot_ms": 26.91519999999997,
+          "done_ms": 2.5871999999999957,
+          "total_ms": 32.9547
+        }
+      },
+      "duration_ms": 34.47429999997257
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op1",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178"
+        },
+        "signature": "RQq+fk6P89PnKfJHfyc2JOgD7YiZo5zJhGBV1QbWYKxyLMBlgXRAVFj7cxDLVblMpCeq63koKdiHZDJkeJHODA=="
+      },
+      "wall_ms": 1792457556295,
+      "planned_offset_ms": 300,
+      "status": 200,
+      "body": {
+        "result": "DONE",
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op1",
+        "timings": {
+          "reserve_ms": 3.710900000000038,
+          "robot_ms": 4.43220000000008,
+          "done_ms": 2.3337999999999965,
+          "total_ms": 11.331900000000019
+        }
+      },
+      "duration_ms": 12.62400000001071
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op2",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178"
+        },
+        "signature": "4+0ye+KISSd55UQ/CDkqScd03fnq9Jrr2oERktDYzCYHZ0rOqfliVJDr6ABETekjCVZ1kzEyuk7s0HZyPociDg=="
+      },
+      "wall_ms": 1792457556593,
+      "planned_offset_ms": 600,
+      "status": 200,
+      "body": {
+        "result": "DONE",
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op2",
+        "timings": {
+          "reserve_ms": 2.447400000000016,
+          "robot_ms": 3.959600000000023,
+          "done_ms": 2.0731000000000677,
+          "total_ms": 9.326599999999985
+        }
+      },
+      "duration_ms": 10.471199999999953
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op3",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178"
+        },
+        "signature": "bmsPgghwEXBe6KRlrbz4MB181pAKrSbnhH/gTZ6FZx3rxiAMOIfWqxmm5IWSBZIyUu/U7gasz57rRziIJnn+BA=="
+      },
+      "wall_ms": 1792457556903,
+      "planned_offset_ms": 900,
+      "status": 200,
+      "body": {
+        "result": "DONE",
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op3",
+        "timings": {
+          "reserve_ms": 2.4730999999999312,
+          "robot_ms": 4.104899999999816,
+          "done_ms": 2.35349999999994,
+          "total_ms": 9.75689999999986
+        }
+      },
+      "duration_ms": 11.032400000025518
+    },
+    {
+      "phase": "offline",
+      "signed": {
+        "body": {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op4",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178"
+        },
+        "signature": "Uj7cD8lsfIwUPkG47dlbhGt2z4HBFDE2N5Bz+1mw05oRfFMCg5mADbpk/cTWR0OA22XP9IsJiMFShjAdSn7xDQ=="
+      },
+      "wall_ms": 1792457557200,
+      "planned_offset_ms": 1200,
+      "status": 200,
+      "body": {
+        "result": "DONE",
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op4",
+        "timings": {
+          "reserve_ms": 3.8810000000000855,
+          "robot_ms": 4.97180000000003,
+          "done_ms": 2.5437999999999192,
+          "total_ms": 12.263300000000072
+        }
+      },
+      "duration_ms": 13.580400000006193
+    },
+    {
+      "phase": "recovery",
+      "signed": {
+        "body": {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-recovery",
+          "operation": "diagnose",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g179"
+        },
+        "signature": "W3eEkO0K9Lo1En4anE3RM0sv8uiIvcZ1oQdugTUpeZ3FtcJGP2yuFcZXadNNb0wqEzynGuH2TdOX+dcUG3hIDQ=="
+      },
+      "wall_ms": 1792457557514,
+      "status": 200,
+      "body": {
+        "result": "DONE",
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-recovery",
+        "timings": {
+          "reserve_ms": 2.0583999999998923,
+          "robot_ms": 4.566000000000031,
+          "done_ms": 2.376900000000205,
+          "total_ms": 9.725200000000086
+        }
+      },
+      "duration_ms": 10.624600000010105
+    }
+  ],
+  "grants": [
+    {
+      "grant": {
+        "body": {
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178",
+          "subject": "q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "issued_at": 1792457555980,
+          "expires_at": 1792457557980,
+          "quota": 100,
+          "operations": [
+            "diagnose"
+          ]
+        },
+        "signature": "6/KLnMX9WS9JhYE1FW4nvN2y/6+rE3J0ZHKygiLwr9SAa76A397lsH4++hWRh+UyYaj9IzBIxxDmzpaNbmzvDg=="
+      },
+      "ttl_ms": 2000,
+      "history_ms": [
+        500,
+        500,
+        750,
+        750,
+        500,
+        750,
+        500,
+        500
+      ],
+      "preparation_ms": 10.246799999993527
+    },
+    {
+      "grant": {
+        "body": {
+          "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g179",
+          "subject": "q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=",
+          "gateway": "gw-1",
+          "robot": "robot-1",
+          "work_order": "bench-r2-d0-short_outage-durable-adaptive",
+          "version": 1,
+          "issued_at": 1792457557499,
+          "expires_at": 1792457561011,
+          "quota": 100,
+          "operations": [
+            "diagnose"
+          ]
+        },
+        "signature": "6RhcTk4XWHLgmd3EHY+PeXvDyJaO2RIqTrbP0NxFH26vGOCYMOrBBhWSw0Vo7WV/ZPMEGzXOuW5ZBoDrpwOyDw=="
+      },
+      "ttl_ms": 3512,
+      "history_ms": [
+        500,
+        500,
+        750,
+        750,
+        500,
+        750,
+        500,
+        500,
+        1505.63440000001
+      ],
+      "preparation_ms": 4.489900000015041
+    }
+  ],
+  "history_ms": [
+    500,
+    500,
+    750,
+    750,
+    500,
+    750,
+    500,
+    500,
+    1505.63440000001
+  ],
+  "outage_begin_wall_ms": 1792457555990,
+  "outage_end_wall_ms": 1792457557498,
+  "measured_outage_ms": 1505.63440000001,
+  "flush": {
+    "status": 200,
+    "body": {
+      "results": [
+        {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op0",
+          "result": "ACCEPTED",
+          "tx_hash": "0xac60fb0701d68c83a3e75bb8041385ee550fb499de3beb82c9a31e21b2eb7961"
+        },
+        {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op1",
+          "result": "ACCEPTED",
+          "tx_hash": "0x07c441ef13f57eb5b680b6f075783da8416e29d54f6fb6550d377368313468b3"
+        },
+        {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op2",
+          "result": "ACCEPTED",
+          "tx_hash": "0xba81d5114e179a17cc76f839c2346e6a45aadf552bc05d19d1b6d3187268060b"
+        },
+        {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op3",
+          "result": "ACCEPTED",
+          "tx_hash": "0x6c997a615287241868a3f63f2e4dc73a3f66d570de803b912f4866130868b162"
+        },
+        {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-op4",
+          "result": "ACCEPTED",
+          "tx_hash": "0xef7a7d593c872d0a76fb3f6101b6c674c66e88ae1312d6266651c23abd1f542d"
+        },
+        {
+          "op_id": "bench-r2-d0-short_outage-durable-adaptive-recovery",
+          "result": "ACCEPTED",
+          "tx_hash": "0xaab62c7c3b8277d46956f3a454fd84fd6eb2997805f6753ddce26dff0e4270e6"
+        }
+      ]
+    },
+    "duration_ms": 753.5838999999978
+  },
+  "flush_ms": 753.5922999999893,
+  "gateway": {
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    },
+    "grants": [
+      {
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178",
+        "envelope": "{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457555980,\"expires_at\":1792457557980,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6/KLnMX9WS9JhYE1FW4nvN2y/6+rE3J0ZHKygiLwr9SAa76A397lsH4++hWRh+UyYaj9IzBIxxDmzpaNbmzvDg==\"}",
+        "used": 5,
+        "last_hash": "0x55a0b4026ce3ac500b127bdf1a313c2fba9c19dd6dbac98302b70bf3223f255b"
+      },
+      {
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g179",
+        "envelope": "{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g179\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457557499,\"expires_at\":1792457561011,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6RhcTk4XWHLgmd3EHY+PeXvDyJaO2RIqTrbP0NxFH26vGOCYMOrBBhWSw0Vo7WV/ZPMEGzXOuW5ZBoDrpwOyDw==\"}",
+        "used": 1,
+        "last_hash": "0xdeff065ca91ca95984a476ccb9edc2a70fea392f4a18430e6ba0b4ad7c3ab81d"
+      }
+    ],
+    "ops": [
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op0",
+        "request_hash": "0x8d4cd687585349a350e1a99cbaa6533e636dc231bc079fed235a672719fa955d",
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178",
+        "seq": 1,
+        "state": "DONE",
+        "admitted_at": 1792457555994,
+        "previous_hash": "GENESIS",
+        "request": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op0\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"/l2rW9xuXzmA4e2X4ZTW7Yg3BI5riN/IeBk6pAkxtQx2B+IDKKHeMMCt13tLPpiDXSiZ9aKRVsAFiz43TlbqCg==\"}",
+        "record": "{\"body\":{\"sequence\":1,\"grant\":{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457555980,\"expires_at\":1792457557980,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6/KLnMX9WS9JhYE1FW4nvN2y/6+rE3J0ZHKygiLwr9SAa76A397lsH4++hWRh+UyYaj9IzBIxxDmzpaNbmzvDg==\"},\"request\":{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op0\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"/l2rW9xuXzmA4e2X4ZTW7Yg3BI5riN/IeBk6pAkxtQx2B+IDKKHeMMCt13tLPpiDXSiZ9aKRVsAFiz43TlbqCg==\"},\"executed_at\":1792457555994,\"previous_hash\":\"GENESIS\",\"result\":\"DONE\",\"receipt_hash\":\"0x42f8a80aaab87701351bbb7bab5962091435c6bbaf3658e0430a3e5aef6d9547\"},\"signature\":\"pVN+javcB53+QW2lhIaodF59fVIFrna5kbJYrzR37m7tIWObpYxsCSYYzUiJ+AfxcTsB7tU6oqnW1EBYiOWPCg==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op0\",\"command_hash\":\"0x017b10ff8fd719f75ca4a73b84d74450411858eeba26cdfc788ae6482d095a7f\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556015},\"signature\":\"YiTnHQDKxpUB2XzTNrrLaaK+j3yaTn7PN8YjkSWi497Iln0z/NPwTFDs8qZcLjh9jEAynIoCYIroL2u34RJ+AQ==\"}",
+        "synced": 1,
+        "tx_hash": "0xac60fb0701d68c83a3e75bb8041385ee550fb499de3beb82c9a31e21b2eb7961"
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op1",
+        "request_hash": "0x5cd2521eaa8fd7bdb5cde3821dc746e298764dc78fae5d6fcd9adcc63fbe266e",
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178",
+        "seq": 2,
+        "state": "DONE",
+        "admitted_at": 1792457556299,
+        "previous_hash": "0xd24de3b7d50510d56c6499b15a9242c6252ce0c286484afb7b62ffb660ba9dd1",
+        "request": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op1\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"RQq+fk6P89PnKfJHfyc2JOgD7YiZo5zJhGBV1QbWYKxyLMBlgXRAVFj7cxDLVblMpCeq63koKdiHZDJkeJHODA==\"}",
+        "record": "{\"body\":{\"sequence\":2,\"grant\":{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457555980,\"expires_at\":1792457557980,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6/KLnMX9WS9JhYE1FW4nvN2y/6+rE3J0ZHKygiLwr9SAa76A397lsH4++hWRh+UyYaj9IzBIxxDmzpaNbmzvDg==\"},\"request\":{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op1\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"RQq+fk6P89PnKfJHfyc2JOgD7YiZo5zJhGBV1QbWYKxyLMBlgXRAVFj7cxDLVblMpCeq63koKdiHZDJkeJHODA==\"},\"executed_at\":1792457556299,\"previous_hash\":\"0xd24de3b7d50510d56c6499b15a9242c6252ce0c286484afb7b62ffb660ba9dd1\",\"result\":\"DONE\",\"receipt_hash\":\"0xe965db81ee77a59d66fe7fffbb5118d4cd61c22aa37f6d69da9f5747ecae6c1d\"},\"signature\":\"CWNYVaj3RaXBG4h/EDxdzky9Y9sFO7Zg2r4d5Is2OuphJvodgETbJv+i3MEDThLeEVe93PZCHsEdu7ggXvpGAA==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op1\",\"command_hash\":\"0x80aba9a8232bd24085bf5a2aec098a2d7d854989645d21e12211f151497c67f7\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556304},\"signature\":\"hzc5f3yCHEe+hW45mqsN4h9IHoSKUHc4JPlWJUn8JaoWjZRQjdWRBHpPrXtSrdpadYiS97scCTOzbEliha9kAg==\"}",
+        "synced": 1,
+        "tx_hash": "0x07c441ef13f57eb5b680b6f075783da8416e29d54f6fb6550d377368313468b3"
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op2",
+        "request_hash": "0x14a3c189cedd6049dfdcf32610ce7a1b52736788bb1241b68f7db20b16742541",
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178",
+        "seq": 3,
+        "state": "DONE",
+        "admitted_at": 1792457556596,
+        "previous_hash": "0xfd13f201a066a134684f0655adadfa7b126f95088377dd89fd61d5123831ee58",
+        "request": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op2\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"4+0ye+KISSd55UQ/CDkqScd03fnq9Jrr2oERktDYzCYHZ0rOqfliVJDr6ABETekjCVZ1kzEyuk7s0HZyPociDg==\"}",
+        "record": "{\"body\":{\"sequence\":3,\"grant\":{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457555980,\"expires_at\":1792457557980,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6/KLnMX9WS9JhYE1FW4nvN2y/6+rE3J0ZHKygiLwr9SAa76A397lsH4++hWRh+UyYaj9IzBIxxDmzpaNbmzvDg==\"},\"request\":{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op2\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"4+0ye+KISSd55UQ/CDkqScd03fnq9Jrr2oERktDYzCYHZ0rOqfliVJDr6ABETekjCVZ1kzEyuk7s0HZyPociDg==\"},\"executed_at\":1792457556596,\"previous_hash\":\"0xfd13f201a066a134684f0655adadfa7b126f95088377dd89fd61d5123831ee58\",\"result\":\"DONE\",\"receipt_hash\":\"0xf881e48b3f9a3299cccc61d4c0fe143336d3f848e24245569f3f474dc6d5945c\"},\"signature\":\"cPWieCQU86uTegHpq1zALW1a3rUeUsv6K/XlGQP/nnFl/EUyRepcOlWyZwf/K2dPUg9O0DNoysDEGdo9/NqRAQ==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op2\",\"command_hash\":\"0x90a83fa592e4e126defd964878b4b18ea3341c89663e6a68c402d005af8bb05b\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556600},\"signature\":\"7MnyjEG4DJdkiUk89dbzTkpzGE2r23ruxMPipR7OxfoAKuN6Jq7CDsGTcJEAizd4zS0XzpEKuu9FZertMaByDg==\"}",
+        "synced": 1,
+        "tx_hash": "0xba81d5114e179a17cc76f839c2346e6a45aadf552bc05d19d1b6d3187268060b"
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op3",
+        "request_hash": "0x3baa5ff03554526a584bda8c5f8367822b83ad925992dad6f11160b130667188",
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178",
+        "seq": 4,
+        "state": "DONE",
+        "admitted_at": 1792457556907,
+        "previous_hash": "0xeb38ae499e474338ebf4de1771ac9912bed06e0939793de300d3d557a3efc5ab",
+        "request": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op3\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"bmsPgghwEXBe6KRlrbz4MB181pAKrSbnhH/gTZ6FZx3rxiAMOIfWqxmm5IWSBZIyUu/U7gasz57rRziIJnn+BA==\"}",
+        "record": "{\"body\":{\"sequence\":4,\"grant\":{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457555980,\"expires_at\":1792457557980,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6/KLnMX9WS9JhYE1FW4nvN2y/6+rE3J0ZHKygiLwr9SAa76A397lsH4++hWRh+UyYaj9IzBIxxDmzpaNbmzvDg==\"},\"request\":{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op3\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"bmsPgghwEXBe6KRlrbz4MB181pAKrSbnhH/gTZ6FZx3rxiAMOIfWqxmm5IWSBZIyUu/U7gasz57rRziIJnn+BA==\"},\"executed_at\":1792457556907,\"previous_hash\":\"0xeb38ae499e474338ebf4de1771ac9912bed06e0939793de300d3d557a3efc5ab\",\"result\":\"DONE\",\"receipt_hash\":\"0xd269cedb267a17c441bd9c04ee031f509ce30f6a2febf65bec41188c7b7568a6\"},\"signature\":\"9OQ0q6sg7cWoMRGxSxCTmHNi5gijsIbGTeQ/dS+S+qs/VYb2rREk8/r9fHdoLDub9TfavWhCPMelzcuvmh6uBw==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op3\",\"command_hash\":\"0x391acb074a32bb3473bc14a9c20542521c66fc94a292d0e5139c70adacb2da1a\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556911},\"signature\":\"ZUuxVU/5DodXeB03ZCp2ASptZQ+5fmCZ8CxYpxSVK1KIHvRVHq9SxQmeYBG6OXDyqlaw3SWobXdi6MXXaVkXAQ==\"}",
+        "synced": 1,
+        "tx_hash": "0x6c997a615287241868a3f63f2e4dc73a3f66d570de803b912f4866130868b162"
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op4",
+        "request_hash": "0x6d2c87212a02781af320f1cd9a171112f184bad6b26e4b4b590b778cca2782d0",
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g178",
+        "seq": 5,
+        "state": "DONE",
+        "admitted_at": 1792457557204,
+        "previous_hash": "0x5d2c7da77a543e3a7cb936c63e55d30ec8830c85c7c451aa15092dcb9fff50ae",
+        "request": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op4\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"Uj7cD8lsfIwUPkG47dlbhGt2z4HBFDE2N5Bz+1mw05oRfFMCg5mADbpk/cTWR0OA22XP9IsJiMFShjAdSn7xDQ==\"}",
+        "record": "{\"body\":{\"sequence\":5,\"grant\":{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457555980,\"expires_at\":1792457557980,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6/KLnMX9WS9JhYE1FW4nvN2y/6+rE3J0ZHKygiLwr9SAa76A397lsH4++hWRh+UyYaj9IzBIxxDmzpaNbmzvDg==\"},\"request\":{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op4\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\"},\"signature\":\"Uj7cD8lsfIwUPkG47dlbhGt2z4HBFDE2N5Bz+1mw05oRfFMCg5mADbpk/cTWR0OA22XP9IsJiMFShjAdSn7xDQ==\"},\"executed_at\":1792457557204,\"previous_hash\":\"0x5d2c7da77a543e3a7cb936c63e55d30ec8830c85c7c451aa15092dcb9fff50ae\",\"result\":\"DONE\",\"receipt_hash\":\"0x8d687b903ea2e42b65b2cf27f38d96377009dd014e882e700353d7865fb1130c\"},\"signature\":\"Do1jxr+FOlAsDpeeW1XaA+APJ7lLSaw/5xXUMbP9nEu6MGlYwFYPAcemIa57najht7rnL4EKLQVvSq4OOVX/CA==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op4\",\"command_hash\":\"0xb719527aa9a2c993d5bf4ee578901e50a1045739e576b7238fdf7567e6c3d98a\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457557209},\"signature\":\"gx0L/26cpOJw9/VautZYzBYlxYI8Mi5+H9vuzcbhk0YrxjdUTepTbERX3CCYCrBt+Mz0GMVC9FNc2fyqRIPWBA==\"}",
+        "synced": 1,
+        "tx_hash": "0xef7a7d593c872d0a76fb3f6101b6c674c66e88ae1312d6266651c23abd1f542d"
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-recovery",
+        "request_hash": "0x0648925d2d1eaed83230596e9557eef23e6820af0fccb60ef1df6d70ef3b6293",
+        "grant_id": "bench-r2-d0-short_outage-durable-adaptive-g179",
+        "seq": 1,
+        "state": "DONE",
+        "admitted_at": 1792457557503,
+        "previous_hash": "GENESIS",
+        "request": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-recovery\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g179\"},\"signature\":\"W3eEkO0K9Lo1En4anE3RM0sv8uiIvcZ1oQdugTUpeZ3FtcJGP2yuFcZXadNNb0wqEzynGuH2TdOX+dcUG3hIDQ==\"}",
+        "record": "{\"body\":{\"sequence\":1,\"grant\":{\"body\":{\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g179\",\"subject\":\"q7UcAQv1hlcRTamVdRrTuZR2uDWLbU4mfcF96XVK1/I=\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"issued_at\":1792457557499,\"expires_at\":1792457561011,\"quota\":100,\"operations\":[\"diagnose\"]},\"signature\":\"6RhcTk4XWHLgmd3EHY+PeXvDyJaO2RIqTrbP0NxFH26vGOCYMOrBBhWSw0Vo7WV/ZPMEGzXOuW5ZBoDrpwOyDw==\"},\"request\":{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-recovery\",\"operation\":\"diagnose\",\"gateway\":\"gw-1\",\"robot\":\"robot-1\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g179\"},\"signature\":\"W3eEkO0K9Lo1En4anE3RM0sv8uiIvcZ1oQdugTUpeZ3FtcJGP2yuFcZXadNNb0wqEzynGuH2TdOX+dcUG3hIDQ==\"},\"executed_at\":1792457557503,\"previous_hash\":\"GENESIS\",\"result\":\"DONE\",\"receipt_hash\":\"0x920aebf782da3d17fa80a48f966c1830c9304a83eb990ca85b27304be7f3e931\"},\"signature\":\"w6w/Ltx40TwSoDySbubDb2sAJOgybpWDpoU3KoDKpqJ3FhRo9Zittg/8VLpGrYfbbNwhAZepkrxTQS61NKm5BQ==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-recovery\",\"command_hash\":\"0xac994353ef714c33cdeb71fcd8a7bcf5f0dd6e694d2b13450e8d1ec4d3cc149c\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457557507},\"signature\":\"z4yzhRP6XPb3XEDmkqZbL4Ke+1Epnkw0SJO7t2hEqdeYVSRkTyPwuahEQJ5N2bVWIk2CwIUI8+r8sDrwCGFyBA==\"}",
+        "synced": 1,
+        "tx_hash": "0xaab62c7c3b8277d46956f3a454fd84fd6eb2997805f6753ddce26dff0e4270e6"
+      }
+    ],
+    "robot": []
+  },
+  "robot": {
+    "settings": {
+      "journal_mode": "delete",
+      "synchronous": 2,
+      "sqlite": "3.51.3"
+    },
+    "grants": [],
+    "ops": [],
+    "robot": [
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op0",
+        "command_hash": "0x017b10ff8fd719f75ca4a73b84d74450411858eeba26cdfc788ae6482d095a7f",
+        "command": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op0\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"request_hash\":\"0x8d4cd687585349a350e1a99cbaa6533e636dc231bc079fed235a672719fa955d\"},\"signature\":\"eQwcrWrnSjLOG2liefQwTeNmVJiJZUDlnOhMCk9tuGkB27AFuEpSe5GXxXuxOFqOD4xlGxcn7+MNydPyDw4/Cw==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op0\",\"command_hash\":\"0x017b10ff8fd719f75ca4a73b84d74450411858eeba26cdfc788ae6482d095a7f\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556015},\"signature\":\"YiTnHQDKxpUB2XzTNrrLaaK+j3yaTn7PN8YjkSWi497Iln0z/NPwTFDs8qZcLjh9jEAynIoCYIroL2u34RJ+AQ==\"}",
+        "effect_count": 1
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op1",
+        "command_hash": "0x80aba9a8232bd24085bf5a2aec098a2d7d854989645d21e12211f151497c67f7",
+        "command": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op1\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"request_hash\":\"0x5cd2521eaa8fd7bdb5cde3821dc746e298764dc78fae5d6fcd9adcc63fbe266e\"},\"signature\":\"U6ntJysJZwQ7rWJS9YFnosEYcARrfmebKBKjmU1vZCy1uPV8oEUc905sOUiCAawemZTo2mc+D8dCNTadSFi+Bw==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op1\",\"command_hash\":\"0x80aba9a8232bd24085bf5a2aec098a2d7d854989645d21e12211f151497c67f7\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556304},\"signature\":\"hzc5f3yCHEe+hW45mqsN4h9IHoSKUHc4JPlWJUn8JaoWjZRQjdWRBHpPrXtSrdpadYiS97scCTOzbEliha9kAg==\"}",
+        "effect_count": 1
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op2",
+        "command_hash": "0x90a83fa592e4e126defd964878b4b18ea3341c89663e6a68c402d005af8bb05b",
+        "command": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op2\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"request_hash\":\"0x14a3c189cedd6049dfdcf32610ce7a1b52736788bb1241b68f7db20b16742541\"},\"signature\":\"8+k9v57qcnU/epTx0TrwxYTJqy243QdO7xm6JnBeh10dnodT2skY0df5Eaeu7WaFwiAdr9JURfch039CQK7fCA==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op2\",\"command_hash\":\"0x90a83fa592e4e126defd964878b4b18ea3341c89663e6a68c402d005af8bb05b\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556600},\"signature\":\"7MnyjEG4DJdkiUk89dbzTkpzGE2r23ruxMPipR7OxfoAKuN6Jq7CDsGTcJEAizd4zS0XzpEKuu9FZertMaByDg==\"}",
+        "effect_count": 1
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op3",
+        "command_hash": "0x391acb074a32bb3473bc14a9c20542521c66fc94a292d0e5139c70adacb2da1a",
+        "command": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op3\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"request_hash\":\"0x3baa5ff03554526a584bda8c5f8367822b83ad925992dad6f11160b130667188\"},\"signature\":\"wsLmZhaOgKxlm0LDIJy5FUyh0bIOeTUAUfs7p1dyizaANqgbCE1zK3O9b4QDvA4LYBMmM8Kmh8L4wiW3/NikDQ==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op3\",\"command_hash\":\"0x391acb074a32bb3473bc14a9c20542521c66fc94a292d0e5139c70adacb2da1a\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457556911},\"signature\":\"ZUuxVU/5DodXeB03ZCp2ASptZQ+5fmCZ8CxYpxSVK1KIHvRVHq9SxQmeYBG6OXDyqlaw3SWobXdi6MXXaVkXAQ==\"}",
+        "effect_count": 1
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-op4",
+        "command_hash": "0xb719527aa9a2c993d5bf4ee578901e50a1045739e576b7238fdf7567e6c3d98a",
+        "command": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op4\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g178\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"request_hash\":\"0x6d2c87212a02781af320f1cd9a171112f184bad6b26e4b4b590b778cca2782d0\"},\"signature\":\"5IQ45pPt4b0Hv9rG45wZcZdt3R00nmi3d7liD61OhPcOQ/qUeZ65kIVOG7Ex0kjJkjVRp1fpavUpH2w5EMpOBQ==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-op4\",\"command_hash\":\"0xb719527aa9a2c993d5bf4ee578901e50a1045739e576b7238fdf7567e6c3d98a\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457557209},\"signature\":\"gx0L/26cpOJw9/VautZYzBYlxYI8Mi5+H9vuzcbhk0YrxjdUTepTbERX3CCYCrBt+Mz0GMVC9FNc2fyqRIPWBA==\"}",
+        "effect_count": 1
+      },
+      {
+        "op_id": "bench-r2-d0-short_outage-durable-adaptive-recovery",
+        "command_hash": "0xac994353ef714c33cdeb71fcd8a7bcf5f0dd6e694d2b13450e8d1ec4d3cc149c",
+        "command": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-recovery\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"grant_id\":\"bench-r2-d0-short_outage-durable-adaptive-g179\",\"work_order\":\"bench-r2-d0-short_outage-durable-adaptive\",\"version\":1,\"request_hash\":\"0x0648925d2d1eaed83230596e9557eef23e6820af0fccb60ef1df6d70ef3b6293\"},\"signature\":\"R/qq7ZqpN6F8PFs36LtiQsTJirTj6zEDAIt6AbYLfxx8fzqv1P8E7ECSSlfG5KhhGLn17VDVacx67HB3yfVRBA==\"}",
+        "ack": "{\"body\":{\"op_id\":\"bench-r2-d0-short_outage-durable-adaptive-recovery\",\"command_hash\":\"0xac994353ef714c33cdeb71fcd8a7bcf5f0dd6e694d2b13450e8d1ec4d3cc149c\",\"robot\":\"robot-1\",\"operation\":\"diagnose\",\"result\":\"DONE\",\"received_at\":1792457557507},\"signature\":\"z4yzhRP6XPb3XEDmkqZbL4Ke+1Epnkw0SJO7t2hEqdeYVSRkTyPwuahEQJ5N2bVWIk2CwIUI8+r8sDrwCGFyBA==\"}",
+        "effect_count": 1
+      }
+    ]
+  },
+  "accepted": 6,
+  "offline_accepted": 5,
+  "passed": true
+}

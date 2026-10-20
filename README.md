@@ -10,7 +10,7 @@ Code and experiment records for the article "Bounded Offline Authorization and A
 | `offline_maintenance_stage4_comparison` | 6.7-6.9 Policy simulation | Trace-driven lifetime-policy simulation: 150 traces (seeds 1000-1029), 7,200 evaluations |
 | `offline_maintenance_stage5_e2e` | Online Resource 1 | Layered HTTP prototype: four formal batches (216 runs) and diagnostic runs |
 | `stage5_diagnostic_tools` | Online Resource 1 | Diagnostic tools for the long-running layered HTTP run |
-| `offline_maintenance_stage6_unified` | 6.4-6.5 Unified durable prototype | Fault recovery (36 cases), functional checks, performance matrix (108 runs), 120 s observation |
+| `offline_maintenance_stage6_unified` | 6.4-6.5 Unified durable prototype | Revised article: `stage6_results_r5_run2` (five repetitions: 60 fault cases, 9 functional checks, 180 performance runs, 120 s observation). `stage6_results` is the earlier three-repetition batch (36 cases, 108 runs) |
 | `offline_maintenance_stage7_ablation` | 6.6 Recovery ablation | Full, late-reservation and retry-pending variants: 36 runs, 66 transactions |
 
 Software versions: Python 3.9.13; Node.js 24.15.0; ethers 6.13.5; Ganache 7.9.2; solc 0.8.28. Node.js folders: run `npm ci` before the scripts. All keys in this repository are test keys generated for the experiments and are not used by any real wallet, robot or account.
